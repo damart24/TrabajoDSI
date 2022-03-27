@@ -10,13 +10,13 @@
 
     <Grid>
         
-        <StackPanel x:Name="Mapa Ataque">
+        <StackPanel x:Name="MapaAtaque">
             <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"></Image>
         </StackPanel>
 
         
-        <StackPanel x:Name="Panel Puntuacion">
+        <StackPanel x:Name="PanelPuntuacion">
             <Image Source="Assets/panel niveles.png"
                    Stretch="Fill"
                    Width=" 200"
@@ -30,29 +30,29 @@
         
         
        <!--edificios-->
-        <Image  x:Name="Edificio 6" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio6" Source="Assets/castillo.png"   
                 Stretch="Fill"
                 Width="129"
                 Height="100" Margin="750,10,621,890"/>
 
-        <Image  x:Name="Edificio 5" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio5" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="894,378,477,522"/>
-        <Image  x:Name="Edificio 4" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio4" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="711,278,660,622"/>
-        <Image  x:Name="Edificio 3" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio3" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="565,121,806,779"/>
 
-        <Image   x:Name="Edificio 2" Source="Assets/castillo.png"   
+        <Image   x:Name="Edificio2" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="775,500,596,400"/>
-        <Image  x:Name="Edificio 1" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio1" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="540,519,831,381"/>
@@ -60,7 +60,7 @@
         
         <!--informacion de cada edificio-->
 
-        <Image  x:Name="Info 1" Source="Assets/icono_ayuda.png"   
+        <Image  x:Name="Info1" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill"
                    Width="129"
                    Height="100" Margin="392,278,979,622"/>
