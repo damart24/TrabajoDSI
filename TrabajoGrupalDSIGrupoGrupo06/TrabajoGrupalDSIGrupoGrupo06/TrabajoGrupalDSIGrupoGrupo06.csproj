@@ -161,21 +161,23 @@
     <Content Include="Assets\fondo_naranja.png" />
     <Content Include="Assets\hierba.png" />
     <Content Include="Assets\hierba_colorines.png" />
-    <Content Include="Assets\icono usuario.png" />
     <Content Include="Assets\icono_ayuda.png" />
+    <Content Include="Assets\icono_casa.png" />
     <Content Include="Assets\icono_lucha.png" />
-    <Content Include="Assets\Image Pasted 2022-19-03 at 01.10.47.png" />
+    <Content Include="Assets\icono_mas_tropas.png" />
     <Content Include="Assets\imagen_pantalla_inicio.png" />
     <Content Include="Assets\informacion.jpg" />
     <Content Include="Assets\lanzallamas.png" />
     <Content Include="Assets\lingote.png" />
     <Content Include="Assets\madera.png" />
     <Content Include="Assets\mapa_ataque.png" />
+    <Content Include="Assets\martillo.png" />
     <Content Include="Assets\mina.png" />
-    <Content Include="Assets\panel niveles.png" />
+    <Content Include="Assets\panel_niveles.png" />
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
     <Content Include="Assets\soldado.png" />
+    <Content Include="Assets\tienda.png" />
     <Content Include="Assets\tropas_icono.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -218,9 +220,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\lingote.webp" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
