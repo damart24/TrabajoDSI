@@ -160,10 +160,10 @@
     <Content Include="Assets\fondo_gris_claro.png" />
     <Content Include="Assets\fondo_naranja.png" />
     <Content Include="Assets\hierba.png" />
+    <Content Include="Assets\hierba_colorines.png" />
     <Content Include="Assets\icono usuario.png" />
     <Content Include="Assets\icono_ayuda.png" />
     <Content Include="Assets\icono_lucha.png" />
-    <Content Include="Assets\icono_mas_tropas.png" />
     <Content Include="Assets\Image Pasted 2022-19-03 at 01.10.47.png" />
     <Content Include="Assets\imagen_pantalla_inicio.png" />
     <Content Include="Assets\informacion.jpg" />
@@ -175,7 +175,6 @@
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
     <Content Include="Assets\soldado.png" />
-    <Content Include="Assets\tropa.png" />
     <Content Include="Assets\tropas_icono.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
