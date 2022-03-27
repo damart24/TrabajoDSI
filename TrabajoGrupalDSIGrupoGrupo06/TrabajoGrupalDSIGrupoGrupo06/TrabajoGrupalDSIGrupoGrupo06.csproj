@@ -119,8 +119,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="PantallaAtaque.xaml.cs">
+      <DependentUpon>PantallaAtaque.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaEntrenamiento.xaml.cs">
+      <DependentUpon>PantallaEntrenamiento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaInicio.xaml.cs">
+      <DependentUpon>PantallaInicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaJuego.xaml.cs">
+      <DependentUpon>PantallaJuego.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaOpciones.xaml.cs">
+      <DependentUpon>PantallaOpciones.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -144,15 +156,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.12</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="PantallaAtaque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PantallaEntrenamiento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PantallaInicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PantallaJuego.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PantallaOpciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
