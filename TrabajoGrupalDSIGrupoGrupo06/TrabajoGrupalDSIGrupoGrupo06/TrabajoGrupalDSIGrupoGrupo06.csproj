@@ -168,6 +168,7 @@
     <Content Include="Assets\imagen_pantalla_inicio.png" />
     <Content Include="Assets\informacion.jpg" />
     <Content Include="Assets\lanzallamas.png" />
+    <Content Include="Assets\lingote.png" />
     <Content Include="Assets\madera.png" />
     <Content Include="Assets\mapa_ataque.png" />
     <Content Include="Assets\mina.png" />
