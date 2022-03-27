@@ -122,6 +122,9 @@
     <Compile Include="PantallaAtaque.xaml.cs">
       <DependentUpon>PantallaAtaque.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PantallaCarga.xaml.cs">
+      <DependentUpon>PantallaCarga.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PantallaEntrenamiento.xaml.cs">
       <DependentUpon>PantallaEntrenamiento.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\imagen_pantalla_inicio.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -164,6 +168,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="PantallaAtaque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PantallaCarga.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
