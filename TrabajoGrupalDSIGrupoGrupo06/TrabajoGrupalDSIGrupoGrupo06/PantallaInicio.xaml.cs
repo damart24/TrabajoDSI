@@ -30,7 +30,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
         {
           
-                Frame.Navigate(typeof(PantallaCarga));
+                Frame.Navigate(typeof(PantallaJuego));
         }
     }
 }

@@ -13,26 +13,28 @@
                Stretch="Fill"></Image>
         <Image Source="Assets/fondo_naranja.png"
                Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
-        
-        <!--<Image Source="Assets/caballero.png"
-               Stretch="Uniform" Margin="703,403,538,145" RenderTransformOrigin="0.413,0.328"></Image>
+
+        <Image Source="Assets/caballero.png"
+               Stretch="UniformToFill" Margin="789,545,0,215" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="169"></Image>
         <Image Source="Assets/canyon.png"
                Margin="951,561,227,184" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/soldado.png"
-                Margin="233,528,1001,175" RenderTransformOrigin="0.413,0.328"></Image>
+                Margin="267,546,1025,215" RenderTransformOrigin="0.413,0.328" Stretch="UniformToFill"></Image>
         <Image Source="Assets/arquera.png"
-               Stretch="Uniform" Margin="391,537,635,185" RenderTransformOrigin="0.413,0.328"></Image>
+               Stretch="UniformToFill" Margin="512,546,781,215" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/lanzallamas.png"
-               Stretch="Uniform" Margin="851,598,361,246" RenderTransformOrigin="0.413,0.328"></Image>-->
+               Stretch="Uniform" Margin="851,598,361,246" RenderTransformOrigin="0.413,0.328"></Image>
 
         <Image Source="Assets/icono_ayuda.png"
                 Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/icono_ayuda.png"
-                Margin="719,520,720,428" RenderTransformOrigin="0.413,0.328"></Image>
+                Margin="694,520,745,428" RenderTransformOrigin="0.413,0.328"></Image>
         <!--<Image Source="Assets/candado.png"
                Stretch="Uniform" Margin="391,537,635,185" RenderTransformOrigin="0.413,0.328"></Image>-->
         <Image Source="Assets/icono_lucha.png"
                Stretch="Uniform" Margin="1385,879,26,29" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/fondo_blanco.png" Width="119"
+               Margin="1365,866,0,0" HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Stretch="None"/>
         <Image Source="Assets/icono_lucha.png"
                Stretch="Uniform" Margin="1385,879,26,29" RenderTransformOrigin="0.413,0.328"></Image>
     </Grid>
