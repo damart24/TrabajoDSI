@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Image Source="Assets/hierba.png"
+               Stretch="Fill" Opacity="0.5"></Image>
+        <Image Source="Assets/fondo_colorines.png"
+               Stretch="Fill"></Image>
     </Grid>
 </Page>
