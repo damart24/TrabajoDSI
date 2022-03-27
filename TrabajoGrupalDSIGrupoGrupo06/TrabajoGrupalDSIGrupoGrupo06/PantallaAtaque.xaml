@@ -9,14 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        
-        <StackPanel x:Name="MapaAtaque">
+
+        <StackPanel x:Name="Mapa Ataque">
             <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"></Image>
         </StackPanel>
 
-        
-        <StackPanel x:Name="PanelPuntuacion">
+
+        <StackPanel x:Name="Panel Puntuacion">
             <Image Source="Assets/panel niveles.png"
                    Stretch="Fill"
                    Width=" 200"
@@ -27,43 +27,141 @@
             </Image>
         </StackPanel>
 
-        
-        
-       <!--edificios-->
-        <Image  x:Name="Edificio6" Source="Assets/castillo.png"   
+
+
+        <!--edificios-->
+        <Image  x:Name="Edificio 6" Source="Assets/castillo.png"   
                 Stretch="Fill"
-                Width="129"
-                Height="100" Margin="750,10,621,890"/>
+                Width="150"
+                Height="120" Margin="829,10,521,870"/>
 
-        <Image  x:Name="Edificio5" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio 5" Source="Assets/castillo.png"   
                    Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="894,378,477,522"/>
-        <Image  x:Name="Edificio4" Source="Assets/castillo.png"   
+                   Width="150"
+                   Height="120" Margin="1001,440,349,440"/>
+        <Image  x:Name="Edificio 4" Source="Assets/castillo.png"   
                    Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="711,278,660,622"/>
-        <Image  x:Name="Edificio3" Source="Assets/castillo.png"   
+                   Width="150"
+                   Height="120" Margin="708,312,642,568"/>
+        <Image  x:Name="Edificio 3" Source="Assets/castillo.png"   
                    Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="565,121,806,779"/>
+                   Width="150"
+                   Height="120" Margin="526,127,824,753"/>
 
-        <Image   x:Name="Edificio2" Source="Assets/castillo.png"   
+        <Image   x:Name="Edificio 2" Source="Assets/castillo.png"   
                    Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="775,500,596,400"/>
-        <Image  x:Name="Edificio1" Source="Assets/castillo.png"   
+                   Width="150"
+                   Height="120" Margin="783,632,567,248"/>
+        <Image  x:Name="Edificio 1" Source="Assets/castillo.png"   
                    Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="540,519,831,381"/>
+                   Width="150"
+                   Height="120" Margin="491,723,859,157"/>
 
-        
+
         <!--informacion de cada edificio-->
+        <Image  x:Name="Info_1" Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="849,10,612,956"/>
+        <Image  x:Name="Info_2"  Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="526,723,935,243"/>
+        <Image  x:Name="Info_3" Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="809,632,652,334"/>
+        <Image  x:Name="Info_4" Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="1001,451,460,515"/>
+        <Image  x:Name="Info_5" Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="735,312,726,654"/>
+        <Image  x:Name="Info_6" Source="Assets/icono_ayuda - Copia.png"   
+                   Stretch="Fill" Margin="546,127,915,839"/>
 
-        <Image  x:Name="Info1" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill"
-                   Width="129"
-                   Height="100" Margin="392,278,979,622"/>
+        <!--icono de la casa-->
+
+        <Image  x:Name="Home" Source="Assets/home.png"   
+                   Stretch="Fill" Margin="1250,773,32,36"/>
+
+        <!--recorrido a cada edificio-->
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,500,510,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,600,763,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,578,726,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,632,796,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,232,487,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,184,762,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,429,400,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,278,450,0" Width="57">
+        </TextBlock>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,491,472,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,278,450,0" Width="57">
+        </TextBlock>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,232,555,0" Width="57">
+        </TextBlock>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,167,812,0" Width="57">
+        </TextBlock>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,799,0" Width="57"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,891,0" Width="57"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,469,433,0" Width="57"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,469,433,0" Width="57"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-73,761,0" Width="57"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="738,-91,0,0"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="783,-73,0,0"/>
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,144,874,0" Width="57"/>
 
 
     </Grid>

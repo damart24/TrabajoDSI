@@ -143,39 +143,42 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\armas.png" />
-    <Content Include="Assets\arquera.png" />
     <Content Include="Assets\bandera_espanya.png" />
-    <Content Include="Assets\barbaro.png" />
     <Content Include="Assets\caballero.png" />
-    <Content Include="Assets\candado.png" />
     <Content Include="Assets\canyon.png" />
     <Content Include="Assets\casa.png" />
     <Content Include="Assets\castillo.png" />
-    <Content Include="Assets\comida.png" />
+    <Content Include="Assets\circulo_blanco.png" />
     <Content Include="Assets\cuartel.png" />
     <Content Include="Assets\cubito.png" />
     <Content Include="Assets\flecha.png" />
-    <Content Include="Assets\fondo_blanco.png" />
     <Content Include="Assets\fondo_gris.png" />
     <Content Include="Assets\fondo_gris_claro.png" />
     <Content Include="Assets\fondo_naranja.png" />
     <Content Include="Assets\hierba.png" />
+<<<<<<< Updated upstream
     <Content Include="Assets\hierba_colorines.png" />
+=======
+    <Content Include="Assets\home.png" />
+>>>>>>> Stashed changes
     <Content Include="Assets\icono usuario.png" />
-    <Content Include="Assets\icono_ayuda.png" />
+    <Content Include="Assets\icono_ayuda - Copia.png" />
+    <Content Include="Assets\icono_casa.png" />
     <Content Include="Assets\icono_lucha.png" />
     <Content Include="Assets\Image Pasted 2022-19-03 at 01.10.47.png" />
     <Content Include="Assets\imagen_pantalla_inicio.png" />
     <Content Include="Assets\informacion.jpg" />
+<<<<<<< Updated upstream
     <Content Include="Assets\lanzallamas.png" />
     <Content Include="Assets\lingote.png" />
+=======
+>>>>>>> Stashed changes
     <Content Include="Assets\madera.png" />
     <Content Include="Assets\mapa_ataque.png" />
     <Content Include="Assets\mina.png" />
     <Content Include="Assets\panel niveles.png" />
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
-    <Content Include="Assets\soldado.png" />
     <Content Include="Assets\tropas_icono.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
