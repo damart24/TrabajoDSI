@@ -14,28 +14,54 @@
         <Image Source="Assets/fondo_naranja.png"
                Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
 
-        <Image Source="Assets/caballero.png"
-               Stretch="UniformToFill" Margin="789,545,0,215" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="169"></Image>
-        <Image Source="Assets/canyon.png"
-               Margin="951,561,227,184" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/soldado.png"
-                Margin="267,546,1025,215" RenderTransformOrigin="0.413,0.328" Stretch="UniformToFill"></Image>
+                Margin="267,546,1038,215" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
         <Image Source="Assets/arquera.png"
-               Stretch="UniformToFill" Margin="512,546,781,215" RenderTransformOrigin="0.413,0.328"></Image>
-        <Image Source="Assets/lanzallamas.png"
-               Stretch="Uniform" Margin="851,598,361,246" RenderTransformOrigin="0.413,0.328"></Image>
+               Stretch="Fill" Margin="494,544,824,217" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/caballero.png"
+               Stretch="UniformToFill" Margin="710,544,0,216" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="149" Opacity="0.4"></Image>
+        <Image Source="Assets/lanzallamas.png" Opacity="0.4"
+               Stretch="Fill" Margin="893,548,444,215" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/canyon.png" Opacity="0.4"
+               Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
 
         <Image Source="Assets/icono_ayuda.png"
                 Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/icono_ayuda.png"
-                Margin="694,520,745,428" RenderTransformOrigin="0.413,0.328"></Image>
-        <!--<Image Source="Assets/candado.png"
-               Stretch="Uniform" Margin="391,537,635,185" RenderTransformOrigin="0.413,0.328"></Image>-->
-        <Image Source="Assets/icono_lucha.png"
-               Stretch="Uniform" Margin="1385,879,26,29" RenderTransformOrigin="0.413,0.328"></Image>
+                Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
+
+        <Image Source="Assets/candado.png"
+               Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/candado.png"
+               Stretch="Fill" Margin="943,632,494,299" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/candado.png"
+               Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
+
         <Image Source="Assets/fondo_blanco.png" Width="119"
                Margin="1365,866,0,0" HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,10,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,51,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,91,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="171"
+            Margin="1313,133,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="171"
+            Margin="1313,175,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        
         <Image Source="Assets/icono_lucha.png"
                Stretch="Uniform" Margin="1385,879,26,29" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/madera.png"
+               Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/piedra.png" Opacity="1"
+               Stretch="Fill" Margin="1316,134,146,839" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/comida.png"
+               Stretch="Fill" Margin="1316,94,146,879" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/tropa.png"
+               Stretch="Fill" Margin="1316,174,146,799" RenderTransformOrigin="0.413,0.328"></Image>
+        <!--<Image Source="Assets/icono_mas_tropas.png"
+               Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>-->
+
     </Grid>
 </Page>
