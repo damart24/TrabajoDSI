@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel x:Name="Mapa Ataque">
+            <Image Source="Assets/mapa_ataque.png"
+               Stretch="Fill"></Image>
+        </StackPanel>
     </Grid>
 </Page>
