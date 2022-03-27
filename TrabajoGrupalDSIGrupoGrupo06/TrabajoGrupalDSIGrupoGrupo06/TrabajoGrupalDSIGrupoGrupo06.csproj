@@ -164,6 +164,7 @@
     <Content Include="Assets\madera.png" />
     <Content Include="Assets\mapa_ataque.png" />
     <Content Include="Assets\mina.png" />
+    <Content Include="Assets\panel niveles.png" />
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
     <Content Include="Assets\tropas_icono.png" />
