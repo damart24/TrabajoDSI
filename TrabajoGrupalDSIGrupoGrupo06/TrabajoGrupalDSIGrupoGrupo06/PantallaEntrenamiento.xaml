@@ -54,12 +54,12 @@
                Stretch="Uniform" Margin="1385,879,26,29" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/madera.png"
                Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>
-        <Image Source="Assets/piedra.png" Opacity="1"
-               Stretch="Fill" Margin="1316,134,146,839" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/comida.png"
                Stretch="Fill" Margin="1316,94,146,879" RenderTransformOrigin="0.413,0.328"></Image>
-        <Image Source="Assets/tropa.png"
-               Stretch="Fill" Margin="1316,174,146,799" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/piedra.png" Opacity="1"
+               Stretch="Fill" Margin="1316,134,146,839" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="/Assets/tropas_icono.png"
+               Stretch="Fill" Margin="1324,178,157,795" RenderTransformOrigin="0.413,0.328"></Image>
         <!--<Image Source="Assets/icono_mas_tropas.png"
                Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>-->
 
