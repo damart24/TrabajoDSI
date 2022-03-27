@@ -20,17 +20,11 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PantallaInicio : Page
+    public sealed partial class PantallaCarga : Page
     {
-        public PantallaInicio()
+        public PantallaCarga()
         {
             this.InitializeComponent();
-        }
-
-        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
-        {
-          
-                Frame.Navigate(typeof(PantallaCarga));
         }
     }
 }
