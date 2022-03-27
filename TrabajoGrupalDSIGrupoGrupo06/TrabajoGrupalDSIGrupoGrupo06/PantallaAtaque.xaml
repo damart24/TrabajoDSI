@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Image Source="Assets/imagen_pantalla_inicio.png"
+               Stretch="Fill"></Image>
+        <TextBlock Text="Jugando como DaniRey" FontSize="50" HorizontalAlignment="Right" Margin="0,10,65,917"></TextBlock>
+        <TextBlock Text="Haz click en cualquier lugar para comenzar tu aventura" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,883,0,0"></TextBlock>
+        <TextBlock Text="Forged Legends" FontSize="80" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
     </Grid>
 </Page>
