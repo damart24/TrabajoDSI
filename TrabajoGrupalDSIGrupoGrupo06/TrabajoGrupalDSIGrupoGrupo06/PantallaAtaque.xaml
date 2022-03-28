@@ -10,13 +10,13 @@
 
     <Grid>
 
-        <StackPanel x:Name="Mapa Ataque">
+        <StackPanel x:Name="Mapa_Ataque">
             <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"></Image>
         </StackPanel>
 
 
-        <StackPanel x:Name="Panel Puntuacion">
+        <StackPanel x:Name="Panel_Puntuacion">
             <Image Source="Assets/panel_niveles.png"
                    Stretch="Fill"
                    Width=" 200"
@@ -30,29 +30,29 @@
 
 
         <!--edificios-->
-        <Image  x:Name="Edificio 6" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio_6" Source="Assets/castillo.png"   
                 Stretch="Fill"
                 Width="150"
                 Height="120" Margin="829,10,521,870"/>
 
-        <Image  x:Name="Edificio 5" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio_5" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="1001,440,349,440"/>
-        <Image  x:Name="Edificio 4" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio_4" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="708,312,642,568"/>
-        <Image  x:Name="Edificio 3" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio_3" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="526,127,824,753"/>
 
-        <Image   x:Name="Edificio 2" Source="Assets/castillo.png"   
+        <Image   x:Name="Edificio_2" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="783,632,567,248"/>
-        <Image  x:Name="Edificio 1" Source="Assets/castillo.png"   
+        <Image  x:Name="Edificio_1" Source="Assets/castillo.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="491,723,859,157"/>

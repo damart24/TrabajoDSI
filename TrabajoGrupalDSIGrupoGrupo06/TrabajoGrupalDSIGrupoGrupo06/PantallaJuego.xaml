@@ -9,7 +9,121 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="Assets/hierba_colorines.png"
+        <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill"></Image>
+
+
+        <Image Source="Assets/fondo_blanco.png" Width="119"
+               Margin="1365,866,0,0" HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="57"
+            Margin="1297,925,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="106"
+            Margin="22,882,0,0" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="56"
+            Margin="156,927,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
+
+
+        <Image Source="/Assets/icono_mas_tropas.png"
+               Stretch="Fill" Margin="1303,931,148,27" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="/Assets/tienda.png"
+               Stretch="Fill" Margin="22,894,1366,27" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Image Source="/Assets/martillo.png"
+               Stretch="Fill" Margin="6,810,1438,132" RenderTransformOrigin="-25.063,0.15"></Image>
+        <TextBlock Text="2 / 2" FontSize="30" Margin="70,826,1316,131"></TextBlock>
+        <Image Source="/Assets/flecha.png"
+            Stretch="Fill" Margin="71,-30,1404,999" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="/Assets/chat.png"
+               Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Image Source="/Assets/engranaje.png"
+               Stretch="Fill" Margin="156,934,1297,22" RenderTransformOrigin="-25.063,0.15"></Image>
+
+
+        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
+            <Image Source="/Assets/fondo_negro.png"
+               Stretch="Fill" Opacity="0.7"></Image>
+            <Image Source="Assets/fondo_naranja.png"
+               Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/soldado.png"
+                Margin="267,546,1038,215" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            <Image Source="Assets/arquera.png"
+                   Stretch="Fill" Margin="494,544,824,217" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/caballero.png"
+                   Stretch="UniformToFill" Margin="710,544,0,216" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="149" Opacity="0.4"></Image>
+            <Image Source="Assets/lanzallamas.png" Opacity="0.4"
+                   Stretch="Fill" Margin="893,548,444,215" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/canyon.png" Opacity="0.4"
+                   Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+
+            <Image Source="Assets/icono_ayuda.png"
+                    Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/icono_ayuda.png"
+                    Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
+
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="943,632,494,299" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
+        </Grid>
+        <Grid Visibility="Visible" x:Name="Panel_Ajustes">
+            <Image Source="/Assets/fondo_negro.png"
+               Stretch="Fill" Opacity="0.7"></Image>
+            <Image Source="Assets/fondo_naranja.png"
+               Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/soldado.png"
+                Margin="267,546,1038,215" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            <Image Source="Assets/arquera.png"
+                   Stretch="Fill" Margin="494,544,824,217" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/caballero.png"
+                   Stretch="UniformToFill" Margin="710,544,0,216" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="149" Opacity="0.4"></Image>
+            <Image Source="Assets/lanzallamas.png" Opacity="0.4"
+                   Stretch="Fill" Margin="893,548,444,215" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/canyon.png" Opacity="0.4"
+                   Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+
+            <Image Source="Assets/icono_ayuda.png"
+                    Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/icono_ayuda.png"
+                    Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
+
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="943,632,494,299" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/candado.png"
+                   Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
+        </Grid>
+
+        <Image Source="/Assets/panel_niveles.png"
+               Stretch="Fill" Margin="32,24,1331,901" RenderTransformOrigin="-25.063,0.15"></Image>
+
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,10,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,51,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/fondo_blanco.png" Width="171"
+               Margin="1313,91,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="171"
+            Margin="1313,133,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="171"
+            Margin="1313,175,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
+        <Image Source="Assets/icono_lucha.png"
+               Stretch="Uniform" Margin="1381,879,30,29" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/madera.png"
+               Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="/Assets/lingote.png"
+               Stretch="Fill" Margin="1316,54,146,919" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/comida.png"
+               Stretch="Fill" Margin="1316,94,146,879" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="Assets/piedra.png" Opacity="1"
+               Stretch="Fill" Margin="1316,134,146,839" RenderTransformOrigin="0.413,0.328"></Image>
+        <Image Source="/Assets/tropas_icono.png"
+               Stretch="Fill" Margin="1324,178,157,795" RenderTransformOrigin="0.413,0.328"></Image>
+
     </Grid>
 </Page>
