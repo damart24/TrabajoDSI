@@ -59,17 +59,17 @@
 
 
         <!--informacion de cada edificio-->
-        <Image  x:Name="Info_1" Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="849,10,612,956"/>
-        <Image  x:Name="Info_2"  Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="526,723,935,243"/>
-        <Image  x:Name="Info_3" Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="809,632,652,334"/>
-        <Image  x:Name="Info_4" Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="1001,451,460,515"/>
-        <Image  x:Name="Info_5" Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="735,312,726,654"/>
-        <Image  x:Name="Info_6" Source="Assets/icono_ayuda - Copia.png"   
+        <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
                    Stretch="Fill" Margin="546,127,915,839"/>
 
         <!--icono de la casa-->
@@ -164,6 +164,22 @@
         <TextBlock
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,144,874,0" Width="57"/>
 
+
+        
+
+        <!--icono de panel tropas-->
+
+        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="10">
+            <Rectangle Width="220" Height=" 50" Fill="White" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="20,20">
+            </Rectangle>
+        </Border>
+
+        <!--icono de numero tropas-->
+        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="6" Margin="-10,0,10,0">
+            <Image  x:Name="Numero_Tropas" Source="Assets/tropas_icono.png"   
+                   Stretch="Fill" Margin="1270,26,199,936"/>
+        </Border>
+        
 
     </Grid>
 </Page>
