@@ -75,28 +75,33 @@
                Stretch="Fill" Opacity="0.7"></Image>
             <Image Source="Assets/fondo_naranja.png"
                Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/soldado.png"
-                Margin="267,546,1038,215" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-            <Image Source="Assets/arquera.png"
-                   Stretch="Fill" Margin="494,544,824,217" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/caballero.png"
-                   Stretch="UniformToFill" Margin="710,544,0,216" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="149" Opacity="0.4"></Image>
-            <Image Source="Assets/lanzallamas.png" Opacity="0.4"
-                   Stretch="Fill" Margin="893,548,444,215" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/canyon.png" Opacity="0.4"
-                   Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-
-            <Image Source="Assets/icono_ayuda.png"
-                    Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/icono_ayuda.png"
-                    Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
-
-            <Image Source="Assets/candado.png"
-                   Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/candado.png"
-                   Stretch="Fill" Margin="943,632,494,299" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="Assets/candado.png"
-                   Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
+           
+            <TextBlock Text="Configuracion" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,128,0,0" Height="88" TextWrapping="Wrap"></TextBlock >
+            <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="651,344,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
+            <Slider x:Name="musica_slider"
+                        Minimum="20"
+                        Maximum="40"
+                        Value="30"
+                        Margin="661,445,625,513"
+                        TickFrequency="1"
+                        SnapsTo="Ticks"
+                        />
+            <TextBlock Text="Sonido" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="658,500,0,0" Height="82" TextWrapping="Wrap"></TextBlock >
+            <Slider x:Name="sonido_slider"
+                        Minimum="20"
+                        Maximum="40"
+                        Value="30"
+                        Margin="661,585,625,373"
+                        TickFrequency="1"
+                        SnapsTo="Ticks"
+                        />
+            <Image Source="Assets/fondo_blanco.png"
+                    Margin="1209,146,247,810" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="1213,126,0,0" Height="60" TextWrapping="Wrap"></TextBlock >
+            <Image Source="Assets/icono_persona.png"
+                    Margin="620,670,819,278" RenderTransformOrigin="0.57,0.992"></Image>
+            <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
+                   Stretch="Fill" Margin="836,670,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
         </Grid>
 
         <Image Source="/Assets/panel_niveles.png"

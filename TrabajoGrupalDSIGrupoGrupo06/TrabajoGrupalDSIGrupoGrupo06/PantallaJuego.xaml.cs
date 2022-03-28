@@ -26,5 +26,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             this.InitializeComponent();
         }
+
+        private void FontSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+
+        }
     }
 }
