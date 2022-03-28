@@ -12,7 +12,16 @@
         <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill"></Image>
 
-
+        <Grid>
+            <Image Source="/Assets/casa.png" Margin="354,232,977,595"/>
+            <Image Source="/Assets/casa.png" Margin="860,232,471,595"/>
+            <Image Source="/Assets/casa.png" Margin="860,603,471,224"/>
+            <Image Source="/Assets/cuartel.png" Margin="983,355,219,340"/>
+            <Image Source="/Assets/mina.png" Margin="524,56,807,771"/>
+            <Image Source="/Assets/castillo.png" Margin="353,363,808,251"/>
+        </Grid>
+        
+        
         <Image Source="Assets/fondo_blanco.png" Width="119"
                Margin="1365,866,0,0" HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Stretch="None"/>
         <Image Source="/Assets/fondo_blanco.png" Width="57"
@@ -29,6 +38,8 @@
                Stretch="Fill" Margin="22,894,1366,27" RenderTransformOrigin="-25.063,0.15"></Image>
         <Image Source="/Assets/martillo.png"
                Stretch="Fill" Margin="6,810,1438,132" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Image Source="Assets/icono_lucha.png"
+               Stretch="Uniform" Margin="1381,879,30,29" RenderTransformOrigin="0.413,0.328"></Image>
         <TextBlock Text="2 / 2" FontSize="30" Margin="70,826,1316,131"></TextBlock>
         <Image Source="/Assets/flecha.png"
             Stretch="Fill" Margin="71,-30,1404,999" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
@@ -63,14 +74,22 @@
             <Image Source="Assets/icono_ayuda.png"
                     Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
 
+            
+             <Image Source="Assets/fondo_blanco.png"
+                    Margin="405,312,404,648" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            
+            
             <Image Source="Assets/candado.png"
                    Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/candado.png"
                    Stretch="Fill" Margin="943,632,494,299" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/candado.png"
                    Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="Assets/fondo_blanco.png"
+                    Margin="1209,146,247,810" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="1213,126,0,0" Height="60" TextWrapping="Wrap"></TextBlock >
         </Grid>
-        <Grid Visibility="Visible" x:Name="Panel_Ajustes">
+        <Grid Visibility="Collapsed" x:Name="Panel_Ajustes">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.7"></Image>
             <Image Source="Assets/fondo_naranja.png"
@@ -102,6 +121,14 @@
                     Margin="620,670,819,278" RenderTransformOrigin="0.57,0.992"></Image>
             <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
                    Stretch="Fill" Margin="836,670,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
+        </Grid> <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
+            <Image Source="/Assets/fondo_negro.png"
+               Stretch="Fill" Opacity="0.2"></Image>
+            <Image Source="Assets/fondo_naranja.png"
+               Stretch="Fill" Margin="0,653,0,10" RenderTransformOrigin="0.413,0.328"></Image>
+            <Image Source="/Assets/casa.png" Margin="10,640,1236,79"></Image>   
+            <Image Source="/Assets/cuartel.png" Margin="213,619,908,16"></Image>  
+            <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>   
         </Grid>
 
         <Image Source="/Assets/panel_niveles.png"
@@ -117,8 +144,6 @@
             Margin="1313,133,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
         <Image Source="/Assets/fondo_blanco.png" Width="171"
             Margin="1313,175,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
-        <Image Source="Assets/icono_lucha.png"
-               Stretch="Uniform" Margin="1381,879,30,29" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="Assets/madera.png"
                Stretch="Fill" Margin="1316,10,146,963" RenderTransformOrigin="0.413,0.328"></Image>
         <Image Source="/Assets/lingote.png"
