@@ -121,7 +121,8 @@
                     Margin="620,670,819,278" RenderTransformOrigin="0.57,0.992"></Image>
             <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
                    Stretch="Fill" Margin="836,670,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
-        </Grid> <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
+        </Grid> 
+        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.2"></Image>
             <Image Source="Assets/fondo_naranja.png"
@@ -130,9 +131,17 @@
             <Image Source="/Assets/cuartel.png" Margin="213,619,908,16"></Image>  
             <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>   
         </Grid>
-
+        
         <Image Source="/Assets/panel_niveles.png"
                Stretch="Fill" Margin="32,24,1331,901" RenderTransformOrigin="-25.063,0.15"></Image>
+
+        <Grid Visibility="Visible" x:Name="Panel_Chat">
+            <Image Source="/Assets/fondo_negro.png"
+               Stretch="Fill" Opacity="0.7"></Image>
+            <Image Source="Assets/fondo_gris.png"
+               Stretch="Fill" Margin="-10,0,932,10" RenderTransformOrigin="0.413,0.328"></Image>
+        </Grid>
+
 
         <Image Source="Assets/fondo_blanco.png" Width="171"
                Margin="1313,10,0,0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Stretch="None"/>
