@@ -53,6 +53,8 @@
             Margin="1297,925,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None"/>
         <Image Source="/Assets/fondo_blanco.png" Width="106"
             Margin="22,882,0,0" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
+        <Image Source="/Assets/fondo_blanco.png" Width="56"
+            Margin="156,927,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
 
         <Image Source="Assets/icono_lucha.png"
                Stretch="Uniform" Margin="1381,879,30,29" RenderTransformOrigin="0.413,0.328"></Image>
@@ -78,10 +80,14 @@
                Stretch="Fill" Margin="32,24,1331,901" RenderTransformOrigin="-25.063,0.15"></Image>
         <TextBlock Text="2 / 2" FontSize="30" Margin="70,826,1316,131"></TextBlock>
         <Image Source="/Assets/flecha.png"
-            Stretch="Fill" Margin="808,210,628,713" RenderTransformOrigin="-25.063,0.15" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            Stretch="Fill" Margin="71,-30,1404,999" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
-                <CompositeTransform Rotation="12.656"/>
+                <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
             </Image.RenderTransform>
         </Image>
+        <Image Source="/Assets/chat.png"
+               Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Image Source="/Assets/chat.png"
+               Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
     </Grid>
 </Page>
