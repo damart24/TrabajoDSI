@@ -87,7 +87,7 @@
         </Image>
         <Image Source="/Assets/chat.png"
                Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
-        <Image Source="/Assets/chat.png"
-               Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Image Source="/Assets/engranaje.png"
+               Stretch="Fill" Margin="156,934,1297,22" RenderTransformOrigin="-25.063,0.15"></Image>
     </Grid>
 </Page>
