@@ -163,6 +163,7 @@
     <Content Include="Assets\fondo_naranja.png" />
     <Content Include="Assets\hierba.png" />
     <Content Include="Assets\hierba_colorines.png" />
+    <Content Include="Assets\home2.png" />
     <Content Include="Assets\icono_ayuda.png" />
     <Content Include="Assets\icono_casa.png" />
     <Content Include="Assets\icono_lucha.png" />
