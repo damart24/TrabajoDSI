@@ -149,6 +149,7 @@
     <Content Include="Assets\comida.png" />
     <Content Include="Assets\cuartel.png" />
     <Content Include="Assets\cubito.png" />
+    <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\engranaje.png" />
     <Content Include="Assets\flecha.png" />
     <Content Include="Assets\fondo_blanco.png" />
@@ -177,6 +178,7 @@
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
     <Content Include="Assets\soldado.png" />
+    <Content Include="Assets\sombra.png" />
     <Content Include="Assets\tienda.png" />
     <Content Include="Assets\tropas_icono.png" />
     <Content Include="Properties\Default.rd.xml" />

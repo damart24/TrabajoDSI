@@ -8,6 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="boton_redondo" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="100"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+
+    </Page.Resources>
     <Grid>
 
         <StackPanel x:Name="Mapa_Ataque">
@@ -74,12 +84,17 @@
 
         <!--icono de la casa-->
 
-        <Image  x:Name="Home" Source="Assets/home2.png"   
-                   Stretch="Fill" Margin="1250,773,32,36"/>
+        <Button Height="153" Margin="1319,821,0,0" Width="155" VerticalAlignment="Top"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="Assets/icono_casa.png" 
+                   Margin="20,-8,21,-7" ></Image>
+        </Button>
+        <Image Source="Assets/sombra.png"
+                   Margin="1290,792,-3,-3" RenderTransformOrigin="0.5,0.5"/>
 
-        
+
         <!--recorrido a cada edificio-->
-        <TextBlock
+        <TextBlock 
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,500,510,0" Width="57">
         </TextBlock>
 
@@ -165,7 +180,7 @@
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,144,874,0" Width="57"/>
 
 
-        
+
 
         <!--icono de panel tropas-->
 
@@ -175,11 +190,11 @@
         </Border>
 
         <!--icono de numero tropas-->
-        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="6" Margin="-10,0,10,0">
+        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="6" Margin="0,-1,0,1">
             <Image  x:Name="Numero_Tropas" Source="Assets/tropas_icono.png"   
                    Stretch="Fill" Margin="1270,26,199,936"/>
         </Border>
-        
+
 
     </Grid>
 </Page>

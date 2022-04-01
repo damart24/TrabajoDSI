@@ -8,6 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="boton_redondo" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="100"/>
+        </Style>
+
+    </Page.Resources>
+
     <Grid>
         <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill"></Image>
@@ -19,39 +27,53 @@
             <Image Source="/Assets/cuartel.png" Margin="983,355,219,340"/>
             <Image Source="/Assets/mina.png" Margin="524,56,807,771"/>
             <Image Source="/Assets/castillo.png" Margin="353,363,808,251"/>
+            
         </Grid>
-        
-        
-        <Image Source="Assets/fondo_blanco.png" Width="119"
-               Margin="1365,866,0,0" HorizontalAlignment="Left" Height="116" VerticalAlignment="Top" Stretch="None"/>
-        <Image Source="/Assets/fondo_blanco.png" Width="57"
-            Margin="1297,925,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None"/>
-        <Image Source="/Assets/fondo_blanco.png" Width="106"
-            Margin="22,882,0,0" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
-        <Image Source="/Assets/fondo_blanco.png" Width="56"
-            Margin="156,927,0,0" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Stretch="None" RenderTransformOrigin="-0.407,0.624"/>
 
-
-        <Image Source="/Assets/icono_mas_tropas.png"
-               Stretch="Fill" Margin="1303,931,148,27" RenderTransformOrigin="0.413,0.328"></Image>
-        <Image Source="/Assets/tienda.png"
-               Stretch="Fill" Margin="22,894,1366,27" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Button Height="80" Margin="1226,889,0,0" Width="81" VerticalAlignment="Top"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="/Assets/icono_mas_tropas.png"></Image>
+        </Button>
+        <Image Source="Assets/sombra.png"
+                   Margin="1210,872,177,15" RenderTransformOrigin="0.5,0.5"/>
+        
+        <Button Height="153" Margin="26,821,0,0" Width="155" VerticalAlignment="Top"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="/Assets/tienda.png"></Image>
+        </Button>
+        <Image Source="Assets/sombra.png"
+                   Margin="-1,792,1288,-3" RenderTransformOrigin="0.5,0.5"/>
+        
+        <Button Height="80" Margin="196,889,0,0" Width="81" VerticalAlignment="Top"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="/Assets/engranaje.png" Margin="3,3,3,2"></Image>
+        </Button>
+        <Image Source="Assets/sombra.png"
+                   Margin="180,872,1207,15" RenderTransformOrigin="0.5,0.5"/>
+        
         <Image Source="/Assets/martillo.png"
-               Stretch="Fill" Margin="6,810,1438,132" RenderTransformOrigin="-25.063,0.15"></Image>
-        <Image Source="Assets/icono_lucha.png"
-               Stretch="Uniform" Margin="1381,879,30,29" RenderTransformOrigin="0.413,0.328"></Image>
-        <TextBlock Text="2 / 2" FontSize="30" Margin="70,826,1316,131"></TextBlock>
+               Stretch="Fill" Margin="22,746,1422,196" RenderTransformOrigin="-25.063,0.15"></Image>
+        <Button Height="153" Margin="1319,821,0,0" Width="155" VerticalAlignment="Top"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="Assets/icono_lucha.png" 
+                   Margin="20,-8,21,-7" ></Image>
+        </Button>
+        <Image Source="Assets/sombra.png"
+                   Margin="1290,792,-3,-3" RenderTransformOrigin="0.5,0.5"/>
+
+
+        <TextBlock Text="2 / 2" FontSize="35" Margin="90,752,1296,205" 
+                   Foreground="Black" FontWeight="Bold"></TextBlock>
+        <Image Source="/Assets/chat.png"
+               Stretch="Fill" Margin="11,317,1442,639" RenderTransformOrigin="-25.063,0.15"></Image>
         <Image Source="/Assets/flecha.png"
-            Stretch="Fill" Margin="71,-30,1404,999" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            Stretch="Fill" Margin="74,-22,1401,991" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
             </Image.RenderTransform>
         </Image>
-        <Image Source="/Assets/chat.png"
-               Stretch="Fill" Margin="10,317,1443,639" RenderTransformOrigin="-25.063,0.15"></Image>
-        <Image Source="/Assets/engranaje.png"
-               Stretch="Fill" Margin="156,934,1297,22" RenderTransformOrigin="-25.063,0.15"></Image>
-
+        <Image Source="/Assets/desplegable.png"
+               Stretch="Fill" Margin="0,253,1365,541" RenderTransformOrigin="-25.063,0.15"></Image>
 
         <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Image Source="/Assets/fondo_negro.png"
@@ -74,11 +96,11 @@
             <Image Source="Assets/icono_ayuda.png"
                     Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
 
-            
-             <Image Source="Assets/fondo_blanco.png"
+
+            <Image Source="Assets/fondo_blanco.png"
                     Margin="405,312,404,648" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-            
-            
+
+
             <Image Source="Assets/candado.png"
                    Stretch="Fill" Margin="751,632,686,299" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/candado.png"
@@ -94,7 +116,7 @@
                Stretch="Fill" Opacity="0.7"></Image>
             <Image Source="Assets/fondo_naranja.png"
                Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
-           
+
             <TextBlock Text="Configuracion" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,128,0,0" Height="88" TextWrapping="Wrap"></TextBlock >
             <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="651,344,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
             <Slider x:Name="musica_slider"
@@ -121,21 +143,21 @@
                     Margin="620,670,819,278" RenderTransformOrigin="0.57,0.992"></Image>
             <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
                    Stretch="Fill" Margin="836,670,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
-        </Grid> 
+        </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.2"></Image>
             <Image Source="Assets/fondo_naranja.png"
                Stretch="Fill" Margin="0,653,0,10" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="/Assets/casa.png" Margin="10,640,1236,79"></Image>   
-            <Image Source="/Assets/cuartel.png" Margin="213,619,908,16"></Image>  
-            <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>   
+            <Image Source="/Assets/casa.png" Margin="10,640,1236,79"></Image>
+            <Image Source="/Assets/cuartel.png" Margin="213,619,908,16"></Image>
+            <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>
         </Grid>
-        
+
         <Image Source="/Assets/panel_niveles.png"
                Stretch="Fill" Margin="32,24,1331,901" RenderTransformOrigin="-25.063,0.15"></Image>
 
-        <Grid Visibility="Visible" x:Name="Panel_Chat">
+        <Grid Visibility="Collapsed" x:Name="Panel_Chat">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.7"></Image>
             <Image Source="Assets/fondo_gris.png"
