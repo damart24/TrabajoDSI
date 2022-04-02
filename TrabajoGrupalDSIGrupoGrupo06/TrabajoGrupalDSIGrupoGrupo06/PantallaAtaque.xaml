@@ -9,14 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
         <Style x:Key="boton_redondo" TargetType="Button">
             <Setter Property="Background" Value="White"/>
             <Setter Property="CornerRadius" Value="100"/>
         </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="Black"/>
+        <Style x:Key="barra_recursos" TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="5"/>
         </Style>
-
     </Page.Resources>
     <Grid>
 
@@ -26,16 +29,29 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Panel_Puntuacion">
-            <Image Source="Assets/panel_niveles.png"
-                   Stretch="Fill"
-                   Width=" 200"
-                   Height="100"
-                   HorizontalAlignment="Left"
-                   Margin="15,15">
+        <Button  Style="{StaticResource barra_recursos}" Width="168"
+                 Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
+        <TextBlock Text="Usuario2178" 
+                   Margin="61,24,1319,944" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-            </Image>
-        </StackPanel>
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
+                 Background="DeepSkyBlue"
+                 Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
+                 x:Name="progreso_nivel" Background="RoyalBlue"
+                 Margin="36,81,0,0" Height="31" VerticalAlignment="Top"/>
+        <TextBlock Text="Lvl 2" 
+                   Margin="48,65,1332,903" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
+
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
+                 Background="LightGoldenrodYellow"
+                 Margin="120,55,0,0" Height="57" VerticalAlignment="Top"/>
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
+                 Background="Orange"
+                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"/>
+        <TextBlock Text="16🏆" 
+                   Margin="133,65,1247,903" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
+
 
 
 
@@ -182,18 +198,16 @@
 
 
 
-        <!--icono de panel tropas-->
 
-        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="10">
-            <Rectangle Width="220" Height=" 50" Fill="White" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="20,20">
-            </Rectangle>
-        </Border>
+        <Button  Style="{StaticResource barra_recursos}" Width="170"
+               Margin="1313,10,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
+        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="118"
+               Margin="1313,10,0,0" Height="35" VerticalAlignment="Top"/>
+        <Image Source="Assets/tropas_icono.png"
+               Stretch="Fill" Margin="1324,14,157,959" RenderTransformOrigin="0.413,0.328"></Image>
+        <TextBlock Text="1000/1000" 
+                   Margin="1366,14,14,954" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <!--icono de numero tropas-->
-        <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="6" Margin="0,-1,0,1">
-            <Image  x:Name="Numero_Tropas" Source="Assets/tropas_icono.png"   
-                   Stretch="Fill" Margin="1270,26,199,936"/>
-        </Border>
 
 
     </Grid>
