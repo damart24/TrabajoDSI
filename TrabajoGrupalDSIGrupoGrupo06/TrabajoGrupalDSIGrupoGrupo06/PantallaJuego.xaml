@@ -212,49 +212,75 @@
 
 
         <Button  Style="{StaticResource barra_recursos}" Width="170"
-               Margin="1313,10,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
+               Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
+                 HorizontalAlignment="Right"/>
         <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="85"
-               Margin="1313,10,0,0" Height="35" VerticalAlignment="Top"/>
+               Margin="0,20,120,0" Height="35" VerticalAlignment="Top"
+                 HorizontalAlignment="Right"/>
         <Image Source="Assets/madera.png"
-               Stretch="Fill" Margin="1316,14,146,959" RenderTransformOrigin="0.413,0.328"></Image>
+               VerticalAlignment="Top"
+               HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,22,165,0" RenderTransformOrigin="0.413,0.328" Height="26" Width="30"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1366,14,14,954" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,23,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="170"
-               Margin="1313,51,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
+        <Button  Style="{StaticResource barra_recursos}" Width="182"
+               Margin="0,64,20,0" Height="35" VerticalAlignment="Top"
+                 HorizontalAlignment="Right"/>
         <Button  Background="DarkCyan" x:Name="recursos_hierro" Style="{StaticResource barra_recursos}" Width="66"
-               Margin="1313,51,0,0" Height="35" VerticalAlignment="Top"/>
+               Margin="0,64,136,0" Height="35" VerticalAlignment="Top"
+                 HorizontalAlignment="Right"/>
         <Image Source="/Assets/lingote.png"
-               Stretch="Fill" Margin="1316,54,146,919" RenderTransformOrigin="0.413,0.328"></Image>
+               VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,56,162,0" RenderTransformOrigin="0.413,0.328" Height="43" Width="36"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1366,55,14,913" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                  VerticalAlignment="Top"
+                  HorizontalAlignment="Right"
+                  Margin="0,66,59,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button Width="170" Style="{StaticResource barra_recursos}"
-               Margin="1313,91,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
+        <Button Width="182" Style="{StaticResource barra_recursos}"
+               Margin="0,108,20,0" HorizontalAlignment="Right" Height="35" VerticalAlignment="Top"/>
         <Button  Background="PaleVioletRed" x:Name="recursos_comida" Width="148" Style="{StaticResource barra_recursos}"
-               Margin="1313,91,0,0" Height="35" VerticalAlignment="Top"/>
+               Margin="0,108,56,0" Height="35" VerticalAlignment="Top" HorizontalAlignment ="Right"/>
         <Image Source="Assets/comida.png"
-               Stretch="Fill" Margin="1316,94,146,879" RenderTransformOrigin="0.413,0.328"></Image>
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,111,160,0" RenderTransformOrigin="0.413,0.328" Height="30" Width="39"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1366,95,14,873" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,110,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button Width="170" Style="{StaticResource barra_recursos}"
-                Margin="1313,133,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
+        <Button Width="150" Style="{StaticResource barra_recursos}"
+                Margin="0,153,20,0" Height="35" VerticalAlignment="Top"
+                HorizontalAlignment="Right"/>
         <Button  Background="Gray" x:Name="recursos_piedra" Width="123" Style="{StaticResource barra_recursos}"
-                Margin="1313,133,0,0" Height="35" VerticalAlignment="Top"/>
+                Margin="0,153,81,0" Height="35" VerticalAlignment="Top"
+                 HorizontalAlignment="Right"/>
         <Image Source="Assets/piedra.png" Opacity="1"
-               Stretch="Fill" Margin="1316,134,146,839" RenderTransformOrigin="0.413,0.328"></Image>
+               VerticalAlignment="Top"
+               HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,150,155,0" RenderTransformOrigin="0.413,0.328" Height="37" Width="44"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1366,137,14,831" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,157,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button Style="{StaticResource barra_recursos}" Margin="1313,175,0,0" 
-                Width="170" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
-        <Button Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Margin="1313,175,0,0" 
-                Width="108" Height="35" VerticalAlignment="Top"/>
+        <Button Style="{StaticResource barra_recursos}" Margin="0,196,19,0" 
+                Width="184" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Button Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Margin="0,196,95,0"
+                VerticalAlignment="Top" HorizontalAlignment="Right"
+                Width="108" Height="35"/>
         <Image Source="/Assets/tropas_icono.png"
-               Stretch="Fill" Margin="1324,178,157,795" RenderTransformOrigin="0.413,0.328"></Image>
+               VerticalAlignment="Top" HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1369,179,11,789" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="0,198,61,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
 
 

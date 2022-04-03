@@ -143,11 +143,8 @@
     <Content Include="Assets\caballero.png" />
     <Content Include="Assets\candado.png" />
     <Content Include="Assets\canyon.png" />
-    <Content Include="Assets\casa.png" />
-    <Content Include="Assets\castillo.png" />
     <Content Include="Assets\chat.png" />
     <Content Include="Assets\comida.png" />
-    <Content Include="Assets\cuartel.png" />
     <Content Include="Assets\cubito.png" />
     <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\engranaje.png" />
@@ -173,7 +170,6 @@
     <Content Include="Assets\madera.png" />
     <Content Include="Assets\mapa_ataque.png" />
     <Content Include="Assets\martillo.png" />
-    <Content Include="Assets\mina.png" />
     <Content Include="Assets\panel_niveles.png" />
     <Content Include="Assets\pastor.png" />
     <Content Include="Assets\piedra.png" />
