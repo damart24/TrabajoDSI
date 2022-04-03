@@ -34,7 +34,8 @@
 
         </Grid>
 
-        <Button Height="80" Margin="1226,889,0,0" Width="81" VerticalAlignment="Top"
+        <Button Height="80" Margin="0,0,180,20" Width="81" VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/icono_mas_tropas.png"></Image>
         </Button>
@@ -59,13 +60,14 @@
 
         <Image Source="/Assets/martillo.png"
                Stretch="Fill" Margin="120,843,1748,173" RenderTransformOrigin="-25.063,0.15"></Image>
-        <Button Height="153" Margin="1319,821,0,0" Width="155" VerticalAlignment="Top"
+        <Button Height="153" Margin="0,0,20,20" Width="155" VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
                 Style="{StaticResource boton_redondo}">
             <Image Source="Assets/icono_lucha.png" 
                    Margin="20,-8,21,-7" ></Image>
         </Button>
         <Image Source="Assets/sombra.png"
-                   Margin="1290,792,-3,-3" RenderTransformOrigin="0.5,0.5"/>
+                   Margin="1455,634,-106,173" RenderTransformOrigin="0.5,0.5"/>
 
 
         <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
