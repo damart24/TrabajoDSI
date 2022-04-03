@@ -161,27 +161,37 @@
         
         
         <Button  Style="{StaticResource barra_recursos}" Width="168"
-                 Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
+                 Margin="36,24,0,0" Height="57" VerticalAlignment="Top"
+                 HorizontalAlignment="Left"/>
         <TextBlock Text="Usuario2178" 
-                   Margin="61,24,1319,944" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="61,24,0,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
         
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="DeepSkyBlue"
-                 Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
+                 Margin="36,55,0,0" Height="57" VerticalAlignment="Top"
+                 HorizontalAlignment="Left"/>
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  x:Name="progreso_nivel" Background="RoyalBlue"
-                 Margin="36,81,0,0" Height="31" VerticalAlignment="Top"/>
+                 Margin="36,81,0,0" Height="31" VerticalAlignment="Top"
+                 HorizontalAlignment="Left"/>
         <TextBlock Text="Lvl 2" 
-                   Margin="48,65,1332,903" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="48,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="LightGoldenrodYellow"
                  Margin="120,55,0,0" Height="57" VerticalAlignment="Top"/>
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="Orange"
-                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"/>
+                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"
+                 HorizontalAlignment="Left"/>
         <TextBlock Text="16🏆" 
-                   Margin="133,65,1247,903" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="133,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
         
         
