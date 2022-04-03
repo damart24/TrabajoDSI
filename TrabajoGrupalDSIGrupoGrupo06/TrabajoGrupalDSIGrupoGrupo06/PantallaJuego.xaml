@@ -41,7 +41,8 @@
         <Image Source="Assets/sombra.png"
                    Margin="1210,872,177,15" RenderTransformOrigin="0.5,0.5"/>
 
-        <Button Height="153" Margin="26,821,0,0" Width="155" VerticalAlignment="Top"
+        <Button Height="153" Margin="26,0,0,0" Width="155" VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/tienda.png"></Image>
         </Button>
