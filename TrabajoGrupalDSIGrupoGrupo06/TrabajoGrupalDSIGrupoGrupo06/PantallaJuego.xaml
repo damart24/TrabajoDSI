@@ -196,7 +196,7 @@
         
         <Button  Style="{StaticResource barra_recursos}" Width="170"
                Margin="1313,10,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
-        <Button  Background="DarkOrange" x:Name="recursos:madera" Style="{StaticResource barra_recursos}" Width="85"
+        <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="85"
                Margin="1313,10,0,0" Height="35" VerticalAlignment="Top"/>
         <Image Source="Assets/madera.png"
                Stretch="Fill" Margin="1316,14,146,959" RenderTransformOrigin="0.413,0.328"></Image>
