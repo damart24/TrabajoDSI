@@ -41,7 +41,7 @@
         <Image Source="Assets/sombra.png"
                    Margin="1210,872,177,15" RenderTransformOrigin="0.5,0.5"/>
 
-        <Button Height="153" Margin="26,0,0,0" Width="155" VerticalAlignment="Bottom"
+        <Button Height="153" Margin="26,0,0,20" Width="155" VerticalAlignment="Bottom"
                 HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/tienda.png"></Image>
@@ -49,7 +49,8 @@
         <Image Source="Assets/sombra.png"
                    Margin="-1,792,1288,-3" RenderTransformOrigin="0.5,0.5"/>
 
-        <Button Height="80" Margin="196,889,0,0" Width="81" VerticalAlignment="Top"
+        <Button Height="80" Margin="197,0,0,20" Width="81" VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/engranaje.png" Margin="3,3,3,2"></Image>
         </Button>
@@ -57,7 +58,7 @@
                    Margin="180,872,1207,15" RenderTransformOrigin="0.5,0.5"/>
 
         <Image Source="/Assets/martillo.png"
-               Stretch="Fill" Margin="22,746,1422,196" RenderTransformOrigin="-25.063,0.15"></Image>
+               Stretch="Fill" Margin="120,843,1748,173" RenderTransformOrigin="-25.063,0.15"></Image>
         <Button Height="153" Margin="1319,821,0,0" Width="155" VerticalAlignment="Top"
                 Style="{StaticResource boton_redondo}">
             <Image Source="Assets/icono_lucha.png" 
@@ -67,18 +68,21 @@
                    Margin="1290,792,-3,-3" RenderTransformOrigin="0.5,0.5"/>
 
 
-        <TextBlock Text="2 / 2" FontSize="35" Margin="90,752,1296,205" 
+        <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
                    Foreground="Black" FontWeight="Bold"></TextBlock>
         <Image Source="/Assets/chat.png"
-               Stretch="Fill" Margin="11,317,1442,639" RenderTransformOrigin="-25.063,0.15"></Image>
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Stretch="Fill" Margin="50,329,0,0" RenderTransformOrigin="-25.063,0.15" Height="82" Width="100"></Image>
         <Image Source="/Assets/flecha.png"
-            Stretch="Fill" Margin="74,-22,1401,991" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            Stretch="Fill" Margin="127,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="59" Width="47">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
             </Image.RenderTransform>
         </Image>
         <Image Source="/Assets/desplegable.png"
-               Stretch="Fill" Margin="0,253,1365,541" RenderTransformOrigin="-25.063,0.15"></Image>
+               Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
+               VerticalAlignment="Top" Height="273" Width="576" Margin="-6,267,0,0"/>
 
         <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Image Source="/Assets/fondo_negro.png"
@@ -159,8 +163,8 @@
             <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>
         </Grid>
 
-        
-        
+
+
         <Button  Style="{StaticResource barra_recursos}" Width="168"
                  Margin="36,24,0,0" Height="57" VerticalAlignment="Top"
                  HorizontalAlignment="Left"/>
@@ -168,7 +172,7 @@
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Margin="61,24,0,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
-        
+
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="DeepSkyBlue"
                  Margin="36,55,0,0" Height="57" VerticalAlignment="Top"
@@ -194,8 +198,8 @@
                    VerticalAlignment="Top"
                    Margin="133,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
-        
-        
+
+
         <Grid Visibility="Collapsed" x:Name="Panel_Chat">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.7"></Image>
@@ -204,7 +208,7 @@
         </Grid>
 
 
-        
+
         <Button  Style="{StaticResource barra_recursos}" Width="170"
                Margin="1313,10,0,0" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top"/>
         <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="85"
@@ -250,7 +254,7 @@
         <TextBlock Text="1000/1000" 
                    Margin="1369,179,11,789" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        
-        
+
+
     </Grid>
 </Page>
