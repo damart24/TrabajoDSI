@@ -23,7 +23,6 @@
     <Grid>
         <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill"></Image>
-
         <Grid>
             <Image Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="290" Width="328" Margin="400,-540,0,0"/>
             <Image Source="/Assets/casa_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="395" Width="328" Margin="-500,-500,0,0"/>
@@ -33,7 +32,6 @@
             <Image Source="/Assets/castillo_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="379" Width="360" Margin="-431,395,0,0"/>
 
         </Grid>
-
         <Button Height="80" Margin="0,0,180,20" Width="81" VerticalAlignment="Bottom"
                 HorizontalAlignment="Right"
                 Style="{StaticResource boton_redondo}">
@@ -41,7 +39,6 @@
         </Button>
         <Image Source="Assets/sombra.png" 
                    Margin="0,0,166,4" RenderTransformOrigin="0.5,0.5" Stretch="Fill" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="117" Width="113"/>
-
         <Button Height="153" Margin="26,0,0,20" Width="155" VerticalAlignment="Bottom"
                 HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
@@ -49,7 +46,6 @@
         </Button>
         <Image Source="Assets/sombra.png"
                    Margin="-6,0,0,-8" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="213" Width="216"/>
-
         <Button Height="80" Margin="197,0,0,20" Width="81" VerticalAlignment="Bottom"
                 HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
@@ -57,7 +53,6 @@
         </Button>
         <Image Source="Assets/sombra.png"
                    Margin="180,0,0,4" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="117" Width="112"/>
-
         <Image Source="/Assets/martillo.png"
                Stretch="Fill" Margin="120,843,1748,173" RenderTransformOrigin="-25.063,0.15"></Image>
         <Button Height="153" Margin="0,0,20,20" Width="155" VerticalAlignment="Bottom"
@@ -69,8 +64,6 @@
         <Image Source="Assets/sombra.png"
                HorizontalAlignment="Right" VerticalAlignment="Bottom"
                    Margin="0,0,-8,-5" RenderTransformOrigin="0.5,0.5" Height="205" Width="214" Stretch="Fill"/>
-
-
         <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
                    Foreground="Black" FontWeight="Bold"></TextBlock>
         <Image Source="/Assets/chat.png"
@@ -87,21 +80,23 @@
                Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
                VerticalAlignment="Top" Height="273" Width="576" Margin="-6,267,0,0"/>
 
-        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
+        <Grid Visibility="Visible" x:Name="Panel_Entrenamiento">
             <Image Source="/Assets/fondo_negro.png"
                Stretch="Fill" Opacity="0.7"></Image>
             <Image Source="Assets/fondo_naranja.png"
-               Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
+                   HorizontalAlignment="Center" VerticalAlignment="Top"
+               Stretch="Fill"  Height="600" Width="880" Margin="0,100,0,0"/>
             <Image Source="Assets/soldado.png"
-                Margin="267,546,1038,215" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-            <Image Source="Assets/arquera.png"
+                    HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                Margin="370,0,0,130" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="243" Width="151"></Image>
+            <!--<Image Source="Assets/arquera.png"
                    Stretch="Fill" Margin="494,544,824,217" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/caballero.png"
                    Stretch="UniformToFill" Margin="710,544,0,216" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="149" Opacity="0.4"></Image>
             <Image Source="Assets/lanzallamas.png" Opacity="0.4"
                    Stretch="Fill" Margin="893,548,444,215" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/canyon.png" Opacity="0.4"
-                   Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+                   Margin="1077,548,265,217" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>-->
 
             <Image Source="Assets/icono_ayuda.png"
                     Margin="432,520,1007,428" RenderTransformOrigin="0.413,0.328"></Image>
@@ -109,8 +104,7 @@
                     Margin="648,520,791,428" RenderTransformOrigin="0.413,0.328"></Image>
 
 
-            <Image Source="Assets/fondo_blanco.png"
-                    Margin="405,312,404,648" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
+            <Image Source="Assets/fondo_blanco.png" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="70" Width="812" Margin="0,225,0,0"/>
 
 
             <Image Source="Assets/candado.png"
@@ -120,8 +114,9 @@
             <Image Source="Assets/candado.png"
                    Stretch="Fill" Margin="1124,632,313,299" RenderTransformOrigin="0.413,0.328"></Image>
             <Image Source="Assets/fondo_blanco.png"
-                    Margin="1209,146,247,810" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-            <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="1213,126,0,0" Height="60" TextWrapping="Wrap"></TextBlock >
+                   HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Margin="0,112,347,0" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="51" Width="73"></Image>
+            <TextBlock Text="X" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,93,361,0" Height="69" TextWrapping="Wrap" Width="40"></TextBlock >
         </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Ajustes">
             <Image Source="/Assets/fondo_negro.png"
