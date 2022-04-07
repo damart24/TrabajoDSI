@@ -126,31 +126,33 @@
                Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
 
             <TextBlock Text="Configuracion" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,128,0,0" Height="88" TextWrapping="Wrap"></TextBlock >
-            <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="651,344,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
-            <Slider x:Name="musica_slider"
+            <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="659,272,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
+            <Slider VerticalAlignment="Top"
+                x:Name="musica_slider"
                         Minimum="20"
                         Maximum="40"
                         Value="30"
-                        Margin="661,445,625,513"
+                        Margin="661,369,625,0"
                         TickFrequency="1"
                         SnapsTo="Ticks"
                         />
-            <TextBlock Text="Sonido" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="658,500,0,0" Height="82" TextWrapping="Wrap"></TextBlock >
-            <Slider x:Name="sonido_slider"
+            <TextBlock Text="Sonido" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="658,416,0,0" Height="82" TextWrapping="Wrap"></TextBlock >
+            <Slider  VerticalAlignment="Top"
+                x:Name="sonido_slider"
                         Minimum="20"
                         Maximum="40"
                         Value="30"
-                        Margin="661,585,625,373"
+                        Margin="661,502,625,0"
                         TickFrequency="1"
                         SnapsTo="Ticks"
                         />
-            <Image Source="Assets/fondo_blanco.png"
-                    Margin="1209,146,247,810" RenderTransformOrigin="0.413,0.328" Stretch="Fill"></Image>
-            <TextBlock Text="X" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="1213,126,0,0" Height="60" TextWrapping="Wrap"></TextBlock >
-            <Image Source="Assets/icono_persona.png"
-                    Margin="620,670,819,278" RenderTransformOrigin="0.57,0.992"></Image>
+            <Image Source="Assets/fondo_blanco.png" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Margin="0,144,410,0" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="59" Width="51"></Image>
+            <TextBlock Text="X" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,132,409,0" Height="86" TextWrapping="Wrap" Width="44"></TextBlock >
+            <Image Source="Assets/icono_persona.png" HorizontalAlignment="Left" VerticalAlignment="Top"
+                    Margin="685,599,0,0" RenderTransformOrigin="0.57,0.992" Height="52" Width="63"></Image>
             <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
-                   Stretch="Fill" Margin="836,670,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
+                   Stretch="Fill" Margin="796,602,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
         </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
