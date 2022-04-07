@@ -25,12 +25,12 @@
                Stretch="Fill"></Image>
 
         <Grid>
-            <Image Source="/Assets/casa.png" Margin="354,232,977,595"/>
-            <Image Source="/Assets/casa.png" Margin="860,232,471,595"/>
-            <Image Source="/Assets/casa.png" Margin="860,603,471,224"/>
-            <Image Source="/Assets/cuartel.png" Margin="983,355,219,340"/>
-            <Image Source="/Assets/mina.png" Margin="524,56,807,771"/>
-            <Image Source="/Assets/castillo.png" Margin="353,363,808,251"/>
+            <Image Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="290" Width="328" Margin="400,-540,0,0"/>
+            <Image Source="/Assets/casa_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="395" Width="328" Margin="-500,-500,0,0"/>
+            <Image Source="/Assets/casa_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="288" Width="384" Margin="1175,116,0,0"/>
+            <Image Source="/Assets/cuartel_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="280" Width="302" Margin="357,116,0,0"/>
+            <Image Source="/Assets/mina_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="280" Width="302" Margin="500,550,0,0" Stretch="Fill"/>
+            <Image Source="/Assets/castillo_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="379" Width="360" Margin="-431,395,0,0"/>
 
         </Grid>
 
@@ -48,7 +48,7 @@
             <Image Source="/Assets/tienda.png"></Image>
         </Button>
         <Image Source="Assets/sombra.png"
-                   Margin="-8,0,0,-5" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="213" Width="217"/>
+                   Margin="-6,0,0,-8" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="213" Width="216"/>
 
         <Button Height="80" Margin="197,0,0,20" Width="81" VerticalAlignment="Bottom"
                 HorizontalAlignment="Left"
