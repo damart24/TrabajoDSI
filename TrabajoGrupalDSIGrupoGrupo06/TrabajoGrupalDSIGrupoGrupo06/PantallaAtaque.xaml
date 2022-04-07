@@ -23,6 +23,10 @@
     </Page.Resources>
     <Grid>
 
+        <Viewbox 
+            
+         />
+
         <StackPanel x:Name="Mapa_Ataque">
             <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"></Image>
@@ -32,9 +36,9 @@
         <Button  Style="{StaticResource barra_recursos}" Width="168"
                  Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
         <TextBlock Text="Usuario2178" 
-                   Margin="61,24,1319,944" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   Margin="61,24,1319,944" Foreground="Black" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button  Style="{StaticResource barra_recursos}" Width="84"  HorizontalAlignment=" Left"
                  Background="DeepSkyBlue"
                  Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
         <Button  Style="{StaticResource barra_recursos}" Width="84"
@@ -54,49 +58,70 @@
 
 
 
+        <Viewbox>
+            <Grid>
 
-        <!--edificios-->
-        <Image  x:Name="Edificio_6" Source="Assets/castillo.png"   
+
+                <!--edificios-->
+                <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
                 Stretch="Fill"
                 Width="150"
                 Height="120" Margin="829,10,521,870"/>
 
-        <Image  x:Name="Edificio_5" Source="Assets/castillo.png"   
+                <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="1001,440,349,440"/>
-        <Image  x:Name="Edificio_4" Source="Assets/castillo.png"   
+                <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="708,312,642,568"/>
-        <Image  x:Name="Edificio_3" Source="Assets/castillo.png"   
+                <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="526,127,824,753"/>
 
-        <Image   x:Name="Edificio_2" Source="Assets/castillo.png"   
+                <Image   x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="783,632,567,248"/>
-        <Image  x:Name="Edificio_1" Source="Assets/castillo.png"   
+                <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
                    Height="120" Margin="491,723,859,157"/>
+                
+
+
+            </Grid>  
+        </Viewbox>
+        
 
 
         <!--informacion de cada edificio-->
-        <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="849,10,612,956"/>
+        <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
+                   Stretch="Fill" Margin="1192,15,662,992" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="1.446"/>
+            </Image.RenderTransform>
+        </Image>
         <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="526,723,935,243"/>
+                   Stretch="Fill" Margin="988,786,865,220"/>
         <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="809,632,652,334"/>
+                   Stretch="Fill" Margin="1248,656,612,356" RenderTransformOrigin="1.698,-0.033"/>
         <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="1001,451,460,515"/>
+                   Stretch="Fill" Margin="1428,462,425,545" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-1.053"/>
+            </Image.RenderTransform>
+        </Image>
         <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="735,312,726,654"/>
+                   Stretch="Fill" Margin="1194,378,672,654" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
         <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="546,127,915,839"/>
+                   Stretch="Fill" Margin="933,167,915,839"/>
 
         <!--icono de la casa-->
 
@@ -204,9 +229,9 @@
         <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="118"
                Margin="1313,10,0,0" Height="35" VerticalAlignment="Top"/>
         <Image Source="Assets/tropas_icono.png"
-               Stretch="Fill" Margin="1324,14,157,959" RenderTransformOrigin="0.413,0.328"></Image>
+               Stretch="Fill" Margin="1821,3,-7,982" RenderTransformOrigin="0.413,0.328"></Image>
         <TextBlock Text="1000/1000" 
-                   Margin="1366,14,14,954" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   Margin="1383,6,-3,962" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
 
 
