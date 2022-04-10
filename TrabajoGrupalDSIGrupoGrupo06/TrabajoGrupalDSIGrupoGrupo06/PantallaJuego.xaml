@@ -128,7 +128,7 @@
                            Margin="1115,0,0,526" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="90" Width="86"/>
                     <Button Height="61" Margin="1126,0,0,539" Width="64" VerticalAlignment="Bottom"
                         Style="{StaticResource boton_redondo}">
-                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" SelectionChanged="TextBlock_SelectionChanged" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
+                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
                     </Button>
                 </Grid>
             </Viewbox>
