@@ -69,21 +69,27 @@
         </Button>
         <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
                    Foreground="Black" FontWeight="Bold"></TextBlock>
-        <Image Source="/Assets/chat.png"
+
+        <Viewbox>
+            <Grid Width="1418" Height="283">
+                <Image Source="/Assets/chat.png"
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
-               Stretch="Fill" Margin="50,329,0,0" RenderTransformOrigin="-25.063,0.15" Height="82" Width="100"></Image>
-        <Image Source="/Assets/flecha.png"
-            Stretch="Fill" Margin="127,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="59" Width="47">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image Source="/Assets/desplegable.png"
+               Stretch="Fill" Margin="24,82,0,0" RenderTransformOrigin="-25.063,0.15" Height="69" Width="84"></Image>
+                <Image Source="/Assets/flecha.png"
+                       Stretch="Fill" Margin="93,-250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="59" Width="47">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Assets/desplegable.png"
                Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
-               VerticalAlignment="Top" Height="273" Width="576" Margin="-6,267,0,0"/>
+               VerticalAlignment="Center" Height="273" Width="301"/>
 
-        <Grid Visibility="Visible" x:Name="Panel_Entrenamiento">
+            </Grid>
+        </Viewbox>
+
+        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.7"></Image>
             <Viewbox>
@@ -134,15 +140,19 @@
             </Viewbox>
         </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Ajustes">
-
             <Image Source="/Assets/fondo_negro.png"
-               Stretch="Fill" Opacity="0.7"></Image>
-            <Image Source="Assets/fondo_naranja.png"
-               Stretch="Uniform" Margin="96,130,95,132" RenderTransformOrigin="0.413,0.328"></Image>
+                   Stretch="Fill" Opacity="0.7"></Image>
+            <Viewbox>
+                <Grid>
+                    <Image Source="/Assets/fondo_negro.png"
+                            Stretch="Fill" Opacity="0" Margin="-98,0,-90,-91"></Image>
 
-            <TextBlock Text="Configuracion" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,128,0,0" Height="88" TextWrapping="Wrap"></TextBlock >
-            <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="659,272,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
-            <Slider VerticalAlignment="Top"
+                    <Image Source="Assets/fondo_naranja.png"
+                           HorizontalAlignment="Center" VerticalAlignment="Top"
+                       Stretch="Fill"  Height="625" Width="949" Margin="0,43,0,0"/>
+                    <TextBlock Text="Configuracion" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,128,0,0" Height="88" TextWrapping="Wrap"></TextBlock >
+                    <TextBlock Text="Musica" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="659,272,0,0" Height="72" TextWrapping="Wrap" RenderTransformOrigin="0.541,0"></TextBlock >
+                    <Slider VerticalAlignment="Top"
                 x:Name="musica_slider"
                         Minimum="20"
                         Maximum="40"
@@ -151,8 +161,8 @@
                         TickFrequency="1"
                         SnapsTo="Ticks"
                         />
-            <TextBlock Text="Sonido" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="658,416,0,0" Height="82" TextWrapping="Wrap"></TextBlock >
-            <Slider  VerticalAlignment="Top"
+                    <TextBlock Text="Sonido" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="658,416,0,0" Height="82" TextWrapping="Wrap"></TextBlock >
+                    <Slider  VerticalAlignment="Top"
                 x:Name="sonido_slider"
                         Minimum="20"
                         Maximum="40"
@@ -161,22 +171,35 @@
                         TickFrequency="1"
                         SnapsTo="Ticks"
                         />
-            <Image Source="Assets/fondo_blanco.png" HorizontalAlignment="Right" VerticalAlignment="Top"
-                    Margin="0,144,410,0" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="59" Width="51"></Image>
-            <TextBlock Text="X" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Margin="0,132,409,0" Height="86" TextWrapping="Wrap" Width="44"></TextBlock >
-            <Image Source="Assets/icono_persona.png" HorizontalAlignment="Left" VerticalAlignment="Top"
-                    Margin="685,599,0,0" RenderTransformOrigin="0.57,0.992" Height="52" Width="63"></Image>
-            <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
-                   Stretch="Fill" Margin="796,602,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
+                    <Image Source="Assets/icono_persona.png" HorizontalAlignment="Left" VerticalAlignment="Top"
+                           Margin="685,599,0,0" RenderTransformOrigin="0.57,0.992" Height="52" Width="63"></Image>
+                    <Image Source="Assets/bandera_espanya.png" VerticalAlignment="Top" HorizontalAlignment="Left"
+                           Stretch="Fill" Margin="796,602,0,0" RenderTransformOrigin="0.413,0.328" Height="49" Width="78"></Image>
+                    <Image Source="Assets/sombra.png"
+                           Margin="1115,0,0,526" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="90" Width="86"/>
+                    <Button Height="61" Margin="1126,0,0,539" Width="64" VerticalAlignment="Bottom"
+                        Style="{StaticResource boton_redondo}">
+                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
+                    </Button>
+                </Grid>
+            </Viewbox>
         </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
-               Stretch="Fill" Opacity="0.2"></Image>
-            <Image Source="Assets/fondo_naranja.png"
-               Stretch="Fill" Margin="0,653,0,10" RenderTransformOrigin="0.413,0.328"></Image>
-            <Image Source="/Assets/casa.png" Margin="10,640,1236,79"></Image>
-            <Image Source="/Assets/cuartel.png" Margin="213,619,908,16"></Image>
-            <Image Source="/Assets/mina.png" Margin="558,623,708,46"></Image>
+                   Stretch="Fill" Opacity="0.2"></Image>
+            <Viewbox>
+                <Grid>
+                    <Image Source="/Assets/fondo_negro.png"
+                            Stretch="Fill" Opacity="0" Margin="-545,0,-537,-91"></Image>
+
+                    <Image Source="Assets/fondo_naranja.png"
+                           Stretch="Fill" Margin="-1374,2006,-1374,-1752" RenderTransformOrigin="0.413,0.328"></Image>
+                    <Image Source="/Assets/casa_nivel1.png" Margin="300,2128,2989,207"></Image>
+                    <Image Source="/Assets/cuartel_nivel1.png" Margin="1025,2011,1762,-46"></Image>
+                    <Image Source="/Assets/mina_nivel1.png" Margin="2379,2266,1001,163"></Image>
+
+                </Grid>
+            </Viewbox>
         </Grid>
 
 
@@ -225,7 +248,7 @@
 
 
 
-        <Button  Style="{StaticResource barra_recursos}" Width="170"
+        <Button  Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
         <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="85"
@@ -268,7 +291,7 @@
                    HorizontalAlignment="Right"
                    Margin="0,110,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button Width="150" Style="{StaticResource barra_recursos}"
+        <Button Width="182" Style="{StaticResource barra_recursos}"
                 Margin="0,153,20,0" Height="35" VerticalAlignment="Top"
                 HorizontalAlignment="Right"/>
         <Button  Background="Gray" x:Name="recursos_piedra" Width="123" Style="{StaticResource barra_recursos}"
@@ -284,7 +307,7 @@
                    Margin="0,157,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
         <Button Style="{StaticResource barra_recursos}" Margin="0,196,19,0" 
-                Width="184" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                Width="182" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
         <Button Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Margin="0,196,95,0"
                 VerticalAlignment="Top" HorizontalAlignment="Right"
                 Width="108" Height="35"/>
