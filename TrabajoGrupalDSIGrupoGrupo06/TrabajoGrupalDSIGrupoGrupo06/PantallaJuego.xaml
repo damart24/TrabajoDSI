@@ -198,6 +198,10 @@
                     <Image Source="/Assets/cuartel_nivel1.png" Margin="1025,2011,1762,-46"></Image>
                     <Image Source="/Assets/mina_nivel1.png" Margin="2379,2266,1001,163"></Image>
 
+                    <Button Height="61" Margin="5082,0,0,999" Width="64" VerticalAlignment="Bottom"
+                        Style="{StaticResource boton_redondo}">
+                        <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
+                    </Button>
                 </Grid>
             </Viewbox>
         </Grid>
