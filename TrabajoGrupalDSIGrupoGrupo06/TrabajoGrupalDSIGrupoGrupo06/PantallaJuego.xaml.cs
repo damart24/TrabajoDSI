@@ -31,5 +31,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
 
         }
+
+        private void Options_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Ajustes.Visibility = Visibility.Visible;
+        }
+
+        private void OptionsClose_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Ajustes.Visibility = Visibility.Collapsed;
+        }
     }
 }
