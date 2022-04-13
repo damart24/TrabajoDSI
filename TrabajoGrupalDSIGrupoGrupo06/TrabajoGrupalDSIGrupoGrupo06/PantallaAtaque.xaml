@@ -28,20 +28,27 @@
         </Grid.ColumnDefinitions>
 
 
+        <Viewbox>
 
-        <StackPanel x:Name="Mapa_Ataque" Grid.ColumnSpan="2">
-            <Image Source="Assets/mapa_ataque.png"
+            <Grid Height="1086" Width="1131">
+                <StackPanel x:Name="Mapa_Ataque" Margin="-69,0,-739,0">
+                    <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"></Image>
-        </StackPanel>
+                </StackPanel>
+            </Grid>
+
+        </Viewbox>
+
 
         <Grid Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="67*"/>
                 <ColumnDefinition Width="893*"/>
             </Grid.ColumnDefinitions>
+
             <Viewbox Grid.ColumnSpan="2">
-                <Button  Style="{StaticResource barra_recursos}" Width="5"
-                 Margin="36,24,0,0" Height="5"  VerticalAlignment="Top" />
+                <Button  Style="{StaticResource barra_recursos}" Width="1"
+                  Height="3"  VerticalAlignment="Top" />
             </Viewbox>
 
             <TextBlock Text="Usuario2178" 
@@ -67,13 +74,7 @@
             <Image Source="Assets/sombra.png"
                            Margin="981,0,0,526" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="90" Width="86" Grid.Column="1"/>
 
-            <Button Height="57" Margin="0,0,0,1023" Width="62" Click="PanelAtaqueClose_Click" VerticalAlignment="Bottom"
-                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
-                <Button.RenderTransform>
-                    <CompositeTransform ScaleX="-1" ScaleY="-1"/>
-                </Button.RenderTransform>
-                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
-            </Button>
+
 
         </Grid>
 
@@ -100,7 +101,7 @@
                 <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
                    Width="150"
-                   Height="120" Margin="526,127,824,753"/>
+                   Height="120" Margin="566,105,785,775"/>
 
                 <Image   x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
                    Stretch="Fill"
@@ -117,48 +118,59 @@
         </Viewbox>
 
 
+        <Viewbox>
+            <Grid Height="1837" Width="866">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="27*"/>
+                    <RowDefinition Height="1810*"/>
+                </Grid.RowDefinitions>
 
-        <!--informacion de cada edificio-->
-        <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
-                   Stretch="Fill" Margin="1192,15,662,992" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="2">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="1.446"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="921,757,241,249"/>
-        <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="19,656,612,356" RenderTransformOrigin="1.698,-0.033" Grid.Column="1"/>
-        <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="199,462,425,545" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Column="1">
-            <Image.RenderTransform>
-                <CompositeTransform Rotation="-1.053"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="1194,378,672,654" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
-            <Image.RenderTransform>
-                <CompositeTransform ScaleX="-1"/>
-            </Image.RenderTransform>
-        </Image>
-        <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="933,167,224,839"/>
+                <!--informacion de cada edificio-->
+                <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
+                   Stretch="Fill" Margin="2440,-314,-1574,190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="1.446"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
+                   Stretch="Fill" Margin="1729,1428,-863,212" Grid.Row="1"/>
+                <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
+                   Stretch="Fill" Margin="2521,1225,-1655,439" RenderTransformOrigin="1.698,-0.033" Grid.Row="1"/>
+                <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
+                   Stretch="Fill" Margin="3084,713,-2218,935" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="1">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-1.053"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
+                   Stretch="Fill" Margin="2362,415,-1496,1254" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+                    <Image.RenderTransform>
+                        <CompositeTransform ScaleX="-1"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
+                   Stretch="Fill" Margin="1827,-81,-961,1797" Grid.RowSpan="2"/>
+                <Button Height="84" Margin="-632,-1,0,0" Width="92" VerticalAlignment="Top" Click="PanelAtaqueClose_Click"
+                Style="{StaticResource boton_redondo}" Grid.RowSpan="2">
+                    <Image Source="Assets/icono_casa.png" 
+                   Margin="20,-7,22,-8" />
+                </Button>
 
-        <!--icono de la casa-->
 
-        <Button Height="153" Margin="90,821,0,0" Width="155" VerticalAlignment="Top"
-                Style="{StaticResource boton_redondo}" Grid.Column="1">
-            <Image Source="Assets/icono_casa.png" 
-                   Margin="20,-8,21,-7" ></Image>
-        </Button>
-        <Image Source="Assets/sombra.png"
-                   Margin="61,792,-3,-3" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
+            </Grid>
 
+        </Viewbox>
+
+        <Viewbox >
+            <Grid Width="3292" >
+                <!--icono de la casa-->
+
+            </Grid>
+        </Viewbox>
 
         <!--recorrido a cada edificio-->
         <TextBlock 
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,500,510,0" Width="57" Grid.Column="1">
-        </TextBlock>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,678,322,0" Width="57"/>
 
         <TextBlock
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,600,72,0" Width="57">
@@ -184,15 +196,17 @@
         </TextBlock>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,232,487,0" Width="57" Grid.Column="1">
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,517,640,0" Width="57" Grid.ColumnSpan="2"/>
+
+        <TextBlock
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,379,15,0" Width="57">
         </TextBlock>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,184,71,0" Width="57">
-        </TextBlock>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,638,272,0" Width="57"/>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,429,400,0" Width="57" Grid.Column="1">
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
         </TextBlock>
 
         <TextBlock
@@ -200,46 +214,38 @@
         </TextBlock>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,402,656,0" Width="57" Grid.ColumnSpan="2"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,278,450,0" Width="57" Grid.Column="1">
-        </TextBlock>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,491,472,0" Width="57" Grid.Column="1">
-        </TextBlock>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,630,240,0" Width="57"/>
 
         <TextBlock
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
         </TextBlock>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,278,450,0" Width="57" Grid.Column="1">
-        </TextBlock>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,616,213,0" Width="57"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,232,555,0" Width="57" Grid.Column="1">
-        </TextBlock>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,338,66,0" Width="57"/>
 
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,167,121,0" Width="57">
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,302,104,0" Width="57">
         </TextBlock>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,108,0" Width="57"/>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-49,137,0" Width="57"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,200,0" Width="57"/>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,306,0" Width="57"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,469,433,0" Width="57" Grid.Column="1"/>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,479,608,0" Width="57" Grid.Column="1"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,469,433,0" Width="57" Grid.Column="1"/>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,538,657,0" Width="57" Grid.ColumnSpan="2"/>
         <TextBlock
             Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-73,70,0" Width="57"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="738,-91,0,0"/>
+            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="973,-38,0,0"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="783,-73,0,0"/>
+            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="922,-18,0,0"/>
         <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,144,183,0" Width="57"/>
+            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,170,272,0" Width="57"/>
 
 
 
