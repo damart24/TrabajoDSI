@@ -26,5 +26,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             this.InitializeComponent();
         }
+
+        private void PanelAtaqueClose_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PantallaJuego));
+        }
     }
 }

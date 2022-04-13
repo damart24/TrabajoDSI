@@ -41,5 +41,28 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Panel_Ajustes.Visibility = Visibility.Collapsed;
         }
+
+        private void Tienda_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Comprar.Visibility = Visibility.Visible;
+        }
+        private void TiendaClose_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Comprar.Visibility = Visibility.Collapsed;
+        }
+
+        private void PanelEntrenamiento_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Entrenamiento.Visibility= Visibility.Visible;
+        }
+        private void PanelEntrenamientoClose_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Entrenamiento.Visibility = Visibility.Collapsed;
+        }
+
+        private void Pantalla_AtaqueNavegacion(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PantallaAtaque));
+        }
     }
 }
