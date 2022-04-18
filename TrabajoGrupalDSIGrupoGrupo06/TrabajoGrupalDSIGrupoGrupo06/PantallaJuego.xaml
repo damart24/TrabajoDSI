@@ -223,9 +223,11 @@
         </Viewbox>
 
         <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
-            <Image Source="/Assets/fondo_negro.png"
-                   Stretch="Fill" Opacity="0.7"></Image>
-            <Viewbox>
+            <Button Click="PanelEntrenamientoClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
+                <Image Source="/Assets/fondo_negro.png"
+                       Stretch="Fill" Opacity="0.7"></Image>
+            </Button>
+                <Viewbox>
                 <Grid>
 
                     <Image Source="/Assets/fondo_negro.png"
@@ -273,13 +275,14 @@
             </Viewbox>
         </Grid>
         <Grid Visibility="Collapsed" x:Name="Panel_Ajustes">
-            <Image Source="/Assets/fondo_negro.png"
-                   Stretch="Fill" Opacity="0.7"></Image>
+            <Button Click="OptionsClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
+                <Image Source="/Assets/fondo_negro.png"
+                    Stretch="Fill" Opacity="0.7"></Image>
+            </Button>
             <Viewbox>
                 <Grid>
                     <Image Source="/Assets/fondo_negro.png"
                             Stretch="Fill" Opacity="0" Margin="-98,0,-90,-91"></Image>
-
                     <Image Source="Assets/fondo_naranja.png"
                            HorizontalAlignment="Center" VerticalAlignment="Top"
                        Stretch="Fill"  Height="625" Width="949" Margin="0,43,0,0"/>
@@ -319,8 +322,10 @@
         </Grid>
 
         <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
-            <Image Source="/Assets/fondo_negro.png"
+            <Button Click="TiendaClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998" Background="Transparent">
+                <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.2"></Image>
+            </Button>
             <Viewbox>
                 <Grid>
 
