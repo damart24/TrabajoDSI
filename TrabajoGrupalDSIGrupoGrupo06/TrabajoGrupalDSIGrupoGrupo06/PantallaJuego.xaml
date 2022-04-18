@@ -29,7 +29,7 @@
         <Grid>
             <StackPanel Margin="0,-41,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
-                    <CompositeTransform TranslateX="-300"/>
+                    <CompositeTransform TranslateX="-150"/>
                 </StackPanel.RenderTransform>
                 <Image Source="/Assets/casa_nivel2.png" Stretch="Fill" Height="250" Width="200"/>
                 <Button Height="40" Width="40
@@ -76,8 +76,36 @@
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-300" TranslateY="100"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/cuartel_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
-                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                <Image  x:Name="Campamento1" Source="/Assets/cuartel_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Click="Campamento_Click" x:Name="BotonCampamento1" Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-500" TranslateY="500"/>
+                </StackPanel.RenderTransform>
+                <Image  x:Name="Campamento2" Source="/Assets/cuartel_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Click="Campamento_Click" x:Name="BotonCampamento2" Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-100" TranslateY="200"/>
+                </StackPanel.RenderTransform>
+                <Image x:Name="Campamento3" Source="/Assets/cuartel_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Click="Campamento_Click" x:Name="BotonCampamento3" Height="40" Width="40                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
                         <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
@@ -90,7 +118,7 @@
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-200" TranslateY="0"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/castillo_nivel2.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Image  Source="/Assets/castillo_nivel2.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
                 <Button Height="40" Width="40                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
@@ -104,8 +132,36 @@
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="400" TranslateY="200"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/mina_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="250" Stretch="Fill"/>
-                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                <Image x:Name="Mina2" Source="/Assets/mina_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="250" Stretch="Fill"/>
+                <Button x:Name="BotonMina2" Height="40" Width="40"  Click="Mina_Click"  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-500" TranslateY="0"/>
+                </StackPanel.RenderTransform>
+                <Image x:Name="Mina1" Source="/Assets/mina_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="250" Stretch="Fill"/>
+                <Button x:Name="BotonMina1" Height="40" Width="40" Click="Mina_Click" Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="0" TranslateY="400"/>
+                </StackPanel.RenderTransform>
+                <Image x:Name="Mina3" Source="/Assets/mina_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="250" Stretch="Fill"/>
+                <Button x:Name="BotonMina3" Height="40" Width="40" Click="Mina_Click" Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
                         <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
@@ -166,7 +222,7 @@
                 </Image>
                 <Image Source="/Assets/desplegable.png"
                Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
-               VerticalAlignment="Center" Height="273" Width="301"/>
+               VerticalAlignment="Center" Height="263" Width="156"/>
 
             </Grid>
         </Viewbox>
