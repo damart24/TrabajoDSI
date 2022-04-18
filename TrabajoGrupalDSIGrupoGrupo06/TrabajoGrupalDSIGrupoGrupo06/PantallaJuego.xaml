@@ -217,7 +217,8 @@
                 <Image Source="/Assets/desplegable.png"
                Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
                VerticalAlignment="Center" Height="263" Width="156"/>
-
+                <Button x:Name="Chat" Height="147" Width="24"
+                        Click="Chat_Click" Background="Transparent"/>
             </Grid>
         </Viewbox>
 
@@ -317,7 +318,7 @@
             </Viewbox>
         </Grid>
 
-        <Grid Visibility="Visible" x:Name="Panel_Comprar">
+        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.2"></Image>
             <Viewbox>

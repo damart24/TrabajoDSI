@@ -93,7 +93,14 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             else if (Casa3StackPanel.Visibility == Visibility.Collapsed)
                 Casa3StackPanel.Visibility = Visibility.Visible;
             Panel_Comprar.Visibility = Visibility.Collapsed;
-
+        }
+        private void Chat_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Chat.Visibility = Visibility.Visible;
+        }
+        private void ChatClose_Click(object sender, RoutedEventArgs e)
+        {
+            Panel_Chat.Visibility = Visibility.Collapsed;
         }
 
         private void PanelEntrenamientoClose_Click(object sender, RoutedEventArgs e)
