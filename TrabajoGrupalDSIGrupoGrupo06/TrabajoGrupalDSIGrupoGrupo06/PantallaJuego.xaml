@@ -31,8 +31,8 @@
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-150"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/casa_nivel2.png" Stretch="Fill" Height="250" Width="200"/>
-                <Button Height="40" Width="40
+                <Image x:Name="Casa2" Source="/Assets/casa_nivel1.png" Stretch="Fill" Height="250" Width="200"/>
+                <Button x:Name="BotonCasa2" Click="Casa_Click" Height="40" Width="40
                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
@@ -41,14 +41,13 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-
             <StackPanel  Margin="1175,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="0"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/casa_nivel3.png" Stretch="Fill" Height="200" Width="250
+                <Image x:Name="Casa1" Source="/Assets/casa_nivel1.png" Stretch="Fill" Height="200" Width="250
                        "/>
-                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                <Button x:Name="BotonCasa1" Click="Casa_Click" Height="40" Width="40                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
                         <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
@@ -56,13 +55,12 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-
             <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="200"/>
                 </StackPanel.RenderTransform>
-                <Image Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
-                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                <Image x:Name="Casa3" Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button x:Name="BotonCasa3" Click="Casa_Click" Height="40" Width="40                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
                         <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
@@ -70,7 +68,6 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-
 
             <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
@@ -85,7 +82,6 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-
             <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-500" TranslateY="500"/>
@@ -99,7 +95,6 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-
             <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-100" TranslateY="200"/>
@@ -118,8 +113,8 @@
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-200" TranslateY="0"/>
                 </StackPanel.RenderTransform>
-                <Image  Source="/Assets/castillo_nivel2.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
-                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                <Image x:Name="Castillo" Source="/Assets/castillo_nivel1.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Click="Castillo_Click" Height="40" Width="40                         "  Margin="20,2,20,20"
                 Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                     <Button.RenderTransform>
                         <CompositeTransform TranslateY="-59.7" TranslateX="100"/>

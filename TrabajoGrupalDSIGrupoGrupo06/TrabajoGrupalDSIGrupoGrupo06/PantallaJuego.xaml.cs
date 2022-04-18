@@ -25,10 +25,14 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     {
         string mina1Name_, mina2Name_, mina3Name_;
         string campamento1Name_, campamento2Name_, campamento3Name_;
+        string casa1Name_, casa2Name_, casa3Name_;
+        string castilloName;
         public PantallaJuego()
         {
             campamento1Name_ = campamento2Name_ = campamento3Name_ = "ms-appx:///Assets/cuartel_nivel1.png";
             mina1Name_ = mina2Name_ = mina3Name_ = "ms-appx:///Assets/mina_nivel1.png";
+            casa1Name_ = casa2Name_ = casa3Name_ = "ms-appx:///Assets/casa_nivel1.png";
+            castilloName = "ms-appx:///Assets/castillo_nivel1.png";
             this.InitializeComponent();
         }
 
@@ -159,6 +163,64 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     break;
             }
 
+        }
+        private void Casa_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            string buttonName = button.Name;
+            switch (buttonName)
+            {
+                case "BotonCasa1":
+                    if (casa1Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                    {
+                        casa1Name_ = "ms-appx:///Assets/casa_nivel2.png";
+                        Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                    }
+                    else if (casa1Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                    {
+                        casa1Name_ = "ms-appx:///Assets/casa_nivel3.png";
+                        Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    }
+                    break;
+                case "BotonCasa2":
+                    if (casa2Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                    {
+                        casa1Name_ = "ms-appx:///Assets/casa_nivel2.png";
+                        Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                    }
+                    else if (casa2Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                    {
+                        casa2Name_ = "ms-appx:///Assets/casa_nivel3.png";
+                        Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    }
+                    break;
+                case "BotonCasa3":
+                    if (casa3Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                    {
+                        casa3Name_ = "ms-appx:///Assets/casa_nivel2.png";
+                        Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                    }
+                    else if (casa3Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                    {
+                        casa3Name_ = "ms-appx:///Assets/casa_nivel3.png";
+                        Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    }
+                    break;
+            }
+
+        }
+        private void Castillo_Click(object sender, RoutedEventArgs e)
+        {
+            if (castilloName == "ms-appx:///Assets/castillo_nivel1.png")
+            {
+                castilloName = "ms-appx:///Assets/castillo_nivel2.png";
+                Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel2.png"));
+            }
+            else if (castilloName == "ms-appx:///Assets/castillo_nivel2.png")
+            {
+                castilloName = "ms-appx:///Assets/castillo_nivel3.png";
+                Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel3.png"));
+            }
         }
     }
 }
