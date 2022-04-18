@@ -21,7 +21,7 @@
     </Page.Resources>
 
     <Grid>
-        
+
         <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill" 
                 />
@@ -390,10 +390,12 @@
 
 
         <Grid Visibility="Collapsed" x:Name="Panel_Chat">
-            <Image Source="/Assets/fondo_negro.png"
-               Stretch="Fill" Opacity="0.7"></Image>
+            <Button Click="ChatClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
+                <Image Source="/Assets/fondo_negro.png"
+                Stretch="Fill" Opacity="0.7" Height="1074" Width="1912"></Image>
+            </Button>
             <Image Source="Assets/fondo_gris.png"
-               Stretch="Fill" Margin="-10,0,932,10" RenderTransformOrigin="0.413,0.328"></Image>
+               Stretch="Fill" Margin="-10,0,932,0" RenderTransformOrigin="0.413,0.328"></Image>
         </Grid>
 
 
