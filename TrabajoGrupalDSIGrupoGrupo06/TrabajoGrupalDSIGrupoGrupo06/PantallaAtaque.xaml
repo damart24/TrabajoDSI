@@ -94,8 +94,115 @@
                        Stretch="Fill"
                        Width="150"
                        Height="120" Margin="491,723,859,157"/>
-                    
-                    
+
+
+                    <!--PanelesAtacar-->
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque6" Text="El gran ejército" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="1035,55,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold"/>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha6" Click="PanelAtaqueClose_Click" Margin="0,0,15,75" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque5" Text="Valle del fuego" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="359,140,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold"/>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha5" Click="PanelAtaqueClose_Click" Margin="0,0,691,-10" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque4" Text="Avanzadilla letal" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="460,382,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold"/>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha4" Click="PanelAtaqueClose_Click" Margin="0,0,560,-247" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque3" Text="El cruce del rio" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="474,357,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold" RenderTransformOrigin="3.218,2.369">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform TranslateX="700.3" TranslateY="125"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha3" Click="PanelAtaqueClose_Click" Margin="0,0,578,-201" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-675" TranslateX="400"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque2" Text="Rivales peligrosos" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="944,762,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold"/>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha2" Click="PanelAtaqueClose_Click" Margin="0,0,576,-252" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-450" TranslateX="175.3"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
+                    <TextBlock Visibility="Collapsed" x:Name="NombreAtaque1" Text="Vecinos Molestos"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Margin="291,743,0,0" Foreground="Black" FontSize="30" FontWeight="SemiBold"/>
+                    <Button Visibility="Collapsed" Height="100" x:Name="IconoLucha1" Click="PanelAtaqueClose_Click" Margin="0,0,743,-608" Width="100" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image Source="/Assets/icono_lucha.png" Width="60"
+                           Margin="-20,-62,-23,-47" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform TranslateY="5"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Button>
                 </Grid>
                 <Grid Height="1100" Width="866">
                     <!--informacion de cada edificio-->
