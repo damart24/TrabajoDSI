@@ -326,7 +326,7 @@
             </Viewbox>
         </Grid>
 
-        <Grid Visibility="Visible" x:Name="Panel_Comprar">
+        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Button Click="TiendaClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998" Background="Transparent">
                 <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.2"></Image>
@@ -415,8 +415,8 @@
         <Button  Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
-        <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="85"
-               Margin="0,20,120,0" Height="35" VerticalAlignment="Top"
+        <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="69"
+               Margin="0,20,136,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
         <Image Source="Assets/madera.png"
                VerticalAlignment="Top"
