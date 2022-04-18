@@ -129,6 +129,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         mina1Name_ = "ms-appx:///Assets/mina_nivel3.png";
                         Mina1.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonMina2":
@@ -141,6 +142,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         mina2Name_ = "ms-appx:///Assets/mina_nivel3.png";
                         Mina2.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonMina3":
@@ -153,6 +155,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         mina3Name_ = "ms-appx:///Assets/mina_nivel3.png";
                         Mina3.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
             }
@@ -174,6 +177,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         campamento1Name_ = "ms-appx:///Assets/cuartel_nivel3.png";
                         Campamento1.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonCampamento2":
@@ -186,6 +190,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         campamento2Name_ = "ms-appx:///Assets/cuartel_nivel3.png";
                         Campamento2.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonCampamento3":
@@ -198,6 +203,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         campamento3Name_ = "ms-appx:///Assets/cuartel_nivel3.png";
                         Campamento3.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
             }
@@ -219,18 +225,20 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         casa1Name_ = "ms-appx:///Assets/casa_nivel3.png";
                         Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonCasa2":
                     if (casa2Name_ == "ms-appx:///Assets/casa_nivel1.png")
                     {
-                        casa1Name_ = "ms-appx:///Assets/casa_nivel2.png";
+                        casa2Name_ = "ms-appx:///Assets/casa_nivel2.png";
                         Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
                     }
                     else if (casa2Name_ == "ms-appx:///Assets/casa_nivel2.png")
                     {
                         casa2Name_ = "ms-appx:///Assets/casa_nivel3.png";
                         Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "BotonCasa3":
@@ -243,6 +251,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     {
                         casa3Name_ = "ms-appx:///Assets/casa_nivel3.png";
                         Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                        button.Visibility = Visibility.Collapsed;
                     }
                     break;
             }
@@ -250,6 +259,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Castillo_Click(object sender, RoutedEventArgs e)
         {
+            Button button = (Button)sender;
             if (castilloName == "ms-appx:///Assets/castillo_nivel1.png")
             {
                 castilloName = "ms-appx:///Assets/castillo_nivel2.png";
@@ -259,6 +269,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             {
                 castilloName = "ms-appx:///Assets/castillo_nivel3.png";
                 Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel3.png"));
+                button.Visibility = Visibility.Collapsed;
             }
         }
     }
