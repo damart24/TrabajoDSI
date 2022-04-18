@@ -24,7 +24,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     /// </summary>
     public sealed partial class PantallaJuego : Page, INotifyPropertyChanged
     {
-        int madera, metal, comida, tropas;
+        int madera = 0, metal = 0, comida = 0, piedra = 0, tropas = 0;
         string mina1Name_, mina2Name_, mina3Name_;
         string campamento1Name_, campamento2Name_, campamento3Name_;
         string casa1Name_, casa2Name_, casa3Name_;

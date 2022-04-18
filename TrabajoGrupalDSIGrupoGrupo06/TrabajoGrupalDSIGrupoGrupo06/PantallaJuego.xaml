@@ -422,7 +422,11 @@
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,22,165,0" RenderTransformOrigin="0.413,0.328" Height="26" Width="30"/>
-        <TextBlock Text="{x:Bind CurrentTime, Mode=OneWay}"
+        <TextBlock Text="{x:Bind madera, Mode=OneWay}"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,23,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/100"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,23,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
@@ -437,10 +441,14 @@
                VerticalAlignment="Top"
                 HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,56,162,0" RenderTransformOrigin="0.413,0.328" Height="43" Width="36"/>
-        <TextBlock Text="1000/1000" 
-                  VerticalAlignment="Top"
-                  HorizontalAlignment="Right"
-                  Margin="0,66,59,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,66,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/100"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,66,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
         <Button Width="182" Style="{StaticResource barra_recursos}"
                Margin="0,108,20,0" HorizontalAlignment="Right" Height="35" VerticalAlignment="Top"/>
@@ -450,7 +458,11 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,111,160,0" RenderTransformOrigin="0.413,0.328" Height="30" Width="39"/>
-        <TextBlock Text="1000/1000" 
+        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,110,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/100"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,110,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
@@ -465,7 +477,11 @@
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,150,155,0" RenderTransformOrigin="0.413,0.328" Height="37" Width="44"/>
-        <TextBlock Text="1000/1000" 
+        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,157,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/100"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,157,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
@@ -478,10 +494,14 @@
         <Image Source="/Assets/tropas_icono.png"
                VerticalAlignment="Top" HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
-        <TextBlock Text="1000/1000" 
-                   HorizontalAlignment="Right"
+        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
                    VerticalAlignment="Top"
-                   Margin="0,198,61,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   HorizontalAlignment="Right"
+                   Margin="0,198,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/100"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,198,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
 
     </Grid>
