@@ -84,7 +84,7 @@
                 </StackPanel>
                 <StackPanel x:Name="Campamento2StackPanel" Visibility="Collapsed" Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                     <StackPanel.RenderTransform>
-                        <CompositeTransform TranslateX="-500" TranslateY="500"/>
+                        <CompositeTransform TranslateX="175" TranslateY="350"/>
                     </StackPanel.RenderTransform>
                     <Image  x:Name="Campamento2" Source="/Assets/cuartel_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
                     <Button Click="Campamento_Click" x:Name="BotonCampamento2" Height="40" Width="40                         "  Margin="20,2,20,20"
