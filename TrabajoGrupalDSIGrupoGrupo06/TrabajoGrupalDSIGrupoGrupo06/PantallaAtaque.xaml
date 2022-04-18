@@ -68,29 +68,79 @@
             <Grid>
                 <Grid>
                     <!--edificios-->
-                    <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
-                    Stretch="Fill"
-                    Width="150"
-                    Height="120" Margin="829,10,521,870"/>
-
-                    <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,125,60" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
+                        Stretch="Fill"
+                        Width="150"
+                        Height="120"/>
+                    </Button>
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,451,-15" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
-                       Height="120" Margin="1001,440,349,440"/>
-                    <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
+                       Height="120" />
+                    </Button>
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,343,-217" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
-                       Height="120" Margin="708,312,642,568"/>
-                    <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
+                       Height="120"/>
+                    </Button>
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,25,-382" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
-                       Height="120" Margin="566,105,785,775"/>
-
-                    <Image   x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
+                       Height="120"/>
+                    </Button>
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,225,-558" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
-                       Height="120" Margin="783,632,567,248"/>
-                    <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
+                       Height="120"/>
+                    </Button>
+                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,535,-633" Width="200" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                            Background="DarkSlateGray"
+                        Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-825" TranslateX="-300"/>
+                        </Button.RenderTransform>
+                        <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="491,723,859,157"/>
+                    </Button>
+                    <Image Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120" Margin="491,723,859,157"/>
@@ -209,7 +259,7 @@
                     <Grid>
                         <Image  x:Name="Info_1"  Source="Assets/icono_ayuda.png" Margin="283,751,532,284"/>
                         <Image  x:Name="Info_2"  Source="/Assets/icono_ayuda.png" Margin="575,663,240,372"/>
-                        <Image  x:Name="Info_3"  Source="/Assets/icono_ayuda.png" Margin="799,467,16,568"/>
+                        <Image  x:Name="Info_3"  Source="/Assets/icono_ayuda.png" Margin="805,492,10,543"/>
                         <Image  x:Name="Info_4"  Source="/Assets/icono_ayuda.png" Margin="503,335,312,700"/>
                         <Image  x:Name="Info_5"  Source="/Assets/icono_ayuda.png" Margin="355,135,460,900"/>
                         <Image  x:Name="Info_6"  Source="/Assets/icono_ayuda.png" Margin="631,39,184,996"/>
