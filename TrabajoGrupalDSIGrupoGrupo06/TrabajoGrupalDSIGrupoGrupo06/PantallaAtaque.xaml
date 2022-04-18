@@ -22,269 +22,128 @@
         </Style>
     </Page.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1229*"/>
-            <ColumnDefinition Width="691*"/>
-        </Grid.ColumnDefinitions>
+        <Image Source="Assets/mapa_ataque.png"
+               Stretch="Fill"/>
 
+        <Button  Style="{StaticResource barra_recursos}" Width="168"
+             Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
+        <TextBlock Text="Usuario2178" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="61,24,0,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Viewbox>
-
-            <Grid Height="1086" Width="1131">
-                <StackPanel x:Name="Mapa_Ataque" Margin="-69,0,-739,0">
-                    <Image Source="Assets/mapa_ataque.png"
-               Stretch="Fill"></Image>
-                </StackPanel>
-            </Grid>
-
-        </Viewbox>
-
-
-        <Grid Grid.ColumnSpan="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="67*"/>
-                <ColumnDefinition Width="893*"/>
-            </Grid.ColumnDefinitions>
-
-            <Viewbox Grid.ColumnSpan="2">
-                <Button  Style="{StaticResource barra_recursos}" Width="1"
-                  Height="3"  VerticalAlignment="Top" />
-            </Viewbox>
-
-            <TextBlock Text="Usuario2178" 
-                   Margin="61,24,0,0" Foreground="Black" FontSize="20" FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
-
-            <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="DeepSkyBlue"
                  Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
-            <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
                  x:Name="progreso_nivel" Background="RoyalBlue"
                  Margin="36,81,0,0" Height="31" VerticalAlignment="Top"/>
-            <TextBlock Text="Lvl 2" 
-                   Margin="48,65,1332,903" Foreground="Black" FontSize="25" FontWeight="SemiBold" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Lvl 2" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="48,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
-            <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="LightGoldenrodYellow"
-                 Margin="120,55,0,0" Height="57" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-            <Button  Style="{StaticResource barra_recursos}" Width="84"
+                 Margin="120,55,0,0" Height="57" VerticalAlignment="Top"/>
+        <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="Orange"
-                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-            <TextBlock Text="16🏆" 
-                   Margin="133,65,1247,903" Foreground="Black" FontSize="25" FontWeight="SemiBold" Grid.ColumnSpan="2"/>
-            <Image Source="Assets/sombra.png"
-                           Margin="981,0,0,526" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="90" Width="86" Grid.Column="1"/>
+                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"/>
+        <TextBlock Text="16🏆" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="133,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
+        <Image Source="Assets/sombra.png"
+               HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                   Margin="0,0,-8,-5" RenderTransformOrigin="0.5,0.5" Height="205" Width="214" Stretch="Fill"/>
+        <Button Height="153" Click="PanelAtaqueClose_Click" Margin="0,0,20,20" Width="155" VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Style="{StaticResource boton_redondo}">
+            <Image Source="Assets/home2.png" 
+                   Margin="-20,-62,-23,-47" ></Image>
+        </Button>
 
-
-        </Grid>
-
-
-
-        <Viewbox Grid.ColumnSpan="2">
+        <Viewbox>
             <Grid>
+                <Grid>
+                    <!--edificios-->
+                    <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
+                    Stretch="Fill"
+                    Width="150"
+                    Height="120" Margin="829,10,521,870"/>
 
+                    <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="1001,440,349,440"/>
+                    <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="708,312,642,568"/>
+                    <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="566,105,785,775"/>
 
-                <!--edificios-->
-                <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
-                Stretch="Fill"
-                Width="150"
-                Height="120" Margin="829,10,521,870"/>
+                    <Image   x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="783,632,567,248"/>
+                    <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
+                       Stretch="Fill"
+                       Width="150"
+                       Height="120" Margin="491,723,859,157"/>
+                    
+                    
+                </Grid>
+                <Grid Height="1100" Width="866">
+                    <!--informacion de cada edificio-->
+                    <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
+                       Stretch="Fill" Margin="2440,-314,-1574,190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="1.446"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
+                       Stretch="Fill" Margin="1729,1428,-863,212" Grid.Row="1"/>
+                    <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
+                       Stretch="Fill" Margin="2521,1225,-1655,439" RenderTransformOrigin="1.698,-0.033" Grid.Row="1"/>
+                    <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
+                       Stretch="Fill" Margin="3084,713,-2218,935" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="1">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="-1.053"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
+                       Stretch="Fill" Margin="2362,415,-1496,1254" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
+                       Stretch="Fill" Margin="1827,-81,-961,1797" Grid.RowSpan="2"/>
 
-                <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
-                   Stretch="Fill"
-                   Width="150"
-                   Height="120" Margin="1001,440,349,440"/>
-                <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
-                   Stretch="Fill"
-                   Width="150"
-                   Height="120" Margin="708,312,642,568"/>
-                <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
-                   Stretch="Fill"
-                   Width="150"
-                   Height="120" Margin="566,105,785,775"/>
-
-                <Image   x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
-                   Stretch="Fill"
-                   Width="150"
-                   Height="120" Margin="783,632,567,248"/>
-                <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
-                   Stretch="Fill"
-                   Width="150"
-                   Height="120" Margin="491,723,859,157"/>
-
-
-
+                    <Grid>
+                        <TextBlock Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1529,1005,0" Width="57" Height="171"/>
+                    </Grid>
+                </Grid>
             </Grid>
         </Viewbox>
 
-
-        <Viewbox>
-            <Grid Height="1837" Width="866">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="27*"/>
-                    <RowDefinition Height="1810*"/>
-                </Grid.RowDefinitions>
-
-                <!--informacion de cada edificio-->
-                <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
-                   Stretch="Fill" Margin="2440,-314,-1574,190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform Rotation="1.446"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="1729,1428,-863,212" Grid.Row="1"/>
-                <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="2521,1225,-1655,439" RenderTransformOrigin="1.698,-0.033" Grid.Row="1"/>
-                <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="3084,713,-2218,935" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="1">
-                    <Image.RenderTransform>
-                        <CompositeTransform Rotation="-1.053"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="2362,415,-1496,1254" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
-                    <Image.RenderTransform>
-                        <CompositeTransform ScaleX="-1"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
-                   Stretch="Fill" Margin="1827,-81,-961,1797" Grid.RowSpan="2"/>
-                <Button Height="84" Margin="-632,-1,0,0" Width="92" VerticalAlignment="Top" Click="PanelAtaqueClose_Click"
-                Style="{StaticResource boton_redondo}" Grid.RowSpan="2">
-                    <Image Source="Assets/icono_casa.png" 
-                   Margin="20,-7,22,-8" />
-                </Button>
-
-
-            </Grid>
-
-        </Viewbox>
-
-        <Viewbox >
-            <Grid Width="3292" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1645*"/>
-                    <ColumnDefinition Width="1647*"/>
-                </Grid.ColumnDefinitions>
-                <!--icono de la casa-->
-                <!--recorrido a cada edificio-->
-                <TextBlock 
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1500,929,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,932,-97,0" Width="57" Grid.Column="1">
-                </TextBlock>
-
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,869,-170,0" Width="57" Grid.Column="1">
-                </TextBlock>
-
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,650,186,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,88,950,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-371,640,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1008,-14,0" Width="57" Grid.Column="1">
-                </TextBlock>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-497,447,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,204,798,0" Width="57" Grid.Column="1">
-                </TextBlock>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1108,139,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1434,834,0" Width="65" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,310,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,402,656,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1064,72,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,502,371,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1359,640,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,912,0" Width="57" Grid.Column="1"/>
-
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,945,0" Width="57" Grid.Column="1">
-                </TextBlock>
-                <TextBlock
-                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-371,531,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,624,33,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1397,746,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-840,584,0" Width="57" Grid.Column="1"/>
-                <TextBlock
-                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-332,704,0" Width="57" Grid.Column="1"/>
-
-            </Grid>
-        </Viewbox>
-
-
-
-
-
-        <Viewbox>
-
-            <Grid Height="16" Width="123" RenderTransformOrigin="0.5,0.5">
-                <Grid.RenderTransform>
-                    <CompositeTransform TranslateX="40" TranslateY="0"/>
-                </Grid.RenderTransform>
-                <Button  Style="{StaticResource barra_recursos}" Width="220" Height="4" Scale="2,2,2" Margin="99,0,0,0" RenderTransformOrigin="0.5,0.5" >
-                    <Button.RenderTransform>
-                        <CompositeTransform TranslateY="-50.4" TranslateX="12"/>
-                    </Button.RenderTransform>
-                </Button>
-
-            </Grid>
-        </Viewbox>
-        <Viewbox>
-
-            <Grid Height="13" Width="89" RenderTransformOrigin="0.5,0.5" >
-                <Grid.RenderTransform>
-                    <CompositeTransform TranslateX="126" TranslateY="-41.7"/>
-                </Grid.RenderTransform>
-
-                <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="95"
-               Margin="0,10,76,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
-
-            </Grid>
-        </Viewbox>
-
-        <Viewbox>
-
-            <Grid>
-                <Image x:Name="Image" Source="Assets/tropas_icono.png"
-                    Stretch="Fill" Margin="4100,-10,-2563,3017" RenderTransformOrigin="0.56,0.529" Scale="2,2,3" >
-                    <Image.RenderTransform>
-                        <CompositeTransform ScaleX="-1"/>
-                    </Image.RenderTransform>
-
-                </Image>
-                <TextBlock 
-                   Margin="3566,-548,-3415,1515" Foreground="Black" FontSize="40" FontWeight="SemiBold"><Run Text="  "/><Run Text="1000/1000"/></TextBlock>
-            </Grid>
-        </Viewbox>
-
-
+        <Button  Style="{StaticResource barra_recursos}" Width="182"
+               Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
+               HorizontalAlignment="Right"/>
+        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="85"
+               Margin="0,20,120,0" Height="35" VerticalAlignment="Top"
+               HorizontalAlignment="Right"/>
+        <Image Source="/Assets/tropas_icono.png"
+               VerticalAlignment="Top" HorizontalAlignment="Right"
+               Stretch="Fill" Margin="0,24,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
+        <TextBlock Text="1000/1000" 
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,23,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
 
     </Grid>
