@@ -68,74 +68,74 @@
             <Grid>
                 <Grid>
                     <!--edificios-->
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,125,60" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_6" Visibility="Visible" Height="150" Margin="0,0,125,60" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_6" Source="Assets/castillo_nivel1.png"   
+                        <Image Source="Assets/castillo_nivel1.png"   
                         Stretch="Fill"
                         Width="150"
                         Height="120"/>
                     </Button>
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,451,-15" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_5" Visibility="Visible" Height="150" Margin="0,0,451,-15" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_5" Source="Assets/castillo_nivel1.png"   
+                        <Image  Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120" />
                     </Button>
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,343,-217" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_4" Visibility="Visible" Height="150" Margin="0,0,343,-217" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_4" Source="Assets/castillo_nivel1.png"   
+                        <Image Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120"/>
                     </Button>
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,25,-382" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_3" Visibility="Visible" Height="150" Margin="0,0,25,-382" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_3" Source="Assets/castillo_nivel1.png"   
+                        <Image Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120"/>
                     </Button>
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,225,-558" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_2" Visibility="Visible" Height="150" Margin="0,0,225,-558" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_2" Source="Assets/castillo_nivel1.png"   
+                        <Image  Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120"/>
                     </Button>
-                    <Button Visibility="Visible" Height="150" Click="PanelAtaqueClose_Click" Margin="0,0,535,-633" Width="200" VerticalAlignment="Bottom"
+                    <Button Click="Edificio_Click" x:Name="Edificio_1" Visibility="Visible" Height="150" Margin="0,0,535,-633" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
                         <Button.RenderTransform>
                             <CompositeTransform TranslateY="-825" TranslateX="-300"/>
                         </Button.RenderTransform>
-                        <Image  x:Name="Edificio_1" Source="Assets/castillo_nivel1.png"   
+                        <Image Source="Assets/castillo_nivel1.png"   
                        Stretch="Fill"
                        Width="150"
                        Height="120" Margin="491,723,859,157"/>
