@@ -99,33 +99,49 @@
                 </Grid>
                 <Grid Height="1100" Width="866">
                     <!--informacion de cada edificio-->
-                    <Image  x:Name="Info_1" Source="Assets/icono_ayuda.png"    
-                       Stretch="Fill" Margin="2440,-314,-1574,190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                        <Image.RenderTransform>
-                            <CompositeTransform Rotation="1.446"/>
-                        </Image.RenderTransform>
-                    </Image>
-                    <Image  x:Name="Info_2"  Source="Assets/icono_ayuda.png"   
-                       Stretch="Fill" Margin="1729,1428,-863,212" Grid.Row="1"/>
-                    <Image  x:Name="Info_3" Source="Assets/icono_ayuda.png"   
-                       Stretch="Fill" Margin="2521,1225,-1655,439" RenderTransformOrigin="1.698,-0.033" Grid.Row="1"/>
-                    <Image  x:Name="Info_4" Source="Assets/icono_ayuda.png"   
-                       Stretch="Fill" Margin="3084,713,-2218,935" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="1">
-                        <Image.RenderTransform>
-                            <CompositeTransform Rotation="-1.053"/>
-                        </Image.RenderTransform>
-                    </Image>
-                    <Image  x:Name="Info_5" Source="Assets/icono_ayuda.png"   
-                       Stretch="Fill" Margin="2362,415,-1496,1254" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
-                        <Image.RenderTransform>
-                            <CompositeTransform ScaleX="-1"/>
-                        </Image.RenderTransform>
-                    </Image>
-                    <Image  x:Name="Info_6" Source="Assets/icono_ayuda.png"   
-                       Stretch="Fill" Margin="1827,-81,-961,1797" Grid.RowSpan="2"/>
-
                     <Grid>
-                        <TextBlock Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1529,1005,0" Width="57" Height="171"/>
+                        <Image  x:Name="Info_1"  Source="Assets/icono_ayuda.png" Margin="283,751,532,284"/>
+                        <Image  x:Name="Info_2"  Source="/Assets/icono_ayuda.png" Margin="575,663,240,372"/>
+                        <Image  x:Name="Info_3"  Source="/Assets/icono_ayuda.png" Margin="799,467,16,568"/>
+                        <Image  x:Name="Info_4"  Source="/Assets/icono_ayuda.png" Margin="503,335,312,700"/>
+                        <Image  x:Name="Info_5"  Source="/Assets/icono_ayuda.png" Margin="355,135,460,900"/>
+                        <Image  x:Name="Info_6"  Source="/Assets/icono_ayuda.png" Margin="631,39,184,996"/>
+                    </Grid>
+                    <Grid>
+                        <TextBlock Text="." FontSize="150" Margin="63,807,755,116"/>
+                        <TextBlock Text="." FontSize="150" Margin="96,775,719,148"/>
+                        <TextBlock Text="." FontSize="150" Margin="128,755,686,168"/>
+                        <TextBlock Text="." FontSize="150" Margin="164,735,649,188"/>
+                        <TextBlock Text="." FontSize="150" Margin="320,731,492,192"/>
+                        <TextBlock Text="." FontSize="150" Margin="356,739,455,184"/>
+                        <TextBlock Text="." FontSize="150" Margin="388,731,422,192"/>
+                        <TextBlock Text="." FontSize="150" Margin="420,719,389,204"/>
+                        <TextBlock Text="." FontSize="150" Margin="448,699,360,224"/>
+                        <TextBlock Text="." FontSize="150" Margin="472,671,335,252"/>
+                        <TextBlock Text="." FontSize="150" Margin="488,643,318,280"/>
+                        <TextBlock Text="." FontSize="150" Margin="616,595,189,328"/>
+                        <TextBlock Text="." FontSize="150" Margin="644,583,160,340"/>
+                        <TextBlock Text="." FontSize="150" Margin="676,563,127,360"/>
+                        <TextBlock Text="." FontSize="150" Margin="696,535,106,388"/>
+                        <TextBlock Text="." FontSize="150" Margin="708,499,93,424"/>
+                        <TextBlock Text="." FontSize="150" Margin="720,467,80,456"/>
+                        <TextBlock Text="." FontSize="150" Margin="656,399,143,524"/>
+                        <TextBlock Text="." FontSize="150" Margin="620,387,178,536"/>
+                        <TextBlock Text="." FontSize="150" Margin="584,379,213,544"/>
+                        <TextBlock Text="." FontSize="150" Margin="584,379,212,544"/>
+                        <TextBlock Text="." FontSize="150" Margin="548,367,248,556"/>
+                        <TextBlock Text="." FontSize="150" Margin="516,351,279,572"/>
+                        <TextBlock Text="." FontSize="150" Margin="500,327,294,596"/>
+                        <TextBlock Text="." FontSize="150" Margin="388,223,405,700"/>
+                        <TextBlock Text="." FontSize="150" Margin="368,195,424,728"/>
+                        <TextBlock Text="." FontSize="150" Margin="356,167,435,756"/>
+                        <TextBlock Text="." FontSize="150" Margin="344,135,446,788"/>
+                        <TextBlock Text="." FontSize="150" Margin="396,35,393,888"/>
+                        <TextBlock Text="." FontSize="150" Margin="428,43,360,880"/>
+                        <TextBlock Text="." FontSize="150" Margin="464,43,323,880"/>
+                        <TextBlock Text="." FontSize="150" Margin="504,35,282,888"/>
+                        <TextBlock Text="." FontSize="150" Margin="540,23,245,900"/>
+                        <TextBlock Text="." FontSize="150" Margin="39,839,778,84"/>
                     </Grid>
                 </Grid>
             </Grid>
