@@ -21,21 +21,97 @@
     </Page.Resources>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Image Source="/Assets/hierba_colorines.png"
-               Stretch="Fill"></Image>
+               Stretch="Fill"/>
         <Grid>
-            <Image Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="290" Width="328" Margin="400,-540,0,0"/>
-            <Image Source="/Assets/casa_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="395" Width="328" Margin="-500,-500,0,0"/>
-            <Image Source="/Assets/casa_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="288" Width="384" Margin="1175,116,0,0"/>
-            <Image Source="/Assets/cuartel_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="280" Width="302" Margin="357,116,0,0"/>
-            <Image Source="/Assets/mina_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="280" Width="302" Margin="500,550,0,0" Stretch="Fill"/>
-
-            <StackPanel>
-                <Button Height="80" Width="81" Click="PanelEntrenamiento_Click" HorizontalAlignment="Center"
-                Style="{StaticResource boton_redondo}">
-                    <Image Source="/Assets/flecha.png"/>
+            <StackPanel Margin="0,-41,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-300"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/casa_nivel2.png" Stretch="Fill" Height="250" Width="200"/>
+                <Button Height="40" Width="40
+                        "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
-                <Image Source="/Assets/castillo_nivel2.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="379" Width="360" Margin="-431,395,0,0"/>
+            </StackPanel>
+
+            <StackPanel  Margin="1175,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="0"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/casa_nivel3.png" Stretch="Fill" Height="200" Width="250
+                       "/>
+                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="200"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/casa_nivel1.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+
+            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-300" TranslateY="100"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/cuartel_nivel3.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Margin="-431,395,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="-200" TranslateY="0"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/castillo_nivel2.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Height="200" Width="250"/>
+                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+                <StackPanel.RenderTransform>
+                    <CompositeTransform TranslateX="400" TranslateY="200"/>
+                </StackPanel.RenderTransform>
+                <Image Source="/Assets/mina_nivel2.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="250" Stretch="Fill"/>
+                <Button Height="40" Width="40                         "  Margin="20,2,20,20"
+                Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                    </Button.RenderTransform>
+                    <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
+                </Button>
             </StackPanel>
 
         </Grid>
@@ -50,7 +126,6 @@
         <Image Source="Assets/sombra.png"
                    Margin="-6,0,0,-8" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="213" Width="216"/>
         <Button Height="153" Margin="26,0,0,20" Width="155" VerticalAlignment="Bottom"
-                HorizontalAlignment="Left"
                 Click="Tienda_Click"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/tienda.png"></Image>
@@ -59,7 +134,6 @@
         <Image Source="Assets/sombra.png"
                    Margin="180,0,0,4" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="117" Width="112"/>
         <Button Click="Options_Click" Height="80" Margin="197,0,0,20" Width="81" VerticalAlignment="Bottom"
-                HorizontalAlignment="Left"
                 Style="{StaticResource boton_redondo}">
             <Image Source="/Assets/engranaje.png" Margin="3,3,3,2"></Image>
         </Button>
@@ -97,7 +171,7 @@
             </Grid>
         </Viewbox>
 
-        <Grid Visibility="Visible" x:Name="Panel_Entrenamiento">
+        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.7"></Image>
             <Viewbox>
@@ -218,8 +292,7 @@
 
 
         <Button  Style="{StaticResource barra_recursos}" Width="168"
-                 Margin="36,24,0,0" Height="57" VerticalAlignment="Top"
-                 HorizontalAlignment="Left"/>
+                 Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
         <TextBlock Text="Usuario2178" 
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
@@ -227,12 +300,10 @@
 
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="DeepSkyBlue"
-                 Margin="36,55,0,0" Height="57" VerticalAlignment="Top"
-                 HorizontalAlignment="Left"/>
+                 Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  x:Name="progreso_nivel" Background="RoyalBlue"
-                 Margin="36,81,0,0" Height="31" VerticalAlignment="Top"
-                 HorizontalAlignment="Left"/>
+                 Margin="36,81,0,0" Height="31" VerticalAlignment="Top"/>
         <TextBlock Text="Lvl 2" 
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
@@ -243,8 +314,7 @@
                  Margin="120,55,0,0" Height="57" VerticalAlignment="Top"/>
         <Button  Style="{StaticResource barra_recursos}" Width="84"
                  Background="Orange"
-                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"
-                 HorizontalAlignment="Left"/>
+                 Margin="120,69,0,0" Height="43" VerticalAlignment="Top"/>
         <TextBlock Text="16🏆" 
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
@@ -270,7 +340,7 @@
         <Image Source="Assets/madera.png"
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
-               Stretch="Fill" Margin="0,22,165,0" RenderTransformOrigin="0.413,0.328" Height="26" Width="30"></Image>
+               Stretch="Fill" Margin="0,22,165,0" RenderTransformOrigin="0.413,0.328" Height="26" Width="30"/>
         <TextBlock Text="1000/1000" 
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
@@ -285,7 +355,7 @@
         <Image Source="/Assets/lingote.png"
                VerticalAlignment="Top"
                 HorizontalAlignment="Right"
-               Stretch="Fill" Margin="0,56,162,0" RenderTransformOrigin="0.413,0.328" Height="43" Width="36"></Image>
+               Stretch="Fill" Margin="0,56,162,0" RenderTransformOrigin="0.413,0.328" Height="43" Width="36"/>
         <TextBlock Text="1000/1000" 
                   VerticalAlignment="Top"
                   HorizontalAlignment="Right"
@@ -298,7 +368,7 @@
         <Image Source="Assets/comida.png"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
-               Stretch="Fill" Margin="0,111,160,0" RenderTransformOrigin="0.413,0.328" Height="30" Width="39"></Image>
+               Stretch="Fill" Margin="0,111,160,0" RenderTransformOrigin="0.413,0.328" Height="30" Width="39"/>
         <TextBlock Text="1000/1000" 
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
@@ -313,7 +383,7 @@
         <Image Source="Assets/piedra.png" Opacity="1"
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
-               Stretch="Fill" Margin="0,150,155,0" RenderTransformOrigin="0.413,0.328" Height="37" Width="44"></Image>
+               Stretch="Fill" Margin="0,150,155,0" RenderTransformOrigin="0.413,0.328" Height="37" Width="44"/>
         <TextBlock Text="1000/1000" 
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
@@ -326,7 +396,7 @@
                 Width="108" Height="35"/>
         <Image Source="/Assets/tropas_icono.png"
                VerticalAlignment="Top" HorizontalAlignment="Right"
-               Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"></Image>
+               Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
         <TextBlock Text="1000/1000" 
                    HorizontalAlignment="Right"
                    VerticalAlignment="Top"
