@@ -157,6 +157,10 @@
     <Content Include="Assets\cubito.png" />
     <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\engranaje.png" />
+    <Content Include="Assets\estrellas.png" />
+    <Content Include="Assets\estrellas_1.png" />
+    <Content Include="Assets\estrellas_2.png" />
+    <Content Include="Assets\estrellas_3.png" />
     <Content Include="Assets\flecha.png" />
     <Content Include="Assets\fondo_blanco.png" />
     <Content Include="Assets\fondo_gris.png" />
