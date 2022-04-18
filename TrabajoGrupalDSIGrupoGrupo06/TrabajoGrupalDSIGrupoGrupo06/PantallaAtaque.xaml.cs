@@ -31,5 +31,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Frame.Navigate(typeof(PantallaJuego));
         }
+
+        
     }
 }

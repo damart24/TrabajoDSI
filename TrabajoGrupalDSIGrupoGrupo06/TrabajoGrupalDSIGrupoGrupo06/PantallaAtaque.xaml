@@ -163,102 +163,127 @@
 
         <Viewbox >
             <Grid Width="3292" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1645*"/>
+                    <ColumnDefinition Width="1647*"/>
+                </Grid.ColumnDefinitions>
                 <!--icono de la casa-->
+                <!--recorrido a cada edificio-->
+                <TextBlock 
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1500,929,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,932,-97,0" Width="57" Grid.Column="1">
+                </TextBlock>
+
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,869,-170,0" Width="57" Grid.Column="1">
+                </TextBlock>
+
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,650,186,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,88,950,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-371,640,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1008,-14,0" Width="57" Grid.Column="1">
+                </TextBlock>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-497,447,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,204,798,0" Width="57" Grid.Column="1">
+                </TextBlock>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1108,139,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1434,834,0" Width="65" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,310,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,402,656,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1064,72,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,502,371,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1359,640,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,912,0" Width="57" Grid.Column="1"/>
+
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,945,0" Width="57" Grid.Column="1">
+                </TextBlock>
+                <TextBlock
+                    Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-371,531,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,624,33,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,1397,746,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-840,584,0" Width="57" Grid.Column="1"/>
+                <TextBlock
+                    Text="." FontSize="190" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-332,704,0" Width="57" Grid.Column="1"/>
 
             </Grid>
         </Viewbox>
 
-        <!--recorrido a cada edificio-->
-        <TextBlock 
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,678,322,0" Width="57"/>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,600,72,0" Width="57">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,578,35,0" Width="57">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,632,105,0" Width="57">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,517,640,0" Width="57" Grid.ColumnSpan="2"/>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,379,15,0" Width="57">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,638,272,0" Width="57"/>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,402,656,0" Width="57" Grid.ColumnSpan="2"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,630,240,0" Width="57"/>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,558,688,0" Width="57" Grid.ColumnSpan="2">
-        </TextBlock>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,616,213,0" Width="57"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,338,66,0" Width="57"/>
-
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,302,104,0" Width="57">
-        </TextBlock>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-49,137,0" Width="57"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,306,0" Width="57"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,479,608,0" Width="57" Grid.Column="1"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,538,657,0" Width="57" Grid.ColumnSpan="2"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-73,70,0" Width="57"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="973,-38,0,0"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Margin="922,-18,0,0"/>
-        <TextBlock
-            Text="." FontSize="150" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,170,272,0" Width="57"/>
 
 
 
 
+        <Viewbox>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="170"
-               Margin="84,10,0,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"  Grid.Column="1"/>
-        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="95"
-               Margin="0,10,75,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"  Grid.Column="1"/>
-        <Image Source="Assets/tropas_icono.png"
-               Stretch="Fill" Margin="592,3,-7,982" RenderTransformOrigin="0.413,0.328" Grid.Column="1"></Image>
-        <TextBlock Text="1000/1000" 
-                   Margin="154,6,-3,962" Foreground="Black" FontSize="20" FontWeight="SemiBold" Grid.Column="1"/>
+            <Grid Height="16" Width="123" RenderTransformOrigin="0.5,0.5">
+                <Grid.RenderTransform>
+                    <CompositeTransform TranslateX="40" TranslateY="0"/>
+                </Grid.RenderTransform>
+                <Button  Style="{StaticResource barra_recursos}" Width="220" Height="4" Scale="2,2,2" Margin="99,0,0,0" RenderTransformOrigin="0.5,0.5" >
+                    <Button.RenderTransform>
+                        <CompositeTransform TranslateY="-50.4" TranslateX="12"/>
+                    </Button.RenderTransform>
+                </Button>
+
+            </Grid>
+        </Viewbox>
+        <Viewbox>
+
+            <Grid Height="13" Width="89" RenderTransformOrigin="0.5,0.5" >
+                <Grid.RenderTransform>
+                    <CompositeTransform TranslateX="126" TranslateY="-41.7"/>
+                </Grid.RenderTransform>
+
+                <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="95"
+               Margin="0,10,76,0" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+            </Grid>
+        </Viewbox>
+
+        <Viewbox>
+
+            <Grid>
+                <Image x:Name="Image" Source="Assets/tropas_icono.png"
+                    Stretch="Fill" Margin="4100,-10,-2563,3017" RenderTransformOrigin="0.56,0.529" Scale="2,2,3" >
+                    <Image.RenderTransform>
+                        <CompositeTransform ScaleX="-1"/>
+                    </Image.RenderTransform>
+
+                </Image>
+                <TextBlock 
+                   Margin="3566,-548,-3415,1515" Foreground="Black" FontSize="40" FontWeight="SemiBold"><Run Text="  "/><Run Text="1000/1000"/></TextBlock>
+            </Grid>
+        </Viewbox>
+
 
 
 
