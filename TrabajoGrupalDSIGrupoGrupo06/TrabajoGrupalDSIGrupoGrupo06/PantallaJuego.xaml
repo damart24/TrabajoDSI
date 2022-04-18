@@ -21,9 +21,7 @@
     </Page.Resources>
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        
         <Image Source="/Assets/hierba_colorines.png"
                Stretch="Fill" 
                 />
@@ -193,14 +191,14 @@
         <Image Source="Assets/sombra.png"
                HorizontalAlignment="Right" VerticalAlignment="Bottom"
                    Margin="0,0,-8,-5" RenderTransformOrigin="0.5,0.5" Height="205" Width="214" Stretch="Fill"/>
-        <Image Source="/Assets/martillo.png"
-               Stretch="Fill" Margin="120,843,1748,173" RenderTransformOrigin="-25.063,0.15"></Image>
         <Button Height="153" Click="Pantalla_AtaqueNavegacion" Margin="0,0,20,20" Width="155" VerticalAlignment="Bottom"
                 HorizontalAlignment="Right"
                 Style="{StaticResource boton_redondo}">
             <Image Source="Assets/icono_lucha.png" 
                    Margin="20,-8,21,-7" ></Image>
         </Button>
+        <Image Source="/Assets/martillo.png"
+               Stretch="Fill" Margin="120,843,1748,173" RenderTransformOrigin="-25.063,0.15"></Image>
         <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
                    Foreground="Black" FontWeight="Bold"></TextBlock>
 
