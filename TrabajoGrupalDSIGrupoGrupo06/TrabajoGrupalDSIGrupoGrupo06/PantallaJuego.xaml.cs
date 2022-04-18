@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -21,12 +22,17 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PantallaJuego : Page
+    public sealed partial class PantallaJuego : Page, INotifyPropertyChanged
     {
+        int madera, metal, comida, tropas;
         string mina1Name_, mina2Name_, mina3Name_;
         string campamento1Name_, campamento2Name_, campamento3Name_;
         string casa1Name_, casa2Name_, casa3Name_;
         string castilloName;
+
+        private DispatcherTimer _timer;//creas variable objeto contador
+
+        public event PropertyChangedEventHandler PropertyChanged;
         public PantallaJuego()
         {
             campamento1Name_ = campamento2Name_ = campamento3Name_ = "ms-appx:///Assets/cuartel_nivel1.png";
@@ -34,7 +40,16 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             casa1Name_ = casa2Name_ = casa3Name_ = "ms-appx:///Assets/casa_nivel1.png";
             castilloName = "ms-appx:///Assets/castillo_nivel1.png";
             this.InitializeComponent();
+
+            _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+
+            _timer.Tick += (sender, o) =>
+                //PropertyChanged?.Invoke es una abreviatura para comprobar si un evento es NULL y, si no, para invocarlo y (this, new PropertyChangedEventArgs(nameof(CurrentTime) actualiza el  evento CurrentTime con el nuevo objeto de valor actualizado _timer
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentTime)));
+            //inicia el temporizador
+            _timer.Start();
         }
+        public string CurrentTime;
 
         private void FontSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
