@@ -64,6 +64,38 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Panel_Entrenamiento.Visibility= Visibility.Visible;
         }
+
+        private void Construccion_MiCampamento(object sender, RoutedEventArgs e)
+        {
+            if (Campamento2StackPanel.Visibility == Visibility.Collapsed)
+                Campamento2StackPanel.Visibility = Visibility.Visible;
+
+            else if (Campamento3StackPanel.Visibility == Visibility.Collapsed)
+                Campamento3StackPanel.Visibility = Visibility.Visible;
+            Panel_Comprar.Visibility = Visibility.Collapsed;
+        }
+
+        private void Construccion_Mina(object sender, RoutedEventArgs e)
+        {
+            if (Mina2StackPanel.Visibility == Visibility.Collapsed)
+                Mina2StackPanel.Visibility = Visibility.Visible;
+
+            else if (Mina3StackPanel.Visibility == Visibility.Collapsed)
+                Mina3StackPanel.Visibility = Visibility.Visible;
+            Panel_Comprar.Visibility = Visibility.Collapsed;
+
+        }
+        private void Construccion_MiCasa(object sender, RoutedEventArgs e)
+        {
+            if (Casa2StackPanel.Visibility == Visibility.Collapsed)
+                Casa2StackPanel.Visibility = Visibility.Visible;
+
+            else if (Casa3StackPanel.Visibility == Visibility.Collapsed)
+                Casa3StackPanel.Visibility = Visibility.Visible;
+            Panel_Comprar.Visibility = Visibility.Collapsed;
+
+        }
+
         private void PanelEntrenamientoClose_Click(object sender, RoutedEventArgs e)
         {
             Panel_Entrenamiento.Visibility = Visibility.Collapsed;

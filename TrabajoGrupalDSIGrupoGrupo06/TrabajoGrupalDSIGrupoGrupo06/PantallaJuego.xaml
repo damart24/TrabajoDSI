@@ -25,9 +25,10 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Image Source="/Assets/hierba_colorines.png"
-               Stretch="Fill"/>
+               Stretch="Fill" 
+                />
         <Grid>
-            <StackPanel Margin="0,-41,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel  x:Name="Casa2StackPanel"  Visibility="Collapsed" Margin="0,-41,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-150"/>
                 </StackPanel.RenderTransform>
@@ -41,7 +42,7 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-            <StackPanel  Margin="1175,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel   x:Name="Casa1StackPanel"   Margin="1175,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="0"/>
                 </StackPanel.RenderTransform>
@@ -55,7 +56,7 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+            <StackPanel  x:Name="Casa3StackPanel"  Visibility="Collapsed" Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="200"/>
                 </StackPanel.RenderTransform>
@@ -69,7 +70,7 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel x:Name="Campamento1StackPanel"   Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-300" TranslateY="100"/>
                 </StackPanel.RenderTransform>
@@ -82,7 +83,7 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel x:Name="Campamento2StackPanel" Visibility="Collapsed" Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-500" TranslateY="500"/>
                 </StackPanel.RenderTransform>
@@ -95,7 +96,7 @@
                     <Image Source="/Assets/flecha.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" FocusVisualPrimaryBrush="White"/>
                 </Button>
             </StackPanel>
-            <StackPanel  Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel x:Name="Campamento3StackPanel" Visibility="Collapsed" Margin="357,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-100" TranslateY="200"/>
                 </StackPanel.RenderTransform>
@@ -109,7 +110,7 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel Margin="-431,395,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
+            <StackPanel x:Name="Castillo1StackPanel"   Margin="-431,395,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="456">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-200" TranslateY="0"/>
                 </StackPanel.RenderTransform>
@@ -123,7 +124,7 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+            <StackPanel   x:Name="Mina2StackPanel"  Visibility="Collapsed" Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="400" TranslateY="200"/>
                 </StackPanel.RenderTransform>
@@ -137,7 +138,7 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+            <StackPanel  x:Name="Mina1StackPanel"  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="-500" TranslateY="0"/>
                 </StackPanel.RenderTransform>
@@ -151,7 +152,7 @@
                 </Button>
             </StackPanel>
 
-            <StackPanel  Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
+            <StackPanel  x:Name="Mina3StackPanel"  Visibility="Collapsed" Margin="0,116,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="344">
                 <StackPanel.RenderTransform>
                     <CompositeTransform TranslateX="0" TranslateY="400"/>
                 </StackPanel.RenderTransform>
@@ -318,19 +319,35 @@
             </Viewbox>
         </Grid>
 
-        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
+        <Grid Visibility="Visible" x:Name="Panel_Comprar">
             <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.2"></Image>
             <Viewbox>
                 <Grid>
+
                     <Image Source="/Assets/fondo_negro.png"
                             Stretch="Fill" Opacity="0" Margin="-545,0,-537,-91"></Image>
 
                     <Image Source="Assets/fondo_naranja.png"
-                           Stretch="Fill" Margin="-1374,2006,-1374,-1752" RenderTransformOrigin="0.413,0.328"></Image>
-                    <Image Source="/Assets/casa_nivel1.png" Margin="300,2128,2989,207"></Image>
-                    <Image Source="/Assets/cuartel_nivel1.png" Margin="1025,2011,1762,-46"></Image>
-                    <Image Source="/Assets/mina_nivel1.png" Margin="2379,2266,1001,163"></Image>
+                           Stretch="Fill" Margin="-1374,859,-1616,-1752" RenderTransformOrigin="0.413,0.328"></Image>
+                    <Button Height="682" Click="Construccion_MiCasa" Margin="0,0,3959,-779" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right" 
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/casa_nivel1.png" Margin="0,-6,-1,5"></Image>
+                    </Button>
+                    <Button Height="682" Click="Construccion_MiCampamento" Margin="0,0,2254,-773" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/cuartel_nivel1.png" ></Image>
+                    </Button>
+
+                    <Button Height="682"  Click="Construccion_Mina" Margin="0,0,421,-773" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right"
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/mina_nivel1.png" ></Image>
+                    </Button>
+
+
 
                     <Button Height="61" Margin="5082,0,0,999" Width="64" VerticalAlignment="Bottom" Click="TiendaClose_Click"
                         Style="{StaticResource boton_redondo}">
