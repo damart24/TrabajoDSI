@@ -46,25 +46,23 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             _timer_metal = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
             _timer_piedra = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
 
-          
             _timer_madera.Tick += (sender, o) =>
-            madera++;
-            
+                sumarMadera();
             _timer_madera.Tick += (sender, o) =>
                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(madera)));
 
             _timer_comida.Tick += (sender, o) =>
-                comida++;
+                sumarComida();
             _timer_comida.Tick += (sender, o) =>
                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(comida)));
 
             _timer_metal.Tick += (sender, o) =>
-                metal++;
+                sumarMetal();
             _timer_metal.Tick += (sender, o) =>
                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(metal)));
 
             _timer_piedra.Tick += (sender, o) =>
-                piedra++;
+                sumarPiedra();
             _timer_piedra.Tick += (sender, o) =>
                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(piedra)));
 
@@ -299,6 +297,23 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                 Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel3.png"));
                 button.Visibility = Visibility.Collapsed;
             }
+        }
+        private void sumarMadera()
+        {
+            if(madera < 100)  madera++;
+        }
+        private void sumarComida()
+        {
+            if (comida < 100) comida++;
+        }
+        private void sumarMetal()
+        {
+            if (metal < 100) metal++;
+
+        }
+        private void sumarPiedra()
+        {
+            if (piedra < 100) piedra++;
         }
     }
 }
