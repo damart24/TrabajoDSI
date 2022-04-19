@@ -415,8 +415,8 @@
         <Button  Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
-        <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="69"
-               Margin="0,20,136,0" Height="35" VerticalAlignment="Top"
+        <Button  Background="DarkOrange" x:Name="recursos_madera" Style="{StaticResource barra_recursos}" Width="0"
+               Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
         <Image Source="Assets/madera.png"
                VerticalAlignment="Top"
@@ -434,8 +434,8 @@
         <Button  Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,64,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
-        <Button  Background="DarkCyan" x:Name="recursos_hierro" Style="{StaticResource barra_recursos}" Width="66"
-               Margin="0,64,136,0" Height="35" VerticalAlignment="Top"
+        <Button  Background="DarkCyan" x:Name="recursos_hierro" Style="{StaticResource barra_recursos}" Width="0"
+               Margin="0,64,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
         <Image Source="/Assets/lingote.png"
                VerticalAlignment="Top"
@@ -452,8 +452,8 @@
 
         <Button Width="182" Style="{StaticResource barra_recursos}"
                Margin="0,108,20,0" HorizontalAlignment="Right" Height="35" VerticalAlignment="Top"/>
-        <Button  Background="PaleVioletRed" x:Name="recursos_comida" Width="148" Style="{StaticResource barra_recursos}"
-               Margin="0,108,56,0" Height="35" VerticalAlignment="Top" HorizontalAlignment ="Right"/>
+        <Button  Background="PaleVioletRed" x:Name="recursos_comida" Width="0" Style="{StaticResource barra_recursos}"
+               Margin="0,108,20,0" Height="35" VerticalAlignment="Top" HorizontalAlignment ="Right"/>
         <Image Source="Assets/comida.png"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
@@ -470,8 +470,8 @@
         <Button Width="182" Style="{StaticResource barra_recursos}"
                 Margin="0,153,20,0" Height="35" VerticalAlignment="Top"
                 HorizontalAlignment="Right"/>
-        <Button  Background="Gray" x:Name="recursos_piedra" Width="123" Style="{StaticResource barra_recursos}"
-                Margin="0,153,81,0" Height="35" VerticalAlignment="Top"
+        <Button  Background="Gray" x:Name="recursos_piedra" Width="0" Style="{StaticResource barra_recursos}"
+                Margin="0,153,20,0" Height="35" VerticalAlignment="Top"
                  HorizontalAlignment="Right"/>
         <Image Source="Assets/piedra.png" Opacity="1"
                VerticalAlignment="Top"

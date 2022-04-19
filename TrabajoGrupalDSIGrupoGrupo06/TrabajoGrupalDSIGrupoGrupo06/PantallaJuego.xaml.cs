@@ -41,10 +41,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             castilloName = "ms-appx:///Assets/castillo_nivel1.png";
             this.InitializeComponent();
 
-            _timer_madera = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-            _timer_comida = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-            _timer_metal = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
-            _timer_piedra = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_madera = new DispatcherTimer { Interval = TimeSpan.FromSeconds(0.1) };
+            _timer_comida = new DispatcherTimer { Interval = TimeSpan.FromSeconds(0.1) };
+            _timer_metal = new DispatcherTimer { Interval = TimeSpan.FromSeconds(0.1) };
+            _timer_piedra = new DispatcherTimer { Interval = TimeSpan.FromSeconds(0.1) };
 
             _timer_madera.Tick += (sender, o) =>
                 sumarMadera();
@@ -98,6 +98,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Construccion_MiCampamento(object sender, RoutedEventArgs e)
         {
+            if (madera >= 20 && piedra >= 20 && metal >= 20)
+            {
+                madera -= 20;
+                piedra -= 20;
+                metal -= 20;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             if (Campamento2StackPanel.Visibility == Visibility.Collapsed)
                 Campamento2StackPanel.Visibility = Visibility.Visible;
 
@@ -107,6 +116,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Construccion_Mina(object sender, RoutedEventArgs e)
         {
+            if (madera >= 20 && piedra >= 20 && metal >= 20)
+            {
+                madera -= 20;
+                piedra -= 20;
+                metal -= 20;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             if (Mina2StackPanel.Visibility == Visibility.Collapsed)
                 Mina2StackPanel.Visibility = Visibility.Visible;
 
@@ -117,6 +135,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Construccion_MiCasa(object sender, RoutedEventArgs e)
         {
+            if (madera >= 20 && piedra >= 20 && metal >= 20)
+            {
+                madera -= 20;
+                piedra -= 20;
+                metal -= 20;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             if (Casa2StackPanel.Visibility == Visibility.Collapsed)
                 Casa2StackPanel.Visibility = Visibility.Visible;
 
@@ -142,6 +169,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Mina_Click(object sender, RoutedEventArgs e)
         {
+            if (madera >= 10 && piedra >= 10 && metal >= 10)
+            {
+                madera -= 10;
+                piedra -= 10;
+                metal -= 10;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             Button button = (Button)sender;
             string buttonName = button.Name;
             switch (buttonName)
@@ -189,6 +225,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Campamento_Click(object sender, RoutedEventArgs e)
         {
+            if(madera >= 10 && piedra >= 10 && metal >= 10)
+            {
+                madera -= 10;
+                piedra -= 10;
+                metal -= 10;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             Button button = (Button)sender;
             string buttonName = button.Name;
             switch (buttonName)
@@ -237,6 +282,15 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Casa_Click(object sender, RoutedEventArgs e)
         {
+            if (madera >= 10 && piedra >= 10 && metal >= 10)
+            {
+                madera -= 10;
+                piedra -= 10;
+                metal -= 10;
+                recursos_madera.Width = piedra * 182 / 100;
+                recursos_piedra.Width = piedra * 182 / 100;
+                recursos_hierro.Width = piedra * 182 / 100;
+            }
             Button button = (Button)sender;
             string buttonName = button.Name;
             switch (buttonName)
@@ -285,6 +339,12 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Castillo_Click(object sender, RoutedEventArgs e)
         {
+            madera -= 10;
+            piedra -= 10;
+            metal -= 10;
+            recursos_madera.Width = piedra * 182 / 100;
+            recursos_piedra.Width = piedra * 182 / 100;
+            recursos_hierro.Width = piedra * 182 / 100;
             Button button = (Button)sender;
             if (castilloName == "ms-appx:///Assets/castillo_nivel1.png")
             {
@@ -301,19 +361,22 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         private void sumarMadera()
         {
             if(madera < 100)  madera++;
+            recursos_madera.Width = madera * 182 / 100;
         }
         private void sumarComida()
         {
             if (comida < 100) comida++;
+            recursos_comida.Width = comida * 182 / 100;
         }
         private void sumarMetal()
         {
             if (metal < 100) metal++;
-
+            recursos_hierro.Width = metal * 182 / 100;
         }
         private void sumarPiedra()
         {
             if (piedra < 100) piedra++;
+            recursos_piedra.Width = piedra * 182 / 100;
         }
     }
 }
