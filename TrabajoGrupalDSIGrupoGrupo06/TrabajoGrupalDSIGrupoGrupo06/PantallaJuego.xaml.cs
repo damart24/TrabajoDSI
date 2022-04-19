@@ -30,7 +30,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         string casa1Name_, casa2Name_, casa3Name_;
         string castilloName;
 
-        private DispatcherTimer _timer;//creas variable objeto contador
+        private DispatcherTimer _timer_madera, _timer_comida, _timer_piedra, _timer_metal;//creas variable objeto contador
 
         public event PropertyChangedEventHandler PropertyChanged;
         public PantallaJuego()
@@ -41,31 +41,51 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             castilloName = "ms-appx:///Assets/castillo_nivel1.png";
             this.InitializeComponent();
 
-            _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_madera = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_comida = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_metal = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_piedra = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
 
-            _timer.Tick += (sender, o) =>
-                //PropertyChanged?.Invoke es una abreviatura para comprobar si un evento es NULL y, si no, para invocarlo y (this, new PropertyChangedEventArgs(nameof(CurrentTime) actualiza el  evento CurrentTime con el nuevo objeto de valor actualizado _timer
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentTime)));
-            //inicia el temporizador
-            _timer.Start();
+          
+            _timer_madera.Tick += (sender, o) =>
+            madera++;
+            
+            _timer_madera.Tick += (sender, o) =>
+               PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(madera)));
+
+            _timer_comida.Tick += (sender, o) =>
+                comida++;
+            _timer_comida.Tick += (sender, o) =>
+               PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(comida)));
+
+            _timer_metal.Tick += (sender, o) =>
+                metal++;
+            _timer_metal.Tick += (sender, o) =>
+               PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(metal)));
+
+            _timer_piedra.Tick += (sender, o) =>
+                piedra++;
+            _timer_piedra.Tick += (sender, o) =>
+               PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(piedra)));
+
+            _timer_madera.Start();
+            _timer_comida.Start();
+            _timer_metal.Start();
+            _timer_piedra.Start();
         }
-        public string CurrentTime;
 
         private void FontSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
 
         }
-
         private void Options_Click(object sender, RoutedEventArgs e)
         {
             Panel_Ajustes.Visibility = Visibility.Visible;
         }
-
         private void OptionsClose_Click(object sender, RoutedEventArgs e)
         {
             Panel_Ajustes.Visibility = Visibility.Collapsed;
         }
-
         private void Tienda_Click(object sender, RoutedEventArgs e)
         {
             Panel_Comprar.Visibility = Visibility.Visible;
@@ -74,12 +94,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Panel_Comprar.Visibility = Visibility.Collapsed;
         }
-
         private void PanelEntrenamiento_Click(object sender, RoutedEventArgs e)
         {
             Panel_Entrenamiento.Visibility= Visibility.Visible;
         }
-
         private void Construccion_MiCampamento(object sender, RoutedEventArgs e)
         {
             if (Campamento2StackPanel.Visibility == Visibility.Collapsed)
@@ -89,7 +107,6 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                 Campamento3StackPanel.Visibility = Visibility.Visible;
             Panel_Comprar.Visibility = Visibility.Collapsed;
         }
-
         private void Construccion_Mina(object sender, RoutedEventArgs e)
         {
             if (Mina2StackPanel.Visibility == Visibility.Collapsed)
@@ -117,17 +134,14 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Panel_Chat.Visibility = Visibility.Collapsed;
         }
-
         private void PanelEntrenamientoClose_Click(object sender, RoutedEventArgs e)
         {
             Panel_Entrenamiento.Visibility = Visibility.Collapsed;
         }
-
         private void Pantalla_AtaqueNavegacion(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PantallaAtaque));
         }
-
         private void Mina_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
@@ -175,7 +189,6 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     break;
             }
         }
-
         private void Campamento_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;

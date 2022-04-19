@@ -458,7 +458,7 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,111,160,0" RenderTransformOrigin="0.413,0.328" Height="30" Width="39"/>
-        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+        <TextBlock Text="{x:Bind comida, Mode=OneWay}"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,110,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
@@ -477,7 +477,7 @@
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,150,155,0" RenderTransformOrigin="0.413,0.328" Height="37" Width="44"/>
-        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+        <TextBlock Text="{x:Bind piedra, Mode=OneWay}"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,157,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
@@ -494,7 +494,7 @@
         <Image Source="/Assets/tropas_icono.png"
                VerticalAlignment="Top" HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
-        <TextBlock Text="{x:Bind metal, Mode=OneWay}"
+        <TextBlock Text="{x:Bind tropas, Mode=OneWay}"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,198,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
