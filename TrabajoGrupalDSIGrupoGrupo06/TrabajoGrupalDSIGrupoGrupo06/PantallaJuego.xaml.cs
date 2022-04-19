@@ -25,13 +25,13 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     public sealed partial class PantallaJuego : Page, INotifyPropertyChanged
     {
         double velocidadPiedra, velocidadMadera, velocidadComida, velocidadMetal = 1;
-        int madera = 0, metal = 0, comida = 0, piedra = 0, tropas = 0;
+        int madera = 0, metal = 0, comida = 0, piedra = 0, numerodeTropas = 0;
         string mina1Name_, mina2Name_, mina3Name_;
         string campamento1Name_, campamento2Name_, campamento3Name_;
         string casa1Name_, casa2Name_, casa3Name_;
         string castilloName;
 
-        private DispatcherTimer _timer_madera, _timer_comida, _timer_piedra, _timer_metal;//creas variable objeto contador
+        private DispatcherTimer _timer_madera, _timer_comida, _timer_piedra, _timer_metal, _timer_tropas;//creas variable objeto contador
 
         public event PropertyChangedEventHandler PropertyChanged;
         public PantallaJuego()
@@ -46,6 +46,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             _timer_comida = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
             _timer_metal = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
             _timer_piedra = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _timer_tropas = new DispatcherTimer { Interval = TimeSpan.FromSeconds(0.1) };
 
             _timer_madera.Tick += (sender, o) =>
                 sumarMadera();
@@ -67,10 +68,14 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             _timer_piedra.Tick += (sender, o) =>
                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(piedra)));
 
+            _timer_tropas.Tick += (sender, o) =>
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(numerodeTropas)));
+
             _timer_madera.Start();
             _timer_comida.Start();
             _timer_metal.Start();
             _timer_piedra.Start();
+            _timer_tropas.Start();
         }
 
         private void FontSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -400,5 +405,25 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             if (piedra < 100) piedra++;
             recursos_piedra.Width = piedra * 182 / 100;
         }
+        private void Soldado_Click(object sender, RoutedEventArgs e)
+        {
+            if (comida >= 5)
+            {
+                comida -= 5;
+                numerodeTropas += 2;
+            }
+            recursos_soldados.Width = numerodeTropas * 182 / 60;
+        }
+
+        private void Arquero_Click(object sender, RoutedEventArgs e)
+        {
+            if (comida >= 5)
+            {
+                comida -= 5;
+                numerodeTropas += 1;
+            }
+            recursos_soldados.Width = numerodeTropas * 182 / 60;
+        }
+
     }
 }

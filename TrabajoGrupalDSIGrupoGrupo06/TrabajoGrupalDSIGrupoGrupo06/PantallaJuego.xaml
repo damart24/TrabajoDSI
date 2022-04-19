@@ -224,7 +224,7 @@
             </Grid>
         </Viewbox>
 
-        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
+        <Grid Visibility="Visible" x:Name="Panel_Entrenamiento">
             <Button Click="PanelEntrenamientoClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
                 <Image Source="/Assets/fondo_negro.png"
                        Stretch="Fill" Opacity="0.7"></Image>
@@ -232,18 +232,38 @@
             <Viewbox>
                 <Grid>
 
+
+
                     <Image Source="/Assets/fondo_negro.png"
                             Stretch="Fill" Opacity="0" Margin="-98,0,-90,-91"></Image>
 
                     <Image Source="Assets/fondo_naranja.png"
                            HorizontalAlignment="Center" VerticalAlignment="Top"
                        Stretch="Fill"  Height="625" Width="949" Margin="0,43,0,0"/>
-                    <Image Source="Assets/soldado.png"
+
+
+                    <Button Click="Soldado_Click" x:Name="Soldado" Height="201" Width="142" Margin="245,506,0,0"
+                    Style="{StaticResource boton_redondo}" CornerRadius="5" Background="Transparent" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                        </Button.RenderTransform>
+                        <Image Source="Assets/soldado.png"
                             HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                        Margin="326,0,0,45" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="209" Width="129"></Image>
-                    <Image Source="Assets/arquera.png"
+                         RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="209" Width="129" Margin="4,0,0,-16"></Image>
+                    </Button>
+
+                    <Button Click="Arquero_Click" x:Name="Arquero" Height="201" Width="142" Margin="417,506,0,0"
+                    Style="{StaticResource boton_redondo}" CornerRadius="5" Background="Transparent" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+                        <Button.RenderTransform>
+                            <CompositeTransform TranslateY="-59.7" TranslateX="100"/>
+                        </Button.RenderTransform>
+                        <Image Source="Assets/arquera.png"
                            HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                           Stretch="Fill" Margin="502,0,0,51" RenderTransformOrigin="0.413,0.328" Height="206" Width="126"></Image>
+                           Stretch="Fill" RenderTransformOrigin="0.413,0.328" Height="206" Width="126"></Image>
+                    </Button>
+
+
+
                     <Image Source="Assets/caballero.png" VerticalAlignment="Bottom"
                            Stretch="UniformToFill" Margin="687,0,0,54" RenderTransformOrigin="0.413,0.328" HorizontalAlignment="Left" Width="117" Opacity="0.4" Height="207"></Image>
                     <Image Source="Assets/lanzallamas.png" Opacity="0.4" VerticalAlignment="Bottom" HorizontalAlignment="Left"
@@ -488,20 +508,20 @@
 
         <Button Style="{StaticResource barra_recursos}" Margin="0,196,19,0" 
                 Width="182" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right"/>
-        <Button Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Margin="0,196,95,0"
+        <Button Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Margin="0,196,19,0"
                 VerticalAlignment="Top" HorizontalAlignment="Right"
-                Width="108" Height="35"/>
+                Width="0" Height="35"/>
         <Image Source="/Assets/tropas_icono.png"
                VerticalAlignment="Top" HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,199,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
-        <TextBlock Text="{x:Bind tropas, Mode=OneWay}"
+        <TextBlock Text="{x:Bind numerodeTropas, Mode=OneWay}"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,198,102,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
-        <TextBlock Text="/100"
+        <TextBlock Text="/60"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
-                   Margin="0,198,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+                   Margin="0,198,67,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
 
     </Grid>
