@@ -326,13 +326,18 @@
         <Button  Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                HorizontalAlignment="Right"/>
-        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="85"
-               Margin="0,20,120,0" Height="35" VerticalAlignment="Top"
+        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="0"
+               Margin="0,20,19,0" Height="35" VerticalAlignment="Top"
                HorizontalAlignment="Right"/>
         <Image Source="/Assets/tropas_icono.png"
                VerticalAlignment="Top" HorizontalAlignment="Right"
                Stretch="Fill" Margin="0,24,166,0" RenderTransformOrigin="0.413,0.328" Height="29" Width="21"/>
-        <TextBlock Text="1000/1000" 
+        <TextBlock x:Name="tropas"
+                   Text="" 
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Right"
+                   Margin="0,23,96,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
+        <TextBlock Text="/60" 
                    VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Margin="0,23,60,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>

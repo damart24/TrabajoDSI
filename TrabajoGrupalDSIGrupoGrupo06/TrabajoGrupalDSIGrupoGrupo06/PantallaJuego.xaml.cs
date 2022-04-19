@@ -173,7 +173,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Pantalla_AtaqueNavegacion(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PantallaAtaque));
+            Frame.Navigate(typeof(PantallaAtaque), numerodeTropas);
         }
         private void Mina_Click(object sender, RoutedEventArgs e)
         {

@@ -224,7 +224,7 @@
             </Grid>
         </Viewbox>
 
-        <Grid Visibility="Visible" x:Name="Panel_Entrenamiento">
+        <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Button Click="PanelEntrenamientoClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
                 <Image Source="/Assets/fondo_negro.png"
                        Stretch="Fill" Opacity="0.7"></Image>
@@ -274,9 +274,9 @@
                     <TextBlock Foreground="Black" FontSize="70" Text="5" Margin="363,356,1055,256"></TextBlock>
                     <Image Source="/Assets/comida.png" HorizontalAlignment="Left" VerticalAlignment="Bottom"
                             Margin="407,0,0,274" RenderTransformOrigin="0.413,0.328" Height="152" Width="64"></Image>
-                    <TextBlock Foreground="Black" FontSize="70" Text="5" Margin="550,356,868,256"></TextBlock>
+                    <TextBlock Foreground="Black" FontSize="70" Text="5" Margin="531,356,887,256"></TextBlock>
                     <Image Source="/Assets/comida.png" HorizontalAlignment="Left" VerticalAlignment="Bottom"
-                            Margin="596,0,0,273" RenderTransformOrigin="0.413,0.328" Height="93" Width="63"></Image>
+                            Margin="576,0,0,273" RenderTransformOrigin="0.413,0.328" Height="93" Width="63"></Image>
 
 
                     <Image Source="Assets/fondo_blanco.png" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.413,0.328" Stretch="Fill" Height="49" Width="754" Margin="356,198,0,0"/>

@@ -24,6 +24,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     public sealed partial class PantallaAtaque : Page
     {
         int estrellasLevel1, estrellasLevel2, estrellasLevel3, estrellasLevel4, estrellasLevel5, estrellasLevel6;
+        int numeroTropasAtaque = 0; 
         public PantallaAtaque()
         {
             int estrellasLevel1, estrellasLevel2, estrellasLevel3, estrellasLevel4, estrellasLevel5, estrellasLevel6 = 0;
@@ -34,7 +35,6 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Frame.Navigate(typeof(PantallaJuego));
         }
-
         private void Edificio_Click(object sender, RoutedEventArgs e)
         {
             NombreAtaque1.Visibility = Visibility.Collapsed;
@@ -209,6 +209,18 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                     }
                     break;
             }
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            // If e.Parameter is a string, set the TextBlock's text with it.
+            if (e?.Parameter is int numeroTropas)
+            {
+                numeroTropasAtaque = numeroTropas;
+                recursos_soldados.Width = numeroTropasAtaque * 182 / 60;
+                tropas.Text = numeroTropasAtaque.ToString();
+            }
+
+            base.OnNavigatedTo(e);
         }
     }
 }
