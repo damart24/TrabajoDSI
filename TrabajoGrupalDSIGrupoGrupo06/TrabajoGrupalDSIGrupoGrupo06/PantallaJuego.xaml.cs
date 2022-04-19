@@ -77,11 +77,6 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             _timer_piedra.Start();
             _timer_tropas.Start();
         }
-
-        private void FontSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-
-        }
         private void Options_Click(object sender, RoutedEventArgs e)
         {
             Panel_Ajustes.Visibility = Visibility.Visible;
@@ -407,7 +402,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Soldado_Click(object sender, RoutedEventArgs e)
         {
-            if (comida >= 5)
+            if (comida >= 5 && numerodeTropas < 59)
             {
                 comida -= 5;
                 numerodeTropas += 2;
@@ -417,7 +412,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
 
         private void Arquero_Click(object sender, RoutedEventArgs e)
         {
-            if (comida >= 5)
+            if (comida >= 5 && numerodeTropas < 60)
             {
                 comida -= 5;
                 numerodeTropas += 1;
