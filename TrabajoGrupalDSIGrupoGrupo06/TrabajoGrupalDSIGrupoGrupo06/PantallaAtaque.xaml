@@ -25,17 +25,17 @@
         <Image Source="Assets/mapa_ataque.png"
                Stretch="Fill"/>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="168"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="168"
              Margin="36,24,0,0" Height="57" VerticalAlignment="Top"/>
         <TextBlock Text="Usuario2178" 
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Margin="61,24,0,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="84"
                  Background="DeepSkyBlue"
                  Margin="36,55,0,0" Height="57" VerticalAlignment="Top"/>
-        <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="84"
                  x:Name="progreso_nivel" Background="RoyalBlue"
                  Margin="36,81,0,0" Height="31" VerticalAlignment="Top"/>
         <TextBlock Text="Lvl 2" 
@@ -43,10 +43,10 @@
                    VerticalAlignment="Top"
                    Margin="48,65,0,0" Foreground="Black" FontSize="25" FontWeight="SemiBold"/>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="84"
                  Background="LightGoldenrodYellow"
                  Margin="120,55,0,0" Height="57" VerticalAlignment="Top"/>
-        <Button  Style="{StaticResource barra_recursos}" Width="84"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="84"
                  Background="Orange"
                  Margin="120,69,0,0" Height="43" VerticalAlignment="Top"/>
         <TextBlock Text="16🏆" 
@@ -67,8 +67,77 @@
         <Viewbox>
             <Grid>
                 <Grid>
+                   
+                    <!--Estrellas de puntuacion-->
+                    <Image x:Name="EstrellasNivel1" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="492,892,860,108"/>
+                    <Image x:Name="EstrellasNivel2" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="828,811,524,189"/>
+                    <Image x:Name="EstrellasNivel3" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="1048,637,304,363"/>
+                    <Image x:Name="EstrellasNivel4" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="684,474,668,526"/>
+                    <Image x:Name="EstrellasNivel5" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="535,274,817,726"/>
+                    <Image x:Name="EstrellasNivel6" Source="/Assets/estrellas.png"   
+                       Stretch="Fill"
+                       Width="150" Margin="902,205,450,795" RenderTransformOrigin="-0.547,-1.388"/>
+                </Grid>
+                <Grid Height="1100" Width="866">
+                    <!--informacion de cada edificio-->
+                    <Grid>
+                        <Image  x:Name="Info_1"  Source="Assets/icono_ayuda.png" Margin="311,727,504,308"/>
+                        <Image  x:Name="Info_2"  Source="/Assets/icono_ayuda.png" Margin="575,627,240,408"/>
+                        <Image  x:Name="Info_3"  Source="/Assets/icono_ayuda.png" Margin="805,468,10,567"/>
+                        <Image  x:Name="Info_4"  Source="/Assets/icono_ayuda.png" Margin="515,327,300,708"/>
+                        <Image  x:Name="Info_5"  Source="/Assets/icono_ayuda.png" Margin="391,111,424,924"/>
+                        <Image  x:Name="Info_6"  Source="/Assets/icono_ayuda.png" Margin="707,27,108,1008"/>
+                    </Grid>
+                    <Grid>
+                        <TextBlock Text="." FontSize="150" Margin="63,807,755,116"/>
+                        <TextBlock Text="." FontSize="150" Margin="96,775,719,148"/>
+                        <TextBlock Text="." FontSize="150" Margin="128,755,686,168"/>
+                        <TextBlock Text="." FontSize="150" Margin="164,735,649,188"/>
+                        <TextBlock Text="." FontSize="150" Margin="320,731,492,192"/>
+                        <TextBlock Text="." FontSize="150" Margin="356,739,455,184"/>
+                        <TextBlock Text="." FontSize="150" Margin="388,731,422,192"/>
+                        <TextBlock Text="." FontSize="150" Margin="420,719,389,204"/>
+                        <TextBlock Text="." FontSize="150" Margin="448,699,360,224"/>
+                        <TextBlock Text="." FontSize="150" Margin="472,671,335,252"/>
+                        <TextBlock Text="." FontSize="150" Margin="488,643,318,280"/>
+                        <TextBlock Text="." FontSize="150" Margin="616,595,189,328"/>
+                        <TextBlock Text="." FontSize="150" Margin="644,583,160,340"/>
+                        <TextBlock Text="." FontSize="150" Margin="676,563,127,360"/>
+                        <TextBlock Text="." FontSize="150" Margin="696,535,106,388"/>
+                        <TextBlock Text="." FontSize="150" Margin="708,499,93,424"/>
+                        <TextBlock Text="." FontSize="150" Margin="720,467,80,456"/>
+                        <TextBlock Text="." FontSize="150" Margin="656,399,143,524"/>
+                        <TextBlock Text="." FontSize="150" Margin="620,387,178,536"/>
+                        <TextBlock Text="." FontSize="150" Margin="584,379,213,544"/>
+                        <TextBlock Text="." FontSize="150" Margin="584,379,212,544"/>
+                        <TextBlock Text="." FontSize="150" Margin="548,367,248,556"/>
+                        <TextBlock Text="." FontSize="150" Margin="516,351,279,572"/>
+                        <TextBlock Text="." FontSize="150" Margin="500,327,294,596"/>
+                        <TextBlock Text="." FontSize="150" Margin="388,223,405,700"/>
+                        <TextBlock Text="." FontSize="150" Margin="368,195,424,728"/>
+                        <TextBlock Text="." FontSize="150" Margin="356,167,435,756"/>
+                        <TextBlock Text="." FontSize="150" Margin="344,135,446,788"/>
+                        <TextBlock Text="." FontSize="150" Margin="396,35,393,888"/>
+                        <TextBlock Text="." FontSize="150" Margin="428,43,360,880"/>
+                        <TextBlock Text="." FontSize="150" Margin="464,43,323,880"/>
+                        <TextBlock Text="." FontSize="150" Margin="504,35,282,888"/>
+                        <TextBlock Text="." FontSize="150" Margin="540,23,245,900"/>
+                        <TextBlock Text="." FontSize="150" Margin="39,839,778,84"/>
+                    </Grid>
+                </Grid>
+                <Grid>
                     <!--edificios-->
-                    <Button Click="Edificio_Click" x:Name="Edificio_6" Visibility="Visible" Height="150" Margin="0,0,125,60" Width="200" VerticalAlignment="Bottom"
+                    <Button IsTabStop="True" Click="Edificio_Click" x:Name="Edificio_6" Visibility="Visible" Height="150" Margin="0,0,125,60" Width="200" VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                             Background="DarkSlateGray"
                         Style="{StaticResource boton_redondo}" RenderTransformOrigin="0.5,0.5">
@@ -145,6 +214,8 @@
                        Width="150"
                        Height="120" Margin="1438,735,-86,245"/>
 
+                </Grid>
+                <Grid>
                     <!--PanelesAtacar-->
                     <TextBlock Visibility="Collapsed" x:Name="NombreAtaque6" Text="El gran ejército" 
                        HorizontalAlignment="Left"
@@ -253,80 +324,14 @@
                         </Image>
                     </Button>
 
-                    <!--Estrellas de puntuacion-->
-                    <Image x:Name="EstrellasNivel1" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="492,872,860,128"/>
-                    <Image x:Name="EstrellasNivel2" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="828,783,524,217"/>
-                    <Image x:Name="EstrellasNivel3" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="1028,609,324,391"/>
-                    <Image x:Name="EstrellasNivel4" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="684,450,668,550"/>
-                    <Image x:Name="EstrellasNivel5" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="567,242,785,758"/>
-                    <Image x:Name="EstrellasNivel6" Source="/Assets/estrellas.png"   
-                       Stretch="Fill"
-                       Width="150" Margin="902,165,450,835" RenderTransformOrigin="-0.547,-1.388"/>
-                </Grid>
-                <Grid Height="1100" Width="866">
-                    <!--informacion de cada edificio-->
-                    <Grid>
-                        <Image  x:Name="Info_1"  Source="Assets/icono_ayuda.png" Margin="283,751,532,284"/>
-                        <Image  x:Name="Info_2"  Source="/Assets/icono_ayuda.png" Margin="575,663,240,372"/>
-                        <Image  x:Name="Info_3"  Source="/Assets/icono_ayuda.png" Margin="805,492,10,543"/>
-                        <Image  x:Name="Info_4"  Source="/Assets/icono_ayuda.png" Margin="503,335,312,700"/>
-                        <Image  x:Name="Info_5"  Source="/Assets/icono_ayuda.png" Margin="355,135,460,900"/>
-                        <Image  x:Name="Info_6"  Source="/Assets/icono_ayuda.png" Margin="631,39,184,996"/>
-                    </Grid>
-                    <Grid>
-                        <TextBlock Text="." FontSize="150" Margin="63,807,755,116"/>
-                        <TextBlock Text="." FontSize="150" Margin="96,775,719,148"/>
-                        <TextBlock Text="." FontSize="150" Margin="128,755,686,168"/>
-                        <TextBlock Text="." FontSize="150" Margin="164,735,649,188"/>
-                        <TextBlock Text="." FontSize="150" Margin="320,731,492,192"/>
-                        <TextBlock Text="." FontSize="150" Margin="356,739,455,184"/>
-                        <TextBlock Text="." FontSize="150" Margin="388,731,422,192"/>
-                        <TextBlock Text="." FontSize="150" Margin="420,719,389,204"/>
-                        <TextBlock Text="." FontSize="150" Margin="448,699,360,224"/>
-                        <TextBlock Text="." FontSize="150" Margin="472,671,335,252"/>
-                        <TextBlock Text="." FontSize="150" Margin="488,643,318,280"/>
-                        <TextBlock Text="." FontSize="150" Margin="616,595,189,328"/>
-                        <TextBlock Text="." FontSize="150" Margin="644,583,160,340"/>
-                        <TextBlock Text="." FontSize="150" Margin="676,563,127,360"/>
-                        <TextBlock Text="." FontSize="150" Margin="696,535,106,388"/>
-                        <TextBlock Text="." FontSize="150" Margin="708,499,93,424"/>
-                        <TextBlock Text="." FontSize="150" Margin="720,467,80,456"/>
-                        <TextBlock Text="." FontSize="150" Margin="656,399,143,524"/>
-                        <TextBlock Text="." FontSize="150" Margin="620,387,178,536"/>
-                        <TextBlock Text="." FontSize="150" Margin="584,379,213,544"/>
-                        <TextBlock Text="." FontSize="150" Margin="584,379,212,544"/>
-                        <TextBlock Text="." FontSize="150" Margin="548,367,248,556"/>
-                        <TextBlock Text="." FontSize="150" Margin="516,351,279,572"/>
-                        <TextBlock Text="." FontSize="150" Margin="500,327,294,596"/>
-                        <TextBlock Text="." FontSize="150" Margin="388,223,405,700"/>
-                        <TextBlock Text="." FontSize="150" Margin="368,195,424,728"/>
-                        <TextBlock Text="." FontSize="150" Margin="356,167,435,756"/>
-                        <TextBlock Text="." FontSize="150" Margin="344,135,446,788"/>
-                        <TextBlock Text="." FontSize="150" Margin="396,35,393,888"/>
-                        <TextBlock Text="." FontSize="150" Margin="428,43,360,880"/>
-                        <TextBlock Text="." FontSize="150" Margin="464,43,323,880"/>
-                        <TextBlock Text="." FontSize="150" Margin="504,35,282,888"/>
-                        <TextBlock Text="." FontSize="150" Margin="540,23,245,900"/>
-                        <TextBlock Text="." FontSize="150" Margin="39,839,778,84"/>
-                    </Grid>
                 </Grid>
             </Grid>
         </Viewbox>
 
-        <Button  Style="{StaticResource barra_recursos}" Width="182"
+        <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="182"
                Margin="0,20,20,0" Height="35" VerticalAlignment="Top"
                HorizontalAlignment="Right"/>
-        <Button  Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="0"
+        <Button IsTabStop="False" Background="Green" x:Name="recursos_soldados" Style="{StaticResource barra_recursos}" Width="0"
                Margin="0,20,19,0" Height="35" VerticalAlignment="Top"
                HorizontalAlignment="Right"/>
         <Image Source="/Assets/tropas_icono.png"
