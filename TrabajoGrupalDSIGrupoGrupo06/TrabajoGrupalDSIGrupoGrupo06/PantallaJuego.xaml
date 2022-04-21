@@ -204,25 +204,6 @@
         <TextBlock Text="2 / 2" FontSize="35" Margin="36,851,1805,191" 
                    Foreground="Black" FontWeight="Bold"></TextBlock>
 
-        <Viewbox>
-            <Grid Width="200" Height="283">
-                <Image Source="/Assets/chat.png"
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Stretch="Fill" Margin="24,82,0,0" RenderTransformOrigin="-25.063,0.15" Height="69" Width="84"></Image>
-                <Image Source="/Assets/flecha.png"
-                       Stretch="Fill" Margin="93,-250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="59" Width="47">
-                    <Image.RenderTransform>
-                        <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
-                    </Image.RenderTransform>
-                </Image>
-                <Image Source="/Assets/desplegable.png"
-               Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
-               VerticalAlignment="Center" Height="263" Width="156"/>
-                <Button x:Name="Chat" Height="147" Width="24"
-                        Click="Chat_Click" Background="Transparent"/>
-            </Grid>
-        </Viewbox>
 
         <Grid Visibility="Collapsed" x:Name="Panel_Entrenamiento">
             <Button Click="PanelEntrenamientoClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998">
@@ -390,6 +371,25 @@
             </Viewbox>
         </Grid>
 
+        <Viewbox>
+            <Grid Width="1418" Height="283">
+                <Image Source="/Assets/chat.png"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Stretch="Fill" Margin="24,82,0,0" RenderTransformOrigin="-25.063,0.15" Height="69" Width="84"></Image>
+                <Image Source="/Assets/flecha.png"
+                       Stretch="Fill" Margin="93,-250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.555" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="59" Width="47">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="89.471" TranslateX="-51.231" TranslateY="375.805"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Assets/desplegable.png"
+               Stretch="Fill" RenderTransformOrigin="-25.063,0.15" HorizontalAlignment="Left"
+               VerticalAlignment="Center" Height="263" Width="156"/>
+                <Button x:Name="Chat" Height="147" Width="24"
+                        Click="Chat_Click" Background="Transparent"/>
+            </Grid>
+        </Viewbox>
 
 
         <Button IsTabStop="False" Style="{StaticResource barra_recursos}" Width="168"
@@ -428,8 +428,13 @@
                 <Image Source="/Assets/fondo_negro.png"
                 Stretch="Fill" Opacity="0.7" Height="1074" Width="1912"></Image>
             </Button>
+
             <Image Source="Assets/fondo_gris.png"
                Stretch="Fill" Margin="-10,0,932,0" RenderTransformOrigin="0.413,0.328"></Image>
+            <Button Height="61" Margin="34,34,0,0" Width="64" Click="ChatClose_Click" VerticalAlignment="top"
+                        Style="{StaticResource boton_redondo}">
+                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" FontSize="60" Height="72" TextWrapping="Wrap" Width="42" Margin="0,-24,0,0"><Run Text="×"/><Run Text="A"/></TextBlock>
+            </Button>
         </Grid>
 
 

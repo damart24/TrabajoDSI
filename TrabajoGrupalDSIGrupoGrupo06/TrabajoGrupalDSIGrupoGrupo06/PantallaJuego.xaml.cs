@@ -97,6 +97,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         {
             Panel_Entrenamiento.Visibility= Visibility.Visible;
         }
+
         private void Construccion_MiCampamento(object sender, RoutedEventArgs e)
         {
             if (madera >= 20 && piedra >= 20 && metal >= 20)
