@@ -24,7 +24,8 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     public sealed partial class PantallaAtaque : Page
     {
         int estrellasLevel1, estrellasLevel2, estrellasLevel3, estrellasLevel4, estrellasLevel5, estrellasLevel6;
-        int numeroTropasAtaque = 0; 
+        int numeroTropasAtaque = 0;
+        PantallaJuego.datosImportantes dt_;
         public PantallaAtaque()
         {
             int estrellasLevel1, estrellasLevel2, estrellasLevel3, estrellasLevel4, estrellasLevel5, estrellasLevel6 = 0;
@@ -33,7 +34,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
 
         private void PanelAtaqueClose_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PantallaJuego));
+            Frame.Navigate(typeof(PantallaJuego), dt_);
         }
         private void Edificio_Click(object sender, RoutedEventArgs e)
         {
@@ -213,9 +214,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // If e.Parameter is a string, set the TextBlock's text with it.
-            if (e?.Parameter is int numeroTropas)
+            if (e?.Parameter is PantallaJuego.datosImportantes dt)
             {
-                numeroTropasAtaque = numeroTropas;
+                dt_ = dt;
+                numeroTropasAtaque = dt.cTropas;
                 recursos_soldados.Width = numeroTropasAtaque * 182 / 60;
                 tropas.Text = numeroTropasAtaque.ToString();
             }

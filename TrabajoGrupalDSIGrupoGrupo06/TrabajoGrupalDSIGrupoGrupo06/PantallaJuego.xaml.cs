@@ -24,6 +24,26 @@ namespace TrabajoGrupalDSIGrupoGrupo06
     /// </summary>
     public sealed partial class PantallaJuego : Page, INotifyPropertyChanged
     {
+        public struct datosImportantes
+        {
+            
+            public datosImportantes(double velPiedra, double velMadera, double velComida, double velMetal, int canMadera, int canMetal, int canComida, int canPiedra, int canTropas,
+             string nameMina1, string nameMina2, string nameMina3, string nameCampamento1, 
+             string nameCampamento2, string nameCampamento3, string nameCasa1, string nameCasa2, string nameCasa3, string nameCastillo)
+            {
+                cMetal = canMetal; cComida = canComida; cPiedra = canPiedra; cTropas = canTropas; cMadera = canMadera;
+                vPiedra = velPiedra; vMadera = velMadera;  vComida = velComida; vMetal = velMetal;
+                nMina1 = nameMina1; nMina2 = nameMina2; nMina3 = nameMina3;
+                nCampamento1 = nameCampamento1; nCampamento2 = nameCampamento2; nCampamento3 = nameCampamento3;
+                nCasa1 = nameCasa1; nCasa2 = nameCasa2; nCasa3 = nameCasa3; nCastillo = nameCastillo;
+            }
+            public int cMetal { get; set; }  public int cComida { get; set; } public int cPiedra { get; set; } public int cMadera { get; set; } public int cTropas { get; set; }
+            public double vPiedra { get; set; }   public double vMadera { get; set; } public double vComida { get; set; } public double vMetal { get; set; }
+            public string nMina1 { get; set; }
+            public string nMina2 { get; set; } public string nMina3 { get; set; }   
+            public string nCampamento1 { get; set; }  public string nCampamento2 { get; set; }  public string nCampamento3 { get; set; }
+            public string nCasa1 { get; set; }  public string nCasa2 { get; set; }   public string nCasa3 { get; set; } public string nCastillo { get; set; }
+        }
         double velocidadPiedra, velocidadMadera, velocidadComida, velocidadMetal = 1;
         int madera = 0, metal = 0, comida = 0, piedra = 0, numerodeTropas = 0;
         string mina1Name_, mina2Name_, mina3Name_;
@@ -169,7 +189,10 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         }
         private void Pantalla_AtaqueNavegacion(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PantallaAtaque), numerodeTropas);
+            datosImportantes dt; dt = new datosImportantes(velocidadPiedra, velocidadMadera, velocidadComida, velocidadMetal, madera, metal, comida, piedra, numerodeTropas,
+             mina1Name_, mina2Name_, mina3Name_, campamento1Name_,campamento2Name_, campamento3Name_, casa1Name_, casa2Name_, casa3Name_, castilloName);
+             
+            Frame.Navigate(typeof(PantallaAtaque), dt);
         }
         private void Mina_Click(object sender, RoutedEventArgs e)
         {
@@ -421,5 +444,24 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             recursos_soldados.Width = numerodeTropas * 182 / 60;
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            //// If e.Parameter is a string, set the TextBlock's text with it.
+            //if (e?.Parameter is datosImportantes dt)
+            //{
+            //    velocidadPiedra = dt.vPiedra;
+            //    _timer_piedra.Interval = TimeSpan.FromSeconds(1 / velocidadPiedra);
+            //    velocidadMadera = dt.vMadera;
+            //    _timer_madera.Interval = TimeSpan.FromSeconds(1 / velocidadMadera);
+            //    velocidadMetal = dt.vMetal;
+            //    _timer_metal.Interval = TimeSpan.FromSeconds(1 / velocidadMetal);
+            //    velocidadComida = dt.vComida;
+            //    _timer_comida.Interval = TimeSpan.FromSeconds(1 / velocidadComida);
+
+            //    madera = dt.cMadera;
+            //}
+
+            base.OnNavigatedTo(e);
+        }
     }
 }
