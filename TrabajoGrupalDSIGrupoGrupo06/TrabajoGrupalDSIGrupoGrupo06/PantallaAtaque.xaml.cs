@@ -216,7 +216,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             // If e.Parameter is a string, set the TextBlock's text with it.
             if (e?.Parameter is PantallaJuego.datosImportantes dt)
             {
-                dt_ = dt;
+                dt_ = new PantallaJuego.datosImportantes(dt);
                 numeroTropasAtaque = dt.cTropas;
                 recursos_soldados.Width = numeroTropasAtaque * 182 / 60;
                 tropas.Text = numeroTropasAtaque.ToString();

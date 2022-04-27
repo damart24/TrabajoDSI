@@ -29,13 +29,25 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             
             public datosImportantes(double velPiedra, double velMadera, double velComida, double velMetal, int canMadera, int canMetal, int canComida, int canPiedra, int canTropas,
              string nameMina1, string nameMina2, string nameMina3, string nameCampamento1, 
-             string nameCampamento2, string nameCampamento3, string nameCasa1, string nameCasa2, string nameCasa3, string nameCastillo)
+             string nameCampamento2, string nameCampamento3, string nameCasa1, string nameCasa2, string nameCasa3, string nameCastillo,
+             Visibility visCasa2, Visibility visCasa3, Visibility visCamp2, Visibility visCamp3, Visibility visMina2, Visibility visMina3)
             {
                 cMetal = canMetal; cComida = canComida; cPiedra = canPiedra; cTropas = canTropas; cMadera = canMadera;
                 vPiedra = velPiedra; vMadera = velMadera;  vComida = velComida; vMetal = velMetal;
                 nMina1 = nameMina1; nMina2 = nameMina2; nMina3 = nameMina3;
                 nCampamento1 = nameCampamento1; nCampamento2 = nameCampamento2; nCampamento3 = nameCampamento3;
                 nCasa1 = nameCasa1; nCasa2 = nameCasa2; nCasa3 = nameCasa3; nCastillo = nameCastillo;
+                vCasa2 = visCasa2; vCasa3 = visCasa3; vCamp2 = visCamp2; vCamp3 = visCamp3; vMina2 = visMina2; vMina3 = visMina3;
+            }
+
+            public datosImportantes(datosImportantes dt)
+            {
+                cMetal = dt.cMetal; cComida = dt.cComida; cPiedra = dt.cPiedra; cTropas = dt.cTropas; cMadera = dt.cMadera;
+                vPiedra = dt.vPiedra; vMadera = dt.vMadera; vComida = dt.vComida; vMetal = dt.vMetal;
+                nMina1 = dt.nMina1; nMina2 = dt.nMina2; nMina3 = dt.nMina3;
+                nCampamento1 = dt.nCampamento1; nCampamento2 = dt.nCampamento2; nCampamento3 = dt.nCampamento3;
+                nCasa1 = dt.nCasa1; nCasa2 = dt.nCasa2; nCasa3 = dt.nCasa3; nCastillo = dt.nCastillo;
+                vCasa2 = dt.vCasa2; vCasa3 = dt.vCasa3; vCamp2 = dt.vCamp2; vCamp3 = dt.vCamp3; vMina2 = dt.vMina2; vMina3 = dt.vMina3;
             }
             public int cMetal { get; set; }  public int cComida { get; set; } public int cPiedra { get; set; } public int cMadera { get; set; } public int cTropas { get; set; }
             public double vPiedra { get; set; }   public double vMadera { get; set; } public double vComida { get; set; } public double vMetal { get; set; }
@@ -43,8 +55,11 @@ namespace TrabajoGrupalDSIGrupoGrupo06
             public string nMina2 { get; set; } public string nMina3 { get; set; }   
             public string nCampamento1 { get; set; }  public string nCampamento2 { get; set; }  public string nCampamento3 { get; set; }
             public string nCasa1 { get; set; }  public string nCasa2 { get; set; }   public string nCasa3 { get; set; } public string nCastillo { get; set; }
+            public Visibility vCasa2 { get; set; } public Visibility vCasa3 { get; set; }
+            public Visibility vCamp2 { get; set; } public Visibility vCamp3 { get; set; }
+            public Visibility vMina2 { get; set; } public Visibility vMina3 { get; set; }
         }
-        double velocidadPiedra, velocidadMadera, velocidadComida, velocidadMetal = 1;
+        double velocidadPiedra = 1, velocidadMadera = 1, velocidadComida =1, velocidadMetal = 1;
         int madera = 0, metal = 0, comida = 0, piedra = 0, numerodeTropas = 0;
         string mina1Name_, mina2Name_, mina3Name_;
         string campamento1Name_, campamento2Name_, campamento3Name_;
@@ -190,7 +205,8 @@ namespace TrabajoGrupalDSIGrupoGrupo06
         private void Pantalla_AtaqueNavegacion(object sender, RoutedEventArgs e)
         {
             datosImportantes dt; dt = new datosImportantes(velocidadPiedra, velocidadMadera, velocidadComida, velocidadMetal, madera, metal, comida, piedra, numerodeTropas,
-             mina1Name_, mina2Name_, mina3Name_, campamento1Name_,campamento2Name_, campamento3Name_, casa1Name_, casa2Name_, casa3Name_, castilloName);
+             mina1Name_, mina2Name_, mina3Name_, campamento1Name_,campamento2Name_, campamento3Name_, casa1Name_, casa2Name_, casa3Name_, castilloName, Casa2StackPanel.Visibility,
+             Casa3StackPanel.Visibility, Campamento2StackPanel.Visibility, Campamento3StackPanel.Visibility, Mina2StackPanel.Visibility, Mina3StackPanel.Visibility);
              
             Frame.Navigate(typeof(PantallaAtaque), dt);
         }
@@ -399,7 +415,7 @@ namespace TrabajoGrupalDSIGrupoGrupo06
                 {
                     castilloName = "ms-appx:///Assets/castillo_nivel3.png";
                     Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel3.png"));
-                    button.Visibility = Visibility.Collapsed;
+                    BotonCastillo.Visibility = Visibility.Collapsed;
                 }
             }
         }
@@ -446,20 +462,218 @@ namespace TrabajoGrupalDSIGrupoGrupo06
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //// If e.Parameter is a string, set the TextBlock's text with it.
-            //if (e?.Parameter is datosImportantes dt)
-            //{
-            //    velocidadPiedra = dt.vPiedra;
-            //    _timer_piedra.Interval = TimeSpan.FromSeconds(1 / velocidadPiedra);
-            //    velocidadMadera = dt.vMadera;
-            //    _timer_madera.Interval = TimeSpan.FromSeconds(1 / velocidadMadera);
-            //    velocidadMetal = dt.vMetal;
-            //    _timer_metal.Interval = TimeSpan.FromSeconds(1 / velocidadMetal);
-            //    velocidadComida = dt.vComida;
-            //    _timer_comida.Interval = TimeSpan.FromSeconds(1 / velocidadComida);
+            // If e.Parameter is a string, set the TextBlock's text with it.
+            if (e?.Parameter is datosImportantes dt)
+            {
+                velocidadPiedra = dt.vPiedra;
+                _timer_piedra.Interval = TimeSpan.FromSeconds(1 / velocidadPiedra);
+                velocidadMadera = dt.vMadera;
+                _timer_madera.Interval = TimeSpan.FromSeconds(1 / velocidadMadera);
+                velocidadMetal = dt.vMetal;
+                _timer_metal.Interval = TimeSpan.FromSeconds(1 / velocidadMetal);
+                velocidadComida = dt.vComida;
+                _timer_comida.Interval = TimeSpan.FromSeconds(1 / velocidadComida);
 
-            //    madera = dt.cMadera;
-            //}
+                madera = dt.cMadera;
+                recursos_madera.Width = madera * 182 / 100;
+                piedra = dt.cPiedra;
+                recursos_piedra.Width = piedra * 182 / 100;
+                metal = dt.cMetal;
+                recursos_hierro.Width = metal * 182 / 100;
+                comida = dt.cComida;
+                recursos_comida.Width = comida * 182 / 100;
+                numerodeTropas = dt.cTropas;
+                recursos_soldados.Width = numerodeTropas * 182 / 100;
+
+
+
+                mina1Name_ = dt.nMina1;
+                if (mina1Name_ == "ms-appx:///Assets/mina_nivel1.png")              
+                    Mina1.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel1.png"));            
+                else if (mina1Name_ == "ms-appx:///Assets/mina_nivel2.png")
+                    Mina1.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel2.png"));
+                else if (mina1Name_ == "ms-appx:///Assets/mina_nivel3.png"){
+                    Mina1.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                    BotonMina3.Visibility = Visibility.Collapsed;
+                }
+
+                mina2Name_ = dt.nMina2;
+                if (mina2Name_ == "ms-appx:///Assets/mina_nivel1.png")
+                {
+                    Mina2.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel1.png"));
+                    if(dt.vMina2 == Visibility.Visible)
+                        Mina2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (mina2Name_ == "ms-appx:///Assets/mina_nivel2.png")
+                {
+                    Mina2.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel2.png"));
+                    if (dt.vMina2 == Visibility.Visible)
+                        Mina2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (mina2Name_ == "ms-appx:///Assets/mina_nivel3.png")
+                {
+                    Mina2.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                    if (dt.vMina2 == Visibility.Visible)
+                    {
+                        Mina2StackPanel.Visibility = Visibility.Visible;
+                        BotonMina2.Visibility = Visibility.Collapsed;
+                    } 
+                }
+
+                mina3Name_ = dt.nMina3;
+                if (mina3Name_ == "ms-appx:///Assets/mina_nivel1.png")
+                {
+                    Mina3.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel1.png"));
+                    if (dt.vMina3 == Visibility.Visible)
+                        Mina3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (mina3Name_ == "ms-appx:///Assets/mina_nivel2.png")
+                {
+                    Mina3.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel2.png"));
+                    if (dt.vMina3 == Visibility.Visible)
+                        Mina3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (mina3Name_ == "ms-appx:///Assets/mina_nivel3.png")
+                {
+                    Mina3.Source = new BitmapImage(new Uri("ms-appx:///Assets/mina_nivel3.png"));
+                    if (dt.vMina3 == Visibility.Visible)
+                    {
+                        Mina3StackPanel.Visibility = Visibility.Visible;
+                        BotonMina3.Visibility = Visibility.Collapsed;
+                    }
+                }
+
+
+
+                campamento1Name_ = dt.nCampamento1;
+                if (campamento1Name_ == "ms-appx:///Assets/cuartel_nivel1.png")
+                    Campamento1.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel1.png"));
+                else if (campamento1Name_ == "ms-appx:///Assets/cuartel_nivel2.png")
+                    Campamento1.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel2.png"));
+                else if (campamento1Name_ == "ms-appx:///Assets/cuartel_nivel3.png")
+                {
+                    Campamento1.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                    BotonCampamento1.Visibility = Visibility.Collapsed;
+                }
+
+                campamento2Name_ = dt.nCampamento3;
+                if (campamento2Name_ == "ms-appx:///Assets/cuartel_nivel1.png")
+                {
+                    Campamento2.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel1.png"));
+                    if (dt.vCamp2 == Visibility.Visible)
+                        Campamento2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (campamento2Name_ == "ms-appx:///Assets/cuartel_nivel2.png")
+                {
+                    Campamento2.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel2.png"));
+                    if (dt.vCamp2 == Visibility.Visible)
+                        Campamento2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (campamento2Name_ == "ms-appx:///Assets/cuartel_nivel3.png")
+                {
+                    Campamento2.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                    if (dt.vCamp2 == Visibility.Visible)
+                    {
+                        Campamento2StackPanel.Visibility = Visibility.Visible;
+                        BotonCampamento2.Visibility = Visibility.Collapsed;
+                    }
+               
+                }
+
+                campamento3Name_ = dt.nCampamento3;
+                if (campamento3Name_ == "ms-appx:///Assets/cuartel_nivel1.png")
+                {
+                    Campamento3.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel1.png"));
+                    if (dt.vCamp3 == Visibility.Visible)
+                        Campamento3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (campamento3Name_ == "ms-appx:///Assets/cuartel_nivel2.png")
+                {
+                    Campamento3.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel2.png"));
+                    if (dt.vCamp3 == Visibility.Visible)
+                        Campamento3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (campamento3Name_ == "ms-appx:///Assets/cuartel_nivel3.png")
+                {
+                    Campamento3.Source = new BitmapImage(new Uri("ms-appx:///Assets/cuartel_nivel3.png"));
+                    if (dt.vCamp2 == Visibility.Visible)
+                    {
+                        Campamento3StackPanel.Visibility = Visibility.Visible;
+                        BotonCampamento3.Visibility = Visibility.Collapsed;
+                    }
+                }
+
+
+                casa1Name_ = dt.nCasa1;
+                if (casa1Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                    Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel1.png"));
+                else if (casa1Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                    Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                else if (casa1Name_ == "ms-appx:///Assets/casa_nivel3.png")
+                {
+                    Casa1.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    BotonCasa1.Visibility = Visibility.Collapsed;
+                }
+
+                casa2Name_ = dt.nCasa2;
+                if (casa2Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                {
+                    Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel1.png"));
+                    if (dt.vCasa2 == Visibility.Visible)
+                        Casa2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (casa2Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                {
+                    Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                    if (dt.vCasa2 == Visibility.Visible)
+                        Casa2StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (casa2Name_ == "ms-appx:///Assets/casa_nivel3.png")
+                {
+                    Casa2.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    if (dt.vCasa2 == Visibility.Visible)
+                    {
+                        Casa2StackPanel.Visibility = Visibility.Visible;
+                        BotonCasa2.Visibility = Visibility.Collapsed;
+                    }
+
+                }
+
+                casa3Name_ = dt.nCasa3;
+                if (casa3Name_ == "ms-appx:///Assets/casa_nivel1.png")
+                {
+                    Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel1.png"));
+                    if (dt.vCasa3 == Visibility.Visible)
+                        Casa3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (casa3Name_ == "ms-appx:///Assets/casa_nivel2.png")
+                {
+                    Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel2.png"));
+                    if (dt.vCasa3 == Visibility.Visible)
+                        Casa3StackPanel.Visibility = Visibility.Visible;
+                }
+                else if (casa3Name_ == "ms-appx:///Assets/casa_nivel3.png")
+                {
+                    Casa3.Source = new BitmapImage(new Uri("ms-appx:///Assets/casa_nivel3.png"));
+                    if (dt.vCasa3 == Visibility.Visible)
+                    {
+                        Casa3StackPanel.Visibility = Visibility.Visible;
+                        BotonCasa3.Visibility = Visibility.Collapsed;
+                    }
+                }
+
+                castilloName = dt.nCastillo;
+                if (castilloName == "ms-appx:///Assets/casa_nivel1.png")
+                    Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel1.png"));
+                else if (castilloName == "ms-appx:///Assets/casa_nivel2.png")
+                    Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel2.png"));
+                else if (castilloName == "ms-appx:///Assets/casa_nivel3.png")
+                {
+                    Castillo.Source = new BitmapImage(new Uri("ms-appx:///Assets/castillo_nivel3.png"));
+                    BotonCastillo.Visibility = Visibility.Collapsed;
+                }
+
+            }
 
             base.OnNavigatedTo(e);
         }
