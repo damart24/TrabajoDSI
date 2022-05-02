@@ -15,7 +15,7 @@
         <Viewbox>
             <Image Source="Assets/Logo.png" Margin="346,93,781,541" Height="856" Width="629"></Image>
         </Viewbox>
-        <TextBlock Text="Jugando como DaniRey" FontSize="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,61,0" TextWrapping="Wrap"></TextBlock>
+        <TextBlock Text="Jugando como Usuario2178" FontSize="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,61,0" TextWrapping="Wrap"></TextBlock>
         <TextBlock Text="Haz click en cualquier parte para comenzar tu aventura" FontSize="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap"></TextBlock>
 
         <Button
