@@ -490,7 +490,7 @@
                    HorizontalAlignment="Right"
                    Margin="0,198,67,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
-        <Grid Visibility="Visible" x:Name="Panel_Comprar">
+        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
             <Button Click="TiendaClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998" Background="Transparent">
                 <Image Source="/Assets/fondo_negro.png"
                    Stretch="Fill" Opacity="0.2"></Image>
