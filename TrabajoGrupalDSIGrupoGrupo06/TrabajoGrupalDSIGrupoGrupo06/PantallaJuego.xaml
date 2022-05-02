@@ -329,47 +329,7 @@
             </Viewbox>
         </Grid>
 
-        <Grid Visibility="Collapsed" x:Name="Panel_Comprar">
-            <Button Click="TiendaClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998" Background="Transparent">
-                <Image Source="/Assets/fondo_negro.png"
-                   Stretch="Fill" Opacity="0.2"></Image>
-            </Button>
-            <Viewbox>
-                <Grid>
-
-                    <Image Source="/Assets/fondo_negro.png"
-                            Stretch="Fill" Opacity="0" Margin="-545,0,-537,-91"></Image>
-
-                    <Image Source="Assets/fondo_naranja.png"
-                           Stretch="Fill" Margin="-1374,513,-1616,-1752" RenderTransformOrigin="0.413,0.328"></Image>
-                    <Button Height="682" Click="Construccion_MiCasa" Margin="0,0,3959,-779" Width="959" VerticalAlignment="Bottom"
-                        HorizontalAlignment="Right" 
-                        Style="{StaticResource boton_redondo}">
-                        <Image Source="/Assets/casa_nivel1.png" Margin="0,-6,-1,5"></Image>
-                    </Button>
-                    <Button Height="682" Click="Construccion_MiCampamento" Margin="0,0,2254,-773" Width="959" VerticalAlignment="Bottom"
-                        HorizontalAlignment="Right"
-                        Style="{StaticResource boton_redondo}">
-                        <Image Source="/Assets/cuartel_nivel1.png" ></Image>
-                    </Button>
-
-                    <Button Height="682"  Click="Construccion_Mina" Margin="0,0,421,-773" Width="959" VerticalAlignment="Bottom"
-                        HorizontalAlignment="Right"
-                        Style="{StaticResource boton_redondo}">
-                        <Image Source="/Assets/mina_nivel1.png" ></Image>
-                    </Button>
-
-                    <Image Source="Assets/sombra.png"
-                           Margin="4598,0,0,-113" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="267" Width="255"/>
-                    <Button Click="TiendaClose_Click" Height="181" Margin="4631,0,0,-74" Width="190" VerticalAlignment="Bottom"
-                        Style="{StaticResource boton_redondo}">
-                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="200" Height="200" TextWrapping="Wrap" Width="117" Margin="-16,-114,0,0" Text="×"/>
-                    </Button>
-
-
-                </Grid>
-            </Viewbox>
-        </Grid>
+        
 
         <Viewbox>
             <Grid Width="1418" Height="283">
@@ -530,6 +490,47 @@
                    HorizontalAlignment="Right"
                    Margin="0,198,67,0" Foreground="Black" FontSize="20" FontWeight="SemiBold"/>
 
+        <Grid Visibility="Visible" x:Name="Panel_Comprar">
+            <Button Click="TiendaClose_Click" HorizontalAlignment="Center" Height="1236" Width="1998" Background="Transparent">
+                <Image Source="/Assets/fondo_negro.png"
+                   Stretch="Fill" Opacity="0.2"></Image>
+            </Button>
+            <Viewbox>
+                <Grid>
+
+                    <Image Source="/Assets/fondo_negro.png"
+                            Stretch="Fill" Opacity="0" Margin="-545,0,-537,-91"></Image>
+
+                    <Image Source="Assets/fondo_naranja.png"
+                           Stretch="Fill" Margin="-1374,513,-1616,-1752" RenderTransformOrigin="0.413,0.328"></Image>
+                    <Button Height="682" Click="Construccion_MiCasa" Margin="0,0,3959,-779" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right" IsTabStop="True" 
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/casa_nivel1.png" Margin="0,-6,-1,5"></Image>
+                    </Button>
+                    <Button Height="682" Click="Construccion_MiCampamento" Margin="0,0,2254,-773" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right" IsTabStop="True" 
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/cuartel_nivel1.png" ></Image>
+                    </Button>
+
+                    <Button Height="682"  Click="Construccion_Mina" Margin="0,0,421,-773" Width="959" VerticalAlignment="Bottom"
+                        HorizontalAlignment="Right" IsTabStop="True" 
+                        Style="{StaticResource boton_redondo}">
+                        <Image Source="/Assets/mina_nivel1.png" ></Image>
+                    </Button>
+
+                    <Image Source="Assets/sombra.png"
+                           Margin="4598,0,0,-113" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="Fill" Height="267" Width="255"/>
+                    <Button Click="TiendaClose_Click" Height="181" Margin="4631,0,0,-74" Width="190" VerticalAlignment="Bottom"
+                        Style="{StaticResource boton_redondo}">
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="200" Height="200" TextWrapping="Wrap" Width="117" Margin="-16,-114,0,0" Text="×"/>
+                    </Button>
+
+
+                </Grid>
+            </Viewbox>
+        </Grid>
 
     </Grid>
 </Page>
